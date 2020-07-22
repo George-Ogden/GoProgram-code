@@ -1,0 +1,1 @@
+#about{grid-area:2;grid-template-areas:"h2" "p"}#executable{grid-area:3;grid-template-columns:3fr 1fr;grid-template-areas:"h2 image" "p image"}@media only screen and (max-width:800px){.image{display:none}#image{display:block}#about,#executable{grid-template-columns:1fr}}

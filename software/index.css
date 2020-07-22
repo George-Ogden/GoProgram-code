@@ -1,0 +1,1 @@
+#main,#reminder{grid-template-areas:"h2 image" "p image"}#image{grid-area:2}#reminder{grid-area:5}#main{grid-area:3}#graph{grid-area:4;grid-template-areas:"image h2" "image p"}#unix{grid-area:6;grid-template-areas:"h2" "p"}@media only screen and (max-width:800px){.image{display:none}#image{display:block}}

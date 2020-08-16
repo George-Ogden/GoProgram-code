@@ -32,679 +32,274 @@ RewriteRule ^([^Y]*)Y(.*)$ $1y$2
 RewriteRule ^([^Z]*)Z(.*)$ $1z$2
 RewriteCond %{ENV:HASCAPS} TRUE
 RewriteCond %{HTTP_HOST} ^goprogram\.co\.uk$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^/?$ "https\:\/\/goprogram\.co\.uk\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about$ "https\:\/\/goprogram\.co\.uk\/about\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^online$ "https\:\/\/goprogram\.co\.uk\/online\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^cv$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^cv\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^CV\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/cv\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/cv$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^line\.html$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtle\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/turtle\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/turtle\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtle\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^maths$ "https\:\/\/goprogram\.co\.uk\/turtle\/maths" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^circles$ "https\:\/\/goprogram\.co\.uk\/turtle\/circles" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^colours$ "https\:\/\/goprogram\.co\.uk\/turtle\/colours" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^calculator$ "https\:\/\/goprogram\.co\.uk\/online\/calculator" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^converter$ "https\:\/\/goprogram\.co\.uk\/online\/converter" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^sudoku$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/primenumberchecker$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^primenumberchecker$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/primes$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/prime$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^prime$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^primes$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/foursquares$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/foursquare$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/workingmemorytrainer$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/memory$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^memory$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^foursquares$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^foursquare$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^workingmemorytrainer$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^git$ "https\:\/\/github\.com\/George\-Ogden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^github$ "https\:\/\/github\.com\/George\-Ogden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^repl$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^patreon$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^give$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^donate$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^youtube$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^video$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^sololearn$ "https\:\/\/sololearn\.com\/Profile\/12838639" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^replit$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^advertisement$ "HTTPS\:\/\/goprogram\.co\.uk\/ads" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^ai\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^artificial_intelligence\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^artificial\-intelligence$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^artificial\-intelligenceindex$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^artificial\-intelligenceclassifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^artificial\-intelligencecode$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/code" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractals\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^Online\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^mobile\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/apps$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^appsssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/apps$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^fractalssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtle\/fractalssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^play$ "https\:\/\/play\.google\.com\/store\/apps\/developer\?id\=GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^sudoku\-solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^online\/sudoku\-solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^online\/sudoku_solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^sudoku_solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^code$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/code" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtlecircles$ "https\:\/\/goprogram\.co\.uk\/turtle\/circles" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtlecolours$ "https\:\/\/goprogram\.co\.uk\/turtle\/colours" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^onlinecalculator\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator\.html$1" [R=301,L]
+RewriteRule ^onlinecalculator\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtle\/fractalsline$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^turtle\/fractalsfamous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^onlineconverter$ "https\:\/\/goprogram\.co\.uk\/online\/converter" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^onlinesudoku$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^colour\-classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^ai\/colour\-classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^work\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^freelancing\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^pph\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^freelance\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^peopleperhour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^people\-per\-hour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^calc\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator\.html$1" [R=301,L]
+RewriteRule ^calc\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^walk$ "https\:\/\/uk\.virginmoneygiving\.com\/fundraiser\-portal\/fundraiserPage\?pageId\=1154091" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^hire\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^python\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/index\.html$1" [R=301,L]
+RewriteRule ^python\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/index$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^programs\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^Programs\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software$ "https\:\/\/goprogram\.co\.uk\/software\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/birthday$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/birthday_reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/birthday\-reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^birthday\-reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^birthday$ "https\:\/\/goprogram\.co\.uk\/software\/reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^Index\.html$ "https\:\/\/goprogram\.co\.uk\/" [R=301,L]
+RewriteRule ^Index$ "https\:\/\/goprogram\.co\.uk\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^reminder$ "https\:\/\/goprogram\.co\.uk\/software\/reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/graph\-creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^software\/graph_creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^graph$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^graph_creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^graph\-creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^updates$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^update$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/update$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^whats_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'s\-new\.htm$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^what\'s\-new\.html$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^what\'s_new\.html$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^what\'s_new\.htm$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^what\'s_new\.htm$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about\/what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/whats\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^about\/new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/what\'sinstalled$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/whatsinstalled$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/myapps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/Installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/my\-apps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/my_apps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^my_apps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^my\-apps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^myapps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'sinstalled$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^whatsinstalled$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'s_Installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^what\'s_installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^apps\/mypps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
@@ -745,25 +340,31 @@ RewriteRule ^learn_python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^learn\-python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligence\/index\.html$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/" [R=301,L]
+RewriteRule ^artificial\-intelligence\/index$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/index\.html$ "https\:\/\/goprogram\.co\.uk\/software\/" [R=301,L]
+RewriteRule ^software\/index$ "https\:\/\/goprogram\.co\.uk\/software\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online\/index\.html$ "https\:\/\/goprogram\.co\.uk\/online\/" [R=301,L]
+RewriteRule ^online\/index$ "https\:\/\/goprogram\.co\.uk\/online\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^apps\/index\.html$ "https\:\/\/goprogram\.co\.uk\/apps\/" [R=301,L]
+RewriteRule ^apps\/index$ "https\:\/\/goprogram\.co\.uk\/apps\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/index\.html$ "https\:\/\/goprogram\.co\.uk\/turtle\/" [R=301,L]
+RewriteRule ^turtle\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/fractals\/index\.html$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/" [R=301,L]
+RewriteRule ^turtle\/fractals\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/index\.html$ "https\:\/\/goprogram\.co\.uk\/about" [R=301,L]
+RewriteRule ^about\/index$ "https\:\/\/goprogram\.co\.uk\/about" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/unix\.html$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^software\/unix$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^unix\.html$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^unix$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^commands\.html$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^commands$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^linkedin$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^linked$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^link$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]

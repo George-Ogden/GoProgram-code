@@ -200,7 +200,7 @@ RewriteRule ^people\-per\-hour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^calc\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^walk$ "https\:\/\/uk\.virginmoneygiving\.com\/fundraiser\-portal\/fundraiserPage\?pageId\=1154091" [R=301,L]
+RewriteRule ^walk$ "https\:\/\/goprogram\.co\.uk\/about\/walk$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^hire\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

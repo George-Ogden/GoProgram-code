@@ -1,1 +1,18 @@
-<!doctype html><html><head><title>GoProgram</title><link rel=stylesheet href=index.css><link rel=stylesheet href=fonts.css><?php include "meta.php"?><meta name=description content="A website with a wide variety of showcased programming projects."><meta name=keywords content="code, programming, GoProgram, python, JavaScript"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=subject content=programming></head><?php include "header.php"?><section><div id=BG></div><div id=top><h1>GoProgram</h1></div><div id=main><h2>Go, program!</h2></div><div id=controls><span id=left onclick=move(-1)><span class="tooltip top">Previous</span><i class="far fa-caret-square-left"></i></span><span id=right onclick=move(1)><span class="tooltip top">Next</span><i class="far fa-caret-square-right"></i></span></div><div id=dots><div class=dot style=margin-left:auto onclick=moveTo(0)><i class="fas fa-circle"></i></div><div class=dot onclick=moveTo(1)><i class="fas fa-circle"></i></div><div class=dot onclick=moveTo(2)><i class="fas fa-circle"></i></div><div class=dot style=margin-right:auto onclick=moveTo(3)><i class="fas fa-circle"></i></div></div></section><div id=cookie></div><?php include "footer.php"?><script src=main.js></script><?php include "scripts.php"?><script src=https://kit.fontawesome.com/f6748a38ea.js></script><script src=index.js></script><script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js></script><script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js></script><script>var firebaseConfig={apiKey:"AIzaSyBZV2Zn1hwqX54jD9Hb8lNKNESJ_ztFLs8",authDomain:"goprogram-8f3e6.firebaseapp.com",databaseURL:"https://goprogram-8f3e6.firebaseio.com",projectId:"goprogram-8f3e6",storageBucket:"goprogram-8f3e6.appspot.com",messagingSenderId:"418286522925",appId:"1:418286522925:web:954105e701d876248bdea4",measurementId:"G-C5DRZPWGLV"};firebase.initializeApp(firebaseConfig),firebase.analytics()</script></html>
+<!doctype html>
+<html>
+
+<head>
+    <title>GoProgram</title>
+    <?php include "main.php" ?>
+    <link rel=stylesheet href=index.css>
+    <link rel=stylesheet href=fonts.css><?php include "meta.php" ?>
+    <meta name=description content="A website with a wide variety of showcased programming projects.">
+    <meta name=keywords content="code, programming, GoProgram, python, JavaScript">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=subject content=programming>
+</head><?php include "header.php" ?><section>
+<?php image("images/home.jfif","Main Image","text",array("text" => "<h1>GoProgram</h1><h2>Go, program!</h2>","id" => "main")); ?>
+    
+</section>
+<?php include "footer.php" ?><script src=main.js></script><?php include "scripts.php" ?>
+</html>

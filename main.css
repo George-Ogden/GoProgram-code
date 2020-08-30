@@ -431,3 +431,11 @@ a {
     left: 50%;
     top: 100%;
 }
+h1 {
+    color: var(--base);
+    font: lighter 3em var(--primary-font);
+}
+h2 {
+    color: var(--primary-dark);
+    font: lighter 2em var(--primary-font);
+}

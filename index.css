@@ -149,19 +149,27 @@ h1::selection {
 }
 */
 h1 {
-    color: var(--base);
-    font: lighter 5em var(--primary-font);
+    font-size: 5em;
 }
 h2 {
-    color: var(--primary-dark);
-    font: lighter 3em var(--primary-font);
+    font-size: 3em;
 }
 #main {
-    width: 100% ;
+    width: 100%;
 }
 #main .text {
-    left: 50%;
     transform: translateY(-50%);
     left: 50px;
     text-align: left;
+}
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    #main .text {
+        left: 10px;
+    }
 }

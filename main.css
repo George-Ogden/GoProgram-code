@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    justify-items: center;
+    font: 23px/150% var(--primary-font);
 }
 /*
 body {
@@ -61,7 +61,7 @@ section div {
 }
 iframe {
     background: linear-gradient(to right bottom, rgba(192, 192, 192, 0.8), rgba(192, 192, 192, 0.5));
-    width: 100% !important;
+    width: 100% ;
 }
 nav li {
     background-color: inherit;
@@ -336,12 +336,10 @@ html {
     position: relative;
     text-align: center;
 }
-.strava {
-    width: 100%;
-}
 .image .text {
     position: absolute;
     font-size: x-large;
+    width: 100%;
 }
 .image img {
     width: 100%;
@@ -363,8 +361,8 @@ html {
     height: 100%;
     width: 100%;
 }
-.cover.faded {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), 80%, rgba(0, 0, 0, 0.8));
+.cover.floor {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), 75%, rgba(0, 0, 0, 0.9));
 }
 .cover.darken {
     background: rgba(0, 0, 0, 0.2);
@@ -373,6 +371,10 @@ html {
     transition: 0.5s ease;
     opacity: 0;
     background: rgba(0, 0, 0, 0.5);
+}
+.overlay .text.bottom {
+    top: 50%;
+    left: 50%;
 }
 .image:hover .cover.overlay {
     opacity: 1;
@@ -383,10 +385,7 @@ a {
 }
 
 .tooltip_ {
-    background-color: #00f;
-    font: 15px "Noto Serif", Times, serif !important;
-    box-shadow: 1px 1px 3px #00f;
-    color: #0ff;
+    background-color: var(--secondary-dark);;
     height: auto;
     opacity: 0;
     padding: 5px;
@@ -397,16 +396,8 @@ a {
     width: 200px;
     z-index: 2;
 }
-.tooltip_.mouse {
-    position: fixed;
-}
 .tooltip_.top {
     bottom: 150%;
-    left: 50%;
-    margin: -5px 0 0 -100px;
-}
-.tooltip_.bottom {
-    top: 150%;
     left: 50%;
     margin: -5px 0 0 -100px;
 }
@@ -419,23 +410,73 @@ a {
     transition: opacity 0.5s;
     visibility: hidden;
 }
-.tooltip_.bottom::after {
-    margin-left: -5px;
-    border-color: transparent transparent #00f transparent;
-    left: 50%;
-    bottom: 100%;
-}
 .tooltip_.top::after {
     margin-left: -5px;
-    border-color: #00f transparent transparent transparent;
+    border-color: var(--secondary-dark) transparent transparent transparent;
     left: 50%;
     top: 100%;
 }
+h1,h2,h3 {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    user-select: none;
+    text-align: left;
+}
+.section h1,.section h2,.section h3 {
+    
+    text-align: center;
+    margin: auto;
+}
 h1 {
+    font-size: 5em ;
+}
+h1.colour{
     color: var(--base);
-    font: lighter 3em var(--primary-font);
 }
 h2 {
+    font-size:3em;
+}
+h2.colour{
     color: var(--primary-dark);
-    font: lighter 2em var(--primary-font);
+}
+h3 {
+    font-size: 2em;
+}
+h3.colour{
+    color: var(--secondary-dark);
+}
+.section.text {
+    padding: 200px 0;
+    display: -ms-flexbox;
+    display: flex; 
+}
+.section.text h2 {
+    color: var(--primary-dark);
+}
+.section.image .text {
+    display: -ms-flexbox;
+    display: flex; 
+}
+p {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+p::selection {
+    color: var(--primary-light);
+    background: var(--secondary-light);
+}
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    #main .text {
+        left: 10px;
+    }
 }

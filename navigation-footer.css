@@ -6,9 +6,6 @@
         height: 50px;
         width: 50px;
     }
-    body {
-        overflow: auto;
-    }
     header {
         position: relative;
         width: 100%;
@@ -61,7 +58,6 @@
 }
 header {
     background: var(--secondary-dark);
-    font: 20px "Noto Serif", Times, serif;
     width: 100%;
     z-index: 2;
 }
@@ -147,7 +143,6 @@ footer .img {
 }
 @media only screen and (max-width: 400px) {
     header li a {
-        font-size: 12px;
         padding: 19px 0;
     }
 }

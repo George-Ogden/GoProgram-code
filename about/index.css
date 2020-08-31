@@ -1,1 +1,51 @@
-@media only screen and (min-width:800px){#language,#main,#money{grid-template-columns:4fr 1fr}#program,#work{grid-template-columns:1fr 4fr}}#program,#work{grid-template-areas:'image h2' 'image p'}#language,#main,#money{grid-template-areas:'h2 image' 'p image'}#image{grid-area:2}#program{grid-area:4}#work{grid-area:6}#money{grid-area:7}#main{grid-area:3}#language{grid-area:5}
+/*@media only screen and (min-width: 800px) {
+    #language,
+    #main,
+    #money {
+        grid-template-columns: 4fr 1fr;
+    }
+    #program,
+    #work {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+#program,
+#work {
+    grid-template-areas: "image h2" "image p";
+}
+#language,
+#main,
+#money {
+    grid-template-areas: "h2 image" "p image";
+}
+#image {
+    grid-area: 2;
+}
+#program {
+    grid-area: 4;
+}
+#work {
+    grid-area: 6;
+}
+#money {
+    grid-area: 7;
+}
+#main {
+    grid-area: 3;
+}
+#language {
+    grid-area: 5;
+}
+*/
+
+@media (max-width: 700px) {
+    #main .text {
+        left: 10px;
+    }
+}
+
+#top .text {
+    transform: translateY(-100%);
+    left: 50px;
+    text-align: left;
+}

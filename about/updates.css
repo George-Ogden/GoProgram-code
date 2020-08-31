@@ -1,1 +1,15 @@
-@media only screen and (min-width:800px){#about,#tutorials{grid-template-columns:1fr 4fr}#installers{grid-template-columns:4fr 1fr}}#about,#tutorials{grid-template-areas:"image h2" "image p"}#about{grid-area:2}#tutorials{grid-area:5}#installers{grid-template-areas:"h2 image" "p image";grid-area:4}#commands{grid-template-areas:"h2" "p";grid-area:3}
+
+@media (max-width: 700px) {
+    #top .text {
+        left: 10px;
+    }
+}
+
+#top .text {
+    transform: translateY(-100%);
+    right: 50px;
+    width: auto
+}
+#top .text h1{
+    text-align: right;
+}

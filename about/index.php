@@ -20,7 +20,7 @@
 <?php image("images/code.min.jfif","Computer Code","text-darken",array("text" => "<h2>Programs</h2><p>With passions in maths and computer science, you will notice a wide range of mathematical concepts display throughout the projects on the website.</p>"));  ?>
 </div>
 <div class="section image">
-<?php image("../images/logos.png","Hand Drawn Logos","text-overlay",array("text" => "<h2>Languages</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>")); ?>  
+<?php image("../images/logos.png","Hand Drawn Logos","text-overlay",array("text" => "<h2>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>")); ?>  
 </div>
 <div class="section text">
         <h2>Donate</h2>

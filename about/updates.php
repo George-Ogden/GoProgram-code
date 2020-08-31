@@ -1,1 +1,29 @@
-<!doctype html><html><head><title>What's New?</title><link rel=stylesheet href=updates.css><link rel=stylesheet href=../fonts.css><link rel=stylesheet href=../main.css><link rel=stylesheet href=../colours.css><?php include "../meta.php" ?><meta name=description content="A website with a wide variety of showcased open source programming projects."><meta name=keywords content="code, programming, GoProgram, about, Python, JavaScript, updates"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=subject content=programming></head><?php include "../header.php" ?><nav><ul><li><a href=about>About</a></li>|<li><a href=../apps/myapps>What's Installed?</a></li>| <li><a href=tutorials>Python Tutorials</a></li>| <li><a href=software>Installers</a></li>| <li><a href=../software/commands>UNIX Commands</a></li></ul></nav><section><div id=return><span class="tooltip_ bottom">Top of page</span><div class=container><a href=#><i class="fa fa-angle-double-up"></i></a></div></div><div id=top><h1>What's New?</h1></div><div id=about class="box colour-2"><div class=h2><h2>About</h2></div><div class=p>Every time a new web page is launched, it will show up here so that you can see what is new!</div><div class=image><a target=_blank href=images/launch.jpg><span class="tooltip_ mouse">Launch</span><img src=images/launch.jpg alt="Rocket Launch"></a></div></div><div id=commands class="box colour-3"><div class=h2><span class="tooltip_ mouse">Open Page</span><a href=tutorials><h2>UNIX Commands</h2></a></div><div class=p>If you use a command line interface, the best choice is undoubtedly Linux, as the commands in Windows are fairly limited. However, it is possible to download the Coreutils (as well as other commands), which have already been compiled for Windows to increase the diversity and range of commands that can be used on Windows devices and make the command line seem more like a Linux machine.</div></div><div id=installers class="box colour-4"><div class=h2><h2>Installers</h2></div><div class=p>Recently, I have started creating Windows installers for both Python programs and other executable files. Have a look in the software section of this website for some programs that you can install.</div><div class=image><a target=_blank href=../software/images/executable.jpg><span class="tooltip_ mouse">Executable</span><img src=../software/images/executable.jpg alt="Executable Script"></a></div></div><div id=tutorials class="box colour-5"><div class=h2><span class="tooltip_ mouse">Watch Videos</span><a href=tutorials><h2>Python Tutorials</h2></a></div><div class=p><i>"Knowledge has no value unless you share it".</i><br>Therefore, I have started giving Python tutorials to teach people an invaluable skill - programming. Whether you want to speed up mundane tasks or make a career out of writing software, Python is the best language to start with. Hopefully, the code on this website is evidence that I know what I am doing, and I hope that you can develop an awesome skill too.</div><div class=image><a target=_blank href=../turtle/images/python.jpg><span class="tooltip_ mouse">Python</span><img src=../turtle/images/python.jpg alt="Python Logo"></a></div></div></section><div id=cookie></div><?php include "../footer.php" ?><script src=../main.js></script><?php include "../scripts.php" ?></html>
+<!doctype html>
+<html>
+
+<head>
+    <title>What's New?</title>
+    <?php include "../main.php" ?>
+    <link rel=stylesheet href=updates.css>
+    <?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased open source programming projects.">
+    <meta name=keywords content="code, programming, GoProgram, about, Python, JavaScript, updates">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=subject content=programming>
+</head><?php include "../header.php" ?>
+ <section>
+ <?php image("images/updates.jpg","Main Image","text-darken",array("id"=> "top","text" => "<h1>Updates</h1>"));  ?>
+<div class="section text">
+<p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
+</div>
+<hr>
+<div class="section text">
+<h2>Redesign</h2>
+<p>The site has been redesigned to transform the look. After taking a visual design course, I applied what I learnt to create a clean, more modern look. Have a look at <a href="https:old.goprogram.co.uk">the old site</a> to see the miraculous transformation.</p>
+</div>
+<hr>
+<div class="section text">
+<h2>UNIX Commands</h2>
+<p>If you use a command line interface, the best choice is undoubtedly Linux, as the commands in Windows are fairly limited. However, it is possible to download the Coreutils (as well as other commands), which have already been compiled for Windows to increase the diversity and range of commands that can be used on Windows devices and make the command line seem more like a Linux machine.</p>
+</div>
+</section>
+<div id=cookie></div><?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>

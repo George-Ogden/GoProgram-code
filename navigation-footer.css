@@ -68,10 +68,10 @@ header ul {
     padding: 0;
 }
 header li a {
-    color: #FFF;
+    color: #FFF!important;
     display: flex;
     height: 100%;
-    text-decoration: none;
+    text-decoration: none!important;
     width: 100%;
 }
 header li {

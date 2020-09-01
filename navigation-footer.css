@@ -91,10 +91,10 @@ header img:hover {
     transform: rotate(360deg);
 }
 footer .tooltip_ {
-    width: 80px;
+    width: 100px;
 }
 footer .tooltip_.top {
-    margin: -5px 0 0 -40px;
+    margin: 0 0 5px -50px;
 }
 footer a:hover .tooltip_ {
     opacity: 1;
@@ -103,10 +103,6 @@ footer a:hover .tooltip_ {
 footer a:hover .tooltip_::after {
     opacity: 1;
     visibility: visible;
-}
-.fa {
-    margin: auto;
-    vertical-align: middle;
 }
 footer {
     align-items: center;
@@ -119,6 +115,9 @@ footer {
 footer a {
     position: relative;
 }
+footer .icon {
+    height: 33px;
+}
 footer .img {
     -webkit-filter: brightness(0);
     filter: brightness(0);
@@ -127,10 +126,6 @@ footer .img {
 }
 footer img:hover {
     filter: brightness(100%);
-}
-footer .img {
-    height: 30px;
-    justify-self: center;
 }
 @media only screen and (max-width: 800px) {
     section {

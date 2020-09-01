@@ -1,6 +1,13 @@
-<footer>
-        <div class=youtube><a class="youtube fa" href=/youtube target=_blank><span class="tooltip_ top">YouTube</span><img alt=YouTube class=img src=/images/youtube.png> </a> </div> <div class=patreon><a class="patreon fa" href=/donate target=_blank><span class="tooltip_ top">Patreon</span><img alt=Patreon class=img src=/images/patreon.png> </a> </div> <div class=github><a class="github fa" href=/github target=_blank><span class="tooltip_ top">GitHub</span><img alt=GitHub class=img src=/images/github.png> </a> </div> <div class=work><a class="work fa" href=/freelancing target=_blank><span class="tooltip_ top">Hire</span><img class=img src=/images/work.png alt=PeoplePerHour></a></div>
-        <div class=linkedin><a class="linkedin fa" href=/linkedin target=_blank><span class="tooltip_ top">LinkedIn</span><img class=img src=/images/linkedin.png alt=LinkedIn></a></div>
-        <div class=email><a class="email fa" href="mailto:George@goprogram.co.uk?subject=Circles"><span class="tooltip_ top">Email</span><img class=img src=/images/email.png alt=Email></a></div>
+<hr><footer>
+        <?php function icon($type){
+                $lower = strtolower($type);
+                echo "<div class='$lower icon'><a href=/$lower target=_blank><span class='tooltip_ top'>$type</span><img alt=$type class=img src=/images/$type.png></a></div>";
+        }
+        icon("YouTube");
+        icon("Patreon");
+        icon("GitHub");
+        icon("PeoplePerHour");
+        icon("LinkedIn");
+        icon("email");?>
     
 </footer>

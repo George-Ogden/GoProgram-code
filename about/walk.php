@@ -28,7 +28,7 @@
 <div class="card mx-auto" id=stats>
     <div class=card-body>
         <div class=card-title>
-            <h2>Stats</h2>
+            <h2 id=stats>Stats</h2>
         </div>
         <div class=text-center>
             <p class=stat>These are the stats for George during the time spent walking.</p>

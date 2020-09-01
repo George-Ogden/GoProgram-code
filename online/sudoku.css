@@ -1,1 +1,79 @@
-form{grid-area:3;margin:10px 2%;width:80%}#sudoku{margin:auto;max-width:800px;width:100%}td{border:#000 1px solid;padding:0}::selection{background-color:silver}table{border:#000 3px solid}td:nth-of-type(3),td:nth-of-type(6){border-right:#000 3px solid}tr:nth-of-type(3),tr:nth-of-type(6){border-bottom:#000 3px solid}table{border-collapse:collapse;height:500px;width:500px}input{border:none;font:1.5em Ubuntu,sans-serif;height:100%;text-align:center;width:100%}input:valid{background-color:rgba(0,0,255,.2)}input:invalid{background-color:rgba(255,0,0,.8)}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}button{cursor:pointer;font:800 2em Roboto,sans-serif;margin:10px 25%;width:50%}.container{padding-top:100%;position:relative;width:100%}#valid{display:block;font:700 250% Ubuntu,sans-serif;grid-area:2;text-align:center}section{display:grid;grid-gap:25px}@media only screen and (max-width:750px){nav{visibility:hidden}}@media only screen and (max-width:400px){body{font-size:60%}}
+    #sudoku {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+td {
+    border:  2px solid;
+    padding: 0;
+}
+table {
+    border:  5px solid;
+}
+td:nth-of-type(3),
+td:nth-of-type(6) {
+    border-right:  5px solid;
+}
+tr:nth-of-type(3),
+tr:nth-of-type(6) {
+    border-bottom: 5px solid;
+}
+table {
+    border-collapse: collapse;
+    height: 500px;
+    width: 500px;
+}
+input {
+    border: none;
+    font-size: 1.5em;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    user-select: none;
+}
+input::selection {
+    background: var(--primary-light);
+    color: white;
+}
+input:valid {
+    background:var(--primary-light);
+}
+input:invalid {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button {
+    cursor: pointer;
+    font-size: 2em;
+    width: 50%;
+    margin: 50px auto;
+    display: block;
+    background: var(--secondary-dark);
+    color: white;
+    border: none
+}
+.container {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+#valid {
+    display: block;
+    font-size: 250%;
+    text-align: center;
+}
+@media only screen and (max-width: 750px) {
+    nav {
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 60%;
+    }
+}

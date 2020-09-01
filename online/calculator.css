@@ -1,5 +1,5 @@
 calculator {
-    border: 5px solid silver;
+    border: 5px solid;
     display: grid;
     grid-area: 3;
     grid-area-template-rows: repeat(7, 1fr);
@@ -13,7 +13,8 @@ calculator {
 button {
     cursor: pointer;
     user-select: none;
-    border: 1px solid ;
+    border: 2px solid ;
+    background: var(--primary-light);
     font-size: 2em;
     height: 100%;
     padding: 10%;
@@ -23,10 +24,14 @@ button {
 input {
     height: 100%;
     justify-items: center;
+    border-bottom: 2px solid #000;
     margin: 0;
     padding: 5%;
     overflow: auto;
     width: 100%;
+    background:var(--secondary-light);
+    font-size: 2em;
+    color: white
 }
 #bo {
     grid-area: bo;
@@ -45,27 +50,20 @@ form {
     grid-area: 3;
 }
 td {
-    border: 1px solid;
+    border: 2px solid;
     padding: 0;
 }
 td:nth-of-type(3),
 td:nth-of-type(6) {
-    border-right: 3px solid;
+    border-right: 5px solid;
 }
 tr:nth-of-type(3),
 tr:nth-of-type(6) {
-    border-bottom: 3px solid;
+    border-bottom: 5px solid;
 }
 table {
-    border: 3px solid;
+    border: 5px solid;
     border-collapse: collapse;
-    width: 100%;
-}
-input {
-    background:var(--primary-transparent);
-    border: none;
-    font-size: 2em;
-    height: 100%;
     width: 100%;
 }
 input:valid {

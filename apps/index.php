@@ -39,4 +39,4 @@
         <?php echo image("images/whats installed.jpg", "What's Installed?", "floor");  ?>
     </div>
 </section>
-<?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

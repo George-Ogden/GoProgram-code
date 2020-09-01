@@ -26,4 +26,4 @@
 <p>If you use a command line interface, the best choice is undoubtedly Linux, as the commands in Windows are fairly limited. However, it is possible to download the Coreutils (as well as other commands), which have already been compiled for Windows to increase the diversity and range of commands that can be used on Windows devices and make the command line seem more like a Linux machine.</p>
 </div>
 </section>
-<?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

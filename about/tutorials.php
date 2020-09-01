@@ -28,4 +28,4 @@
         <?php echo video("https://youtube.com/embed/a4wymMoq_kc?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D") ?>
     </div>
 </section>
-<?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

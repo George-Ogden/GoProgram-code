@@ -21,4 +21,4 @@
     echo section("Calculator","If you need a hand with some maths or just want to try it out, give the calculator a go. It is a mix between the classic model and a modernistic version.");
     echo section("Colour Converter","If you want to convert a named colour into RGB, hexadecimal, CMYK or HSL, this is the tool. If not, have some fun with it anyway.","images/colours.jfif"); ?>
 </section>
-<?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

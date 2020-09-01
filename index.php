@@ -16,5 +16,5 @@ echo image("images/logos.png","Hand Drawn Logos","text-overlay",array("text" => 
 
 </div>
 </section>
-<?php include "footer.php" ?><script src=main.js></script><?php include "scripts.php" ?>
+<?php include "footer.php" ?></script><?php include "scripts.php" ?>
 </html>

@@ -27,4 +27,4 @@
     <p>The website costs money to run, as well as all the open source projects that I work on and the weekly videos that I publish. All of these rely on an entirely donation-based system. Please, consider donating via Patreon to support the site and receive exclusive benefits and early access.</p>
 </div>
 
-<?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

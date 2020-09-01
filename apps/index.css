@@ -1,1 +1,9 @@
-#installed,#prime{grid-template-areas:'image h2''image p';grid-template-columns:1fr 3fr}#four,#main{grid-template-areas:'h2 image''p image';grid-template-columns:3fr 1fr}#image{grid-area:2}#prime{grid-area:4}#main{grid-area:3}#four{grid-area:6}#installed{grid-area:7}@media only screen and (max-width:800px){.image{display:none}#four,#installed,#main,#prime{grid-template-columns:1fr;grid-template-areas:'h2''p'}#image{display:block}}
+#prime h2 {
+    color: var(--primary-dark)
+}
+#four h2 {
+    color: var(--secondary-light)
+}
+#installed h2 {
+    color: var(--secondary-dark)
+}

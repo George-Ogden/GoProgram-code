@@ -1,1 +1,47 @@
-<!doctype html><html><head><title>Apps</title><link rel=stylesheet href=index.css><link rel=stylesheet href=../fonts.css><link rel=stylesheet href=../main.css><link rel=stylesheet href=../colours.css><?php include "../meta.php"?><meta name=description content="A website with a wide variety of showcased programming projects, some of which are apps."><meta name=keywords content="code, programming, GoProgram, apps, interactive, java"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=subject content=programming></head><?php include "../header.php"?><nav><ul><li><a href=#>Welcome</a></li>|<li><a href=#prime>Prime Number Checker</a></li>|<li><a href=#four>Four Squares</a></li>|<li><a href=#installed>What's Installed?</a></li></ul></nav><section><div id=return><span class="tooltip_ bottom">Top of page</span><div class=container><a href=#><i class="fa fa-angle-double-up"></i></a></div></div><div id=top><h1>Apps</h1></div><div class=image id=image><a target=_blank href=images/apps.jpg><span class="tooltip_ mouse">Apps</span><img src=images/apps.jpg alt="Android Studio Logo"></a></div><div id=main class="box colour-2"><div class=h2><h2>Welcome</h2></div><div class=p>Currently, I have released two apps, but there may be more coming soon.</div><div class=image><a target=_blank href=images/android.jpg><span class="tooltip_ mouse">Android</span><img src=images/android.jpg alt=Android></a></div></div><div id=prime class="box colour-3"><div class=h2><span class="tooltip_ mouse">View in Play Store</span><a href=/apps/primenumberchecker><h2>Prime Number Checker</h2></a></div><div class=p>This app will factor numbers or tell you if it is prime.</div><div class=image><a target=_blank href="images/prime number checker.jpg"><span class="tooltip_ mouse">Prime Number Checker</span><img src="images/prime number checker.jpg" alt=2357></a></div></div><div id=four class="box colour-4"><div class=h2><span class="tooltip_ mouse">View in Play Store</span><a href=/apps/workingmemorytrainer><h2>Four Squares</h2></a></div><div class=p>Repeat the pattern to test and improve your working memory.</div><div class=image><a target=_blank href="images/four squares.jpg"><span class="tooltip_ mouse">Four Squares</span><img src="images/four squares.jpg" alt="Four Squares"></a></div></div><div id=installed class="box colour-5"><div class=h2><span class="tooltip_ mouse">View in Play Store</span><a href=/apps/myapps><h2>What's Installed?</h2></a></div><div class=p>Find out everything that is installed on your device.</div><div class=image><a target=_blank href="images/what's installed.jpg"><span class="tooltip_ mouse">What's Installed?</span><img src="images/what's installed.jpg" alt="What's Installed?"></a></div></div></section><div id=cookie></div><?php include "../footer.php"?><script src=../main.js></script><?php include "../scripts.php"?></html>
+<!doctype html>
+<html>
+
+<head>
+    <title>Apps</title>
+    <?php include "../main.php" ?>
+    <link rel=stylesheet href=index.css>
+    <?php include "../meta.php" ?>
+    <meta name=description content="A website with a wide variety of showcased programming projects, some of which are apps.">
+    <meta name=keywords content="code, programming, GoProgram, apps, interactive, java">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=subject content=programming>
+</head><?php include "../header.php" ?>
+<section>
+    <?php image("images/apps.jpg", "Mobile Phones", "text-darken", array("id" => "top", "text" => "<h1>Apps</h1>"));  ?>
+    <div class="section icons">
+        <div class="icon">
+            <ion-icon name="logo-android"></ion-icon>
+            <p>Currently, I have released three apps, but there may be more coming soon. The theme ranges from utility to interesting and, like everything else on the website, they are free to use and have no ads.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="section image" id=prime>
+        <div class="text">
+            <h2>Prime Number Checker</h2>
+            <p>This app will factor numbers or tell you if it is prime, an extremely useful tool to have.</p>
+        </div>
+        <?php image("images/prime number checker.jpg", "Prime Number Checker", "floor");  ?>
+    </div>
+    <hr>
+    <div class="section image" id=four>
+        <div class="text">
+            <h2>Four Squares</h2>
+            <p>Repeat the pattern to test and improve your working memory, an invaluable skill closely linked to IQ and academic success.</p>
+        </div>
+        <?php image("images/four squares.jpg", "Four Squares", "floor");  ?>
+    </div>
+    <hr>
+    <div class="section image" id=installed>
+        <div class="text">
+            <h2>What's Installed?</h2>
+            <p>Find out everything that is installed on your device, from the applications that you use daily to the apps you didn't know existed.</p>
+        </div>
+        <?php image("images/whats installed.jpg", "What's Installed?", "floor");  ?>
+    </div>
+</section>
+<div id=cookie></div><?php include "../footer.php" ?><script src=../main.js> </script><?php include "../scripts.php" ?> </html>

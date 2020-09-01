@@ -6,7 +6,7 @@ calculator {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "input input input input input" "ans mc mp mm mr" "bo c divide times back" "bc n7 n8 n9 plus" "sqaure n4 n5 n6 minus" "percent n1 n2 n3 equals" "e n0 n0 dot equals";
     margin: 50px 5%;
-    max-width: 1000px;
+    max-width: 1500px;
     min-width: 240px;
     width: 90%;
 }
@@ -16,7 +16,7 @@ button {
     border: 1px solid ;
     font-size: 2em;
     height: 100%;
-    padding: 5%;
+    padding: 10%;
     margin: 0;
     width: 100%;
 }

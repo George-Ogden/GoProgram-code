@@ -72,6 +72,11 @@ img {
     max-height: 400px;
     padding: 10px;
     margin: auto;
+    transition: transform .5s ease-in-out;
+}
+.images img:hover {
+    transform: scale(1.25,1.25);
+    z-index: 1;
 }
 .image .bottom {
     left: 50%;

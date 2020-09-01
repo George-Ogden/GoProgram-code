@@ -17,14 +17,22 @@ function image($src,$description,$type="",$data=array()) {
         $cover = "<div class='cover $type' style='background:$data[colour]'><div class='centre text text-white'>$data[text]</div></div>";
     } 
     if (array_key_exists('id', $data)) {
-        echo "<div class='image' id='$data[id]'><img src='$src' alt='Image Unavailable ($description)'>$cover</div>";
+        return "<div class='image' id='$data[id]'><img src='$src' alt='Image Unavailable ($description)'>$cover</div>";
     } else {
-        echo "<div class='image'><img src='$src' alt='Image Unavailable ($description)'>$cover</div>";
+        return "<div class='image'><img src='$src' alt='Image Unavailable ($description)'>$cover</div>";
     }
 }
 function video($url,$id="") {
-    echo "<div class='video mx-auto' id=$id><iframe src='$url' allow='autoplay encrypted-media' allowfullscreen>Video Unavailable</iframe></div>" ;
+    return "<div class='video mx-auto' id=$id><iframe src='$url' allow='autoplay encrypted-media' allowfullscreen>Video Unavailable</iframe></div>" ;
 }
-
+function section($title,$description,$image="",$id=""){
+    if ($image == ""){
+            $image = "images/".strtolower($title).".jpg";
+        if ($id == ""){
+            $id = strtolower(explode(" ",$title,1)[0]);
+        }
+    }
+    return "<hr><div class='section image' id='$id'><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
+}
 
 ?>

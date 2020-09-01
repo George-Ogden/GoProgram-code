@@ -78,7 +78,7 @@
                                                                                                 <h2>Gallery</h2>
                                                                                             </div>
                                                                                             <div class="d-flex flex-wrap justify-content-around images"><?php for ($i = 1; $i <= 37; $i++) {
-                                                                                                                                                            echo "<img class='image align-self-center' src='images/$i.jpg'>";
+                                                                                                                                                            echo "<a href='images/$i.jpg'><img class='image align-self-center' src='images/$i.jpg'></a>";
                                                                                                                                                         }            ?></div>
                                                                                         </div>
                                                                                 </div>

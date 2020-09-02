@@ -10,8 +10,8 @@
     --secondary-dark: #0008a6;
     --secondary-light: #0f1af2;
     --secondary-transparent: #0f1af2a0;
-    --primary-font: Arial;
-    --secondary-font: Times;
+    --primary-font: 'Roboto', sans-serif;;
+    --secondary-font: 'Lato', sans-serif;
 }
 body,
 html {
@@ -75,34 +75,11 @@ hr {
     width: 90%;
     max-width: 500px;
 }
-.tooltip{
-/*opacity: 1!important;*/
-}
 .tooltip .tooltip-inner {
     background-color: var(--secondary-light);
 }
 .tooltip .arrow::before {
     border-top-color: var(--secondary-light);
-}
-.tooltip_.top {
-    bottom: 150%;
-    left: 50%;
-    margin: 0 0 5px -100px;
-}
-.tooltip_::after {
-    border-width: 5px;
-    border-style: solid;
-    content: "";
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s;
-    visibility: hidden;
-}
-.tooltip_.top::after {
-    margin-left: -5px;
-    border-color: var(--secondary-light) transparent transparent transparent;
-    left: 50%;
-    top: 100%;
 }
 h1,
 h2,
@@ -141,6 +118,18 @@ h3.colour {
     padding: 200px 0;
     display: -ms-flexbox;
     display: flex;
+}
+.section.pad-1 {
+    padding: 100px 0;
+}
+.section.pad-2 {
+    padding: 200px 0;
+}
+.section.pad-3 {
+    padding: 300px 0;
+}
+.section.pad-4 {
+    padding: 400px 0;
 }
 .section.image {
     justify-content: space-around;

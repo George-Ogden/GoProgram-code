@@ -3,8 +3,9 @@
 
 <head>
     <title>Sudoku Solver</title>
+    <?php include "../main.php" ?>
     <link rel=stylesheet href=sudoku.css>
-    <link rel=stylesheet href=../fonts.css> <link rel=stylesheet href=../main.css><?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, including a sudoku solver.">
+    ><?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, including a sudoku solver.">
     <meta name=keywords content="code, programming, GoProgram, sudoku solver, sudoku, JavaScript">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=programming>
@@ -13,7 +14,6 @@
     <div class="section" id=top>
         <h1 class="colour">Sudoku Solver</h1>
     </div>
-    <div>
     <form>
         <div id=valid><br></div>
         <table id=sudoku>

@@ -1,4 +1,4 @@
-<hr><footer>
+<hr class="footer"><footer>
         <?php function icon($type){
                 $lower = strtolower($type);
                 echo "<div class='$lower icon'><a href=/$lower target=_blank><span class='tooltip_ top'>$type</span><img alt=$type class=img src=/images/$type.png></a></div>";

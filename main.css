@@ -71,6 +71,10 @@ hr {
     margin: 0;
     width: 100%;
 }
+.scale {
+    width: 90%;
+    max-width: 500px;
+}
 .tooltip_ {
     background-color: var(--secondary-light);
     color: white;

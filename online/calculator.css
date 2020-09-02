@@ -1,7 +1,6 @@
 calculator {
     border: 5px solid;
     display: grid;
-    grid-area: 3;
     grid-area-template-rows: repeat(7, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "input input input input input" "ans mc mp mm mr" "bo c divide times back" "bc n7 n8 n9 plus" "sqaure n4 n5 n6 minus" "percent n1 n2 n3 equals" "e n0 n0 dot equals";
@@ -46,9 +45,6 @@ input {
     grid-area: input;
     text-align: right;
 }
-form {
-    grid-area: 3;
-}
 td {
     border: 2px solid;
     padding: 0;
@@ -80,7 +76,6 @@ input:invalid {
 #valid {
     display: block;
     font-size: 250%;
-    grid-area: 2;
     text-align: center;
 }
 #mc {

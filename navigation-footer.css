@@ -127,6 +127,9 @@ footer .img {
 footer img:hover {
     filter: brightness(100%);
 }
+hr.footer {
+    background: black
+}
 @media only screen and (max-width: 800px) {
     section {
         margin: 0;

@@ -3,8 +3,9 @@
 
 <head>
     <title>Colour Converter</title>
+    <?php include "../main.php" ?>
     <link rel=stylesheet href=converter.css>
-    <link rel=stylesheet href=../fonts.css> <link rel=stylesheet href=../main.css><?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, including a colour converter.">
+    <?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, including a colour converter.">
     <meta name=keywords content="code, programming, GoProgram, JavaScript, colour, converter">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=programming>

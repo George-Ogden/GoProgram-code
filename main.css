@@ -75,19 +75,14 @@ hr {
     width: 90%;
     max-width: 500px;
 }
-.tooltip_ {
+.tooltip{
+/*opacity: 1!important;*/
+}
+.tooltip .tooltip-inner {
     background-color: var(--secondary-light);
-    color: white;
-    font-size: 20px;
-    height: auto;
-    opacity: 0;
-    padding: 5px;
-    position: absolute;
-    text-align: center;
-    transition: opacity 0.5s;
-    visibility: hidden;
-    width: 200px;
-    z-index: 2;
+}
+.tooltip .arrow::before {
+    border-top-color: var(--secondary-light);
 }
 .tooltip_.top {
     bottom: 150%;

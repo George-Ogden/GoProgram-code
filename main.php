@@ -27,13 +27,13 @@ function video($url,$id="") {
     return "<div class='video mx-auto' id=$id><iframe src='$url' allow='autoplay encrypted-media' allowfullscreen>Video Unavailable</iframe></div>" ;
 }
 function section($title,$description,$image="",$id=""){
-    if ($image == ""){
+    if ($id == ""){
+        $id = strtolower(explode(" ",$title,2)[0]);
+        if ($image == ""){
             $image = "images/".strtolower($title).".jpg";
-        if ($id == ""){
-            $id = strtolower(explode(" ",$title,1)[0]);
         }
     }
-    return "<hr><div class='section image' id='$id'><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
+    return "<hr><div class='section image' id=$id><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
 }
 
 ?>

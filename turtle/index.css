@@ -1,1 +1,3 @@
-@media only screen and (min-width:1000px){#circles,#main,#maths{grid-template-columns:3fr 1fr}#colour,#fractals,#python{grid-template-columns:1fr 3fr}}#colour,#fractals,#python{grid-template-areas:"image h2" "image p"}#circles,#main,#maths{grid-template-areas:"h2 image" "p image"}#image{grid-area:2}@media only screen and (max-width:850px){nav{display:none}}@media only screen and (max-width:640px){.image{display:none;padding:0}#image{display:block}#circles,#colour,#fractals,#main,#maths{grid-template-areas:"h2" "p"}}
+#fractals .cover.floor,#colours .cover.floor {
+    background: transparent
+}

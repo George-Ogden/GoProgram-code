@@ -42,7 +42,13 @@ function display($title,$code, $git, $image=""){
     if ($image==""){
         $image = "images/$title.jpg";
     }
-    return "<hr><div id='".strtolower($title)."'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<hr><div class='section video mx-auto'>". video("https://youtube.com/embed/$code?mute=1") ."</div><hr>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
+    $url = "https://youtube.com/embed/$code";
+    if (strpos($code, "?") == false){
+        $url .= "?mute=1";
+    } else {
+        $url .= "&mute=1";
+    }
+    return "<hr><div id='".strtolower($title)."'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<hr><div class='section video mx-auto'>". video($url) ."</div><hr>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
 }
 function generate($data){
     $selector = "<div class='selection section'>";

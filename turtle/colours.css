@@ -1,21 +1,3 @@
 h1 span {
     font: inherit;
 }
-section.showcase .section.selection .image {
-    margin: 25px;
-    width: 200px;
-}
-section.showcase .section.selection {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-}
-section.showcase .section.picture,
-section.showcase .section.video {
-    width: 90%;
-}
-
-section.showcase .section.video {
-    padding: 100px 0;
-}

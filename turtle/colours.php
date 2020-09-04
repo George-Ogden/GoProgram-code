@@ -5,7 +5,7 @@
     <title>Colours</title>
     <?php include "../main.php" ?>
     <link rel=stylesheet href=colours.css>
-    <link rel=stylesheet href=../fonts.css> <link rel=stylesheet href=../main.css> <link rel=stylesheet href=../colours.css><?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are colourful.">
+    <?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are colourful.">
     <meta name=keywords content="code, programming, GoProgram, colours, turtle, python">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=programming>

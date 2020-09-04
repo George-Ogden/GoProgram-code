@@ -21,7 +21,7 @@
         for ($i = 0; $i < 9; $i++) {
             echo "<tr>";
             for ($j = 0; $j < 9; $j++) {
-            echo "<td><input id=_$i$j type=number min=1 max=9 step=1 pattern=^d?$></td>";
+            echo "<td><input class=w-100 id=_$i$j type=number min=1 max=9 step=1 pattern=^d?$></td>";
         }
             echo "</tr>";
         }?>

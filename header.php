@@ -1,4 +1,4 @@
-<link rel=stylesheet href=/navigation-footer.css> <header>
+<link rel=stylesheet href=/navigation-footer.css> <header class="w-100">
 <ul class=level-1>
     <li class="top level-1"><a href=/>
             <content><img class="top img" src=/images/icon.png> </content> </a> </li> <li class="intelligence level-1"><a href=/artificial-intelligence> <content>Artificial Intelligence</content>

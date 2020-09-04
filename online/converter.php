@@ -25,7 +25,7 @@
     <h2>CMYK</h2>
     <div><input id=cmykColour placeholder="Enter a CMYK code"></div>
     <h2>HSL</h2>
-    <div><input id=hslColour placeholder="Enter an HSL code"></div></div><div id="output" class="scale"></div></div>
+    <div><input id=hslColour placeholder="Enter an HSL code"></div></div><div id="output" class="scale w-100"></div></div>
     <script src=../artificial-intelligence/scripts/Matrix.js> </script> <script src=../artificial-intelligence/scripts/lambertw.js> </script> <script src=../artificial-intelligence/scripts/activation_functions.js> </script> <script src=../artificial-intelligence/scripts/ANN.js> </script> <script src=converter.js></script>
 </section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?><script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js> </script> <script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js> </script> <script>
     var firebaseConfig = {

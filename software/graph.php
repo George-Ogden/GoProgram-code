@@ -11,7 +11,7 @@
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
 <section class="colour">
-<?php echo image("images/graph.jfif", "Graph Creator", "text-darken", array("id" => "top", "text" => "<h1>Graph Creator</h1>"));  ?>
+<?php echo image("images/graph.jfif", "Graph Creator", "text-darken", ["id" => "top", "text" => "<h1>Graph Creator</h1>"]);  ?>
 <div class="section text text-center">
         <p>If you would like to use the graph creator, you can either download the python source code and run it or download the executable file. This software graphs data: it can draw a line of best fit that is either straight, following a power-law or exponential. Additionally, you can use colours and a key to make a series of data clearer. It is undoubtedly a useful tool to have.</div>
     </div>

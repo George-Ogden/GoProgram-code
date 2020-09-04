@@ -11,7 +11,7 @@
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
 <section class="colour">
-<?php echo image("images/software-development.jpg", "Software Development", "text-darken", array("id" => "top", "text" => "<h1>Software</h1>"));  ?>
+<?php echo image("images/software-development.jpg", "Software Development", "text-darken", ["id" => "top", "text" => "<h1>Software</h1>"]);  ?>
 <div class="section text text-center">
         <p>Welcome to a range of software that you can just download and run. You can view the source code or just install with an installer.</div>
     </div>

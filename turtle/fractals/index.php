@@ -11,7 +11,7 @@
     <meta name=subject content=programming>
 </head><?php include "../../header.php" ?>
 <section>
-<?php echo image("images/mandelbrot.jpg", "The Mandelbrot Set", "text-darken", array("id" => "top", "text" => "<h1>Fractals</h1>")); ?>
+<?php echo image("images/mandelbrot.jpg", "The Mandelbrot Set", "text-darken", ["id" => "top", "text" => "<h1>Fractals</h1>"]); ?>
 <div class="section text">
     <h2>From Wikipedia</h2>
     <?php echo json_decode(file_get_contents("https://en.wikipedia.org/api/rest_v1/page/summary/Fractal"),true)["extract_html"]; ?>

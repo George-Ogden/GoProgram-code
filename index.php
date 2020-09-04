@@ -11,8 +11,8 @@
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=programming>
 </head><?php include "header.php" ?><section>
-<?php echo image("images/home.jfif","Main Image","text",array("text" => "<h1 class='colour'>GoProgram</h1><h2 class='colour'>Go, program!</h2>","id" => "main")); 
-echo image("images/logos.png","Hand Drawn Logos","text-overlay",array("text" => "<h3>Software and Web Development</h3>","id" => "skills")); ?>
+<?php echo image("images/home.jfif","Main Image","text",["text" => "<h1 class='colour'>GoProgram</h1><h2 class='colour'>Go, program!</h2>","id" => "main"]); 
+echo image("images/logos.png","Hand Drawn Logos","text-overlay",["text" => "<h3>Software and Web Development</h3>","id" => "skills"]); ?>
 
 </div>
 </section>

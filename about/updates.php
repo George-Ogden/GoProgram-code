@@ -11,7 +11,7 @@
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
  <section>
- <?php echo image("images/updates.jpg","Main Image","text-darken",array("id"=> "top","text" => "<h1>Updates</h1>"));  ?>
+ <?php echo image("images/updates.jpg","Main Image","text-darken",["id"=> "top","text" => "<h1>Updates</h1>"]);  ?>
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>

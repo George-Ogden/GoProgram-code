@@ -12,7 +12,7 @@
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
 <section class="colour">
-    <?php echo image("images/apps.jpg", "Mobile Phones", "text-darken", array("id" => "top", "text" => "<h1>Apps</h1>"));  ?>
+    <?php echo image("images/apps.jpg", "Mobile Phones", "text-darken", ["id" => "top", "text" => "<h1>Apps</h1>"]);  ?>
     <div class="section icons">
         <div class="icon">
             <ion-icon name="logo-android"></ion-icon>
@@ -23,20 +23,5 @@
      echo section("Four Squares","Repeat the pattern to test and improve your working memory, an invaluable skill closely linked to IQ and academic success."); 
      echo section("What's Installed?","Find out everything that is installed on your device, from the applications that you use daily to the apps you didn't know existed.","images/whats installed.jpg","installed"); 
      ?>
-    <div class="section image" id=four>
-        <div class="text">
-            <h2>Four Squares</h2>
-            <p>Repeat the pattern to test and improve your working memory, an invaluable skill closely linked to IQ and academic success.</p>
-        </div>
-        <?php echo image("images/four squares.jpg", "Four Squares", "floor");  ?>
-    </div>
-    <hr>
-    <div class="section image" id=installed>
-        <div class="text">
-            <h2>What's Installed?</h2>
-            <p>Find out everything that is installed on your device, from the applications that you use daily to the apps you didn't know existed.</p>
-        </div>
-        <?php echo image("images/whats installed.jpg", "What's Installed?", "floor");  ?>
-    </div>
 </section>
 <?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

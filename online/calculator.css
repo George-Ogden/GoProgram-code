@@ -18,7 +18,6 @@ button {
     height: 100%;
     padding: 10%;
     margin: 0;
-    width: 100%;
 }
 input {
     height: 100%;
@@ -27,7 +26,6 @@ input {
     margin: 0;
     padding: 5%;
     overflow: auto;
-    width: 100%;
     background:var(--secondary-light);
     font-size: 2em;
     color: white
@@ -57,21 +55,11 @@ tr:nth-of-type(3),
 tr:nth-of-type(6) {
     border-bottom: 5px solid;
 }
-table {
-    border: 5px solid;
-    border-collapse: collapse;
-    width: 100%;
-}
 input:valid {
     background-color: rgba(0, 0, 255, 0.2);
 }
 input:invalid {
     background-color: rgba(255, 0, 0, 0.8);
-}
-.container {
-    padding-top: 100%;
-    position: relative;
-    width: 100%;
 }
 #valid {
     display: block;

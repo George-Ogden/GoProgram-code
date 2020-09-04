@@ -28,7 +28,6 @@ input {
     font-size: 1.5em;
     height: 100%;
     text-align: center;
-    width: 100%;
     color: white;
     user-select: none;
 }
@@ -56,11 +55,6 @@ button {
     background: var(--secondary-dark);
     color: white;
     border: none
-}
-.container {
-    padding-top: 100%;
-    position: relative;
-    width: 100%;
 }
 #valid {
     display: block;

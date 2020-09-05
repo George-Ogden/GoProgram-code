@@ -33,7 +33,7 @@ function section($title,$description,$image="",$id=""){
             $image = "images/".strtolower($title).".jpg";
         }
     }
-    return "<hr><div class='section image' id=$id><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
+    return "<div class='section image' id=$id><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
 }
 function source($git,$code){
     return "<div class='section icons'><a class='icon' href=$git target=_blank><ion-icon name=logo-github></ion-icon><p>Code on GitHub</p></a><a class=icon href='$code' target=_blank download><ion-icon name=code-download-outline></ion-icon><p>Download Code</p></a></div>";
@@ -48,7 +48,7 @@ function display($title,$code, $git, $image=""){
     } else {
         $url .= "&mute=1";
     }
-    return "<hr><div id='".strtolower($title)."'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<hr><div class='section video mx-auto'>". video($url) ."</div><hr>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
+    return "<div id='".strtolower($title)."'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
 }
 function generate($data){
     $selector = "<div class='selection section'>";

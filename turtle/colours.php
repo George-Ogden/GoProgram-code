@@ -18,7 +18,7 @@
             } ?>
         </h1>
     </div>
-    <hr>
+    
     
     <?php
     echo generate([["title"=>"Colour Spin","code"=>"RGStj_7DqqM","git"=>"https://github.com/George-Ogden/Turtle-Projects/blob/master/Colour%20Spin.py"],

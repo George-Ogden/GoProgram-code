@@ -16,7 +16,7 @@
     <h2>From Wikipedia</h2>
     <?php echo json_decode(file_get_contents("https://en.wikipedia.org/api/rest_v1/page/summary/Fractal"),true)["extract_html"]; ?>
 </div>
-<hr>
+
 <div class="section image">
     <p>Welcome to the home of fractals. Enjoy an array of various exciting and interesting shapes. These fractals range from very famous to very original, but all share the same ideas of recursion and self-similarity.</p>
     <?php echo image("../images/fractals.jpg","A collage of fractals"); ?>

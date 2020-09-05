@@ -18,12 +18,12 @@
                         <h2>What it is</h2>
                     <p>This colour classifier will convert the inputed colour into its red, green and blue elements, then feed that into the neural network. The neural network processes the information and outputs a number between -1 and 1, which represents whether the text should be black or white. The same technology is used in the colour converter.</p>
                 </div>
-                <hr>
+                
                 <div class="section text">
                         <h2>How to use</h2>
                     <p>Input red, green and blue values and the artificial intelligence will change the text colour of the output below.</p>
                 </div>
-                <hr>
+                
                 <div class="section pad-1">
                     <h2>Inputs</h2>
                     <form class="d-flex">
@@ -32,7 +32,7 @@
                         <div id=blue><input id=blueInput class=input type=input min=0 max=255 value=0><input id=blueSlider class=slider type=range min=0 max=255 step=1></div>
                     </form>
                 </div>
-                <hr>
+                
                 <div id=output class="section pad-1">
                     <h2>Output</h2>
                     <p class="text-center">This colour is chosen by an AI!</p>

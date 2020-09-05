@@ -48,7 +48,7 @@ function display($title,$code, $git, $image=""){
     } else {
         $url .= "&mute=1";
     }
-    return "<div id='".strtolower($title)."'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
+    return "<div id='".str_replace(" ","_",strtolower($title))."' class='content d-none'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
 }
 function generate($data){
     $selector = "<div class='selection section'>";
@@ -57,8 +57,14 @@ function generate($data){
         if (! array_key_exists('image', $piece)){
             $piece["image"] = "images/$piece[title].jpg";
         }
-        $selector .= image($piece["image"],$piece["title"],"none"); 
+        $selector .= "<a href='#".str_replace(" ","_",strtolower($piece["title"]))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
         $main .= display($piece["title"],$piece["code"],$piece["git"],$piece["image"]); 
     }
-    return $selector . "</div>" . $main;
+    return str_replace_n("class='","class='selected ",$selector,2) . "</div>" . str_replace_n(" d-none","",$main,1);
+}
+function str_replace_n($from, $to, $content,$n)
+{
+    $from = '/'.preg_quote($from, '/').'/';
+
+    return preg_replace($from, $to, $content, $n);
 }

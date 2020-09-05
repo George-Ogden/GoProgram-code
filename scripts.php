@@ -3,7 +3,8 @@
 <script src="/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js> </script> <script src=https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js> </script> <script>
     var firebaseConfig = {
         apiKey: "AIzaSyBZV2Zn1hwqX54jD9Hb8lNKNESJ_ztFLs8",

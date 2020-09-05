@@ -17,6 +17,7 @@ body,
 html {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .image:not(.section) {
     position: relative;
@@ -48,7 +49,7 @@ html {
     width: 100%;
 }
 .cover.floor {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), 75%, rgba(0, 0, 0, 0.9));
+    background: linear-gradient(rgba(0, 0, 0, 0), 70%, rgba(0, 0, 0, 0.8));
 }
 .cover.darken {
     background: rgba(0, 0, 0, 0.3);
@@ -210,6 +211,13 @@ section.showcase .section.selection {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+section.showcase .section.selection .image {
+    border: 5px solid #000;
+   /* cursor: pointer;*/
+}
+section.showcase .section.selection .image.selected {
+    border-color: var(--base)
 }
 section.showcase .section.picture,
 section.showcase .section.video {

@@ -37,7 +37,7 @@
                     <h2>Output</h2>
                     <p class="text-center">This colour is chosen by an AI!</p>
                 </div>
-                <script src=scripts/Matrix.js> </script> <script src=scripts/lambertw.js> </script> <script src=scripts/activation_functions.js> </script> <script src=scripts/ANN.js> </script> <script src=classifier.js></script>
+                <script src=/scripts/js/matrix.js> </script> <script src=/scripts/js/lambertw.js> </script> <script src=/scripts/js/activation_functions.js> </script> <script src=/scripts/js/ann.js> </script><script src=/scripts/js/fcnn.js> </script> <script src=classifier.js></script>
                 </section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
 
 </html>

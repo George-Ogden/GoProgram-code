@@ -5,7 +5,6 @@ turtle.bgcolor("black")
 turtle.ht()
 while True:
     i = 600
-    turtle.speed(0)
     turtle.pu()
     turtle.seth(45)
     turtle.forward((math.sqrt(2)*i/2))

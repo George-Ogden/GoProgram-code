@@ -1,4 +1,4 @@
-let network = Neural_Network.from_string({
+let network = Fully_Connected_Network.from_string({
         length: 3,
         width: 3,
         weights: [
@@ -46,7 +46,7 @@ let network = Neural_Network.from_string({
     output = document.getElementById("output");
 function set(e, t, n) {
     let l = "rgb(" + e + "," + t + "," + n + ")",
-        r = network.feedforward([e / 255, t / 255, n / 255]) > 0 ? "rgb(0,0,0)" : "rgb(255,255,255)";
+        r = network.forward_propagate(Matrix.fromArray([[e / 255, t / 255, n / 255]])).data[0][0] > 0 ? "rgb(0,0,0)" : "rgb(255,255,255)";
     (output.getElementsByTagName("p")[0].style.background = l), (output.getElementsByTagName("p")[0].style.color = r);
 }
 function input() {

@@ -16,7 +16,7 @@ function image($src,$description,$type="",$data=array()) {
         $cover = "";
     } elseif ($type == "text-colour"){
         $cover = "<div class='cover $type' style='background:$data[colour]'><div class='centre text text-white'>$data[text]</div></div>";
-    } 
+    }
     if (array_key_exists('id', $data)) {
         return "<div class='image' id='$data[id]'><img src='$src' alt='Image Unavailable ($description)'>$cover</div>";
     } else {
@@ -35,7 +35,14 @@ function section($title,$description,$image="",$id=""){
     }
     return "<div class='section image' id=$id><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
 }
-function source($git,$code){
+function source($git,$code=""){
+    if ($code == ""){
+        $file = explode("/",$git);
+        $file = strtolower(end($file));
+        $extension = explode(".",$file);
+        $extension = end($extension);
+        $code = "/scripts/$extension/$file";
+    }
     return "<div class='section icons'><a class='icon' href=$git target=_blank><ion-icon name=logo-github></ion-icon><p>Code on GitHub</p></a><a class=icon href='$code' target=_blank download><ion-icon name=code-download-outline></ion-icon><p>Download Code</p></a></div>";
 }
 function display($title,$code, $git, $image=""){
@@ -48,7 +55,7 @@ function display($title,$code, $git, $image=""){
     } else {
         $url .= "&mute=1";
     }
-    return "<div id='".str_replace(" ","_",strtolower($title))."' class='content d-none'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git,"pyscripts/" . strtolower($title) . ".py") . "</div>"; 
+    return "<div id='".str_replace(" ","_",strtolower($title))."' class='content d-none'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git) . "</div>";
 }
 function generate($data){
     $selector = "<div class='selection section'>";
@@ -58,7 +65,7 @@ function generate($data){
             $piece["image"] = "images/$piece[title].jpg";
         }
         $selector .= "<a href='#".str_replace(" ","_",strtolower($piece["title"]))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
-        $main .= display($piece["title"],$piece["code"],$piece["git"],$piece["image"]); 
+        $main .= display($piece["title"],$piece["code"],$piece["git"],$piece["image"]);
     }
     return str_replace_n("class='","class='selected ",$selector,2) . "</div>" . str_replace_n(" d-none","",$main,1);
 }

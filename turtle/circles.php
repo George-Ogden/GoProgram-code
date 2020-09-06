@@ -11,7 +11,7 @@
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
 <section class="showcase">
-<?php echo image("images/loops.jpg", "Long Exposure Photograph", "text-darken", ["id" => "top", "text" => "<h1>Colours</h1>"]);
+<?php echo image("images/loops.jpg", "Long Exposure Photograph", "text-darken", ["id" => "top", "text" => "<h1>Circles</h1>"]);
     echo generate([
         ["title" => "Colour Whirl", "code" => "KOhffwDtdJk", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Colour%20Whirl.py"],
         ["title" => "360 Pointed Star", "code" => "x3-MtfG8UkM?start=25", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/360%20pointed%20star.py"], 

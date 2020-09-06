@@ -116,21 +116,21 @@ h3.colour {
 .section.icons,
 .section.image,
 .section.text,
-.section.pad {
+.pad {
     padding: 200px 0;
     display: -ms-flexbox;
     display: flex;
 }
-.section.pad-1 {
+.pad-1 {
     padding: 100px 0;
 }
-.section.pad-2 {
+.pad-2 {
     padding: 200px 0;
 }
-.section.pad-3 {
+.pad-3 {
     padding: 300px 0;
 }
-.section.pad-4 {
+.pad-4 {
     padding: 400px 0;
 }
 .section.image {
@@ -216,7 +216,7 @@ section.showcase .section.selection .image {
     border: 5px solid #000;
    /* cursor: pointer;*/
 }
-section.showcase .section.selection .image.selected {
+section.showcase .section.selection a.selected .image {
     border-color: var(--base)
 }
 section.showcase .section.picture,
@@ -227,7 +227,15 @@ section.showcase .section.video {
 section.showcase .section.video {
     padding: 100px 0;
 }
-
+.pagination {
+    flex-wrap: wrap;
+}
+.page-item {
+    flex-grow: 1;
+}
+h1 span {
+    font: inherit;
+}
 @media (max-width: 700px) {
     h1 {
         font-size: 2.5em;

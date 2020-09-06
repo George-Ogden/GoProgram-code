@@ -64,14 +64,27 @@ function generate($data){
         if (! array_key_exists('image', $piece)){
             $piece["image"] = "images/$piece[title].jpg";
         }
-        $selector .= "<a href='#".str_replace(" ","_",strtolower($piece["title"]))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
+        $selector .= "<a class='select' href='#".str_replace(" ","_",strtolower($piece["title"]))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
         $main .= display($piece["title"],$piece["code"],$piece["git"],$piece["image"]);
     }
-    return str_replace_n("class='","class='selected ",$selector,2) . "</div>" . str_replace_n(" d-none","",$main,1);
+    return str_replace_n("selected ","",str_replace_n("class='","class='selected ",$selector,2),1) . "</div>" . str_replace_n(" d-none","",$main,1);
 }
 function str_replace_n($from, $to, $content,$n)
 {
     $from = '/'.preg_quote($from, '/').'/';
 
     return preg_replace($from, $to, $content, $n);
+}
+function code($data){
+    $selector = "<div class='selection section'><ul class=pagination>";
+    $main = "";
+    foreach ($data as $piece){
+            if (! array_key_exists('file', $piece)){
+                $piece["file"] = "";
+            }
+            $selector .= "<li class='page-item text-center'><a class=page-link href='#".str_replace(" ","_",strtolower($piece["title"]))."'>$piece[title]</a></li>";
+            $main .= "<div class='section content code d-none' id=".str_replace(" ","_",strtolower($piece["title"]))."><h2>$piece[title]</h2>" . source($piece["git"],$piece["file"]) . "</div>";
+    }
+    
+    return str_replace_n("selected ","",str_replace_n("class='","class='selected ",$selector,2),1) ."</ul></div>" . str_replace_n(" d-none","",$main,1);
 }

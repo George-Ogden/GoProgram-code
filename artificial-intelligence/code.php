@@ -11,62 +11,28 @@
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=programming>
 </head><?php include "../header.php" ?>
-<section class="colour">
+<section class="colour showcase">
     <?php echo image("images/library.jpg", "Library", "text-darken", ["id" => "top", "text" => "<h1>AI Library</h1>"]); ?>
-
+    
     <div class="section text text-center">
         <p>All of the files below can be downloaded and imported. They are all required to make a neural network and are all original. It is available on GitHub and can be used freely.</p>
-    </div>
+    </div>    <?php 
+        echo code([
+                ["title"=>"All Code","git"=> "https://github.com/George-Ogden/Machine-Learning","code"=>"/scripts/zip/ai library.zip"],
+                ["title"=>"Matrix Library","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Matrix.js"],
+                ["title"=>"Lambert W Function","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/lambertw.js"],
+                ["title"=>"Activation Functions","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Activation_Functions.js"],
+                ["title"=>"Neural Network Parent Class","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/ANN.js"],
+                ["title"=>"Fully Connected Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/FCNN.js"],
+                ["title"=>"Convolutional Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/FCNN.js"],
+                ["title"=>"Pooling Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Convolutional%20Layers.js"],
+                ["title"=>"Flattening Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Flatten.js"],
+                ["title"=>"Combined Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Combined%20Network.js.js"],
+                ["title"=>"Convolutional Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/CNN.js"]               
+                ])
+        ?>
 
-    <div class="section code">
-            <h2>All Code</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning","/scripts/zip/ai library.zip")?>
-    </div>
-    <div class="section code">
-            <h2>Matrix</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Matrix.js")?>
-    </div>
 
-    <div class="section code">
-            <h2>Lambert W Function</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/lambertw.js")?>
-    </div>
-    <div class="section code">
-            <h2>Activation Functions</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Activation_Functions.js")?>
-    </div>
-    <div class="section code">
-            <h2>Neural Network Parent Class</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/ANN.js")?>
-    </div>
-
-    <div class="section code">
-            <h2>Fully Connected Neural Network</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/FCNN.js")?>
-    </div>
-
-    <div class="section code">
-            <h2>Convolutional Layers</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Convolutional%20Layers.js")?>
-    </div>
-
-    <div class="section code">
-            <h2>Pooling Layers</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Pooling%20Layers.js")?>
-    </div>
-
-    <div class="section code">
-            <h2>Flattening Layers</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Flatten.js")?>
-    </div>
-    <div class="section code">
-            <h2>Combined Neural Network</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/Combined%20Network.js")?>
-    </div>
-    <div class="section code">
-            <h2>Convolutional Neural Network</h2>
-            <?php echo source("https://github.com/George-Ogden/Machine-Learning/blob/master/CNN.js")?>
-    </div>
 
 </section><?php include "../footer.php" ?></script>
 </script><?php include "../scripts.php" ?>

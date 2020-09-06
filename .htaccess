@@ -386,6 +386,7 @@ RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
 
 Options -Indexes -MultiViews
 RewriteEngine on

@@ -16,8 +16,9 @@ if (window.location.hash){
 }
 });
 $("section.showcase .section.selection a").click(function(){
-    $("section.showcase .section.selection .image").removeClass("selected") 
-    $(this).children(".image").addClass("selected")
+    $("section.showcase .section.selection a").removeClass("selected") 
+    $(this).addClass("selected")
     $(".content").addClass("d-none")
-    $(`${$(this).attr("href")}`).removeClass("d-none")
+    console.log($(this).attr("href"))
+    $($(this).attr("href")).removeClass("d-none")
 })

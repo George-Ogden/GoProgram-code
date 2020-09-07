@@ -4,7 +4,6 @@
 <head>
     <title>Famous Fractals</title>
     <?php include "../../main.php" ?>
-    <link rel=stylesheet href=famous.css?v=1>
     <?php include "../../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are famous fractals.">
     <meta name=keywords content="code, programming, GoProgram, fractals, python, turtle, famous">
     <meta name=viewport content="width=device-width,initial-scale=1">

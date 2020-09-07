@@ -4,7 +4,6 @@
 <head>
     <title>GoProgram</title>
     <?php include "main.php" ?>
-    <link rel=stylesheet href=index.css?v=1>
     <?php include "meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects.">
     <meta name=keywords content="code, programming, GoProgram, python, JavaScript">

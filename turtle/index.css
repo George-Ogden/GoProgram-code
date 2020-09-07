@@ -1,3 +1,1 @@
-#fractals .cover.floor,#colours .cover.floor {
-    background: transparent
-}
+#colours .cover.floor,#fractals .cover.floor{background:0 0}

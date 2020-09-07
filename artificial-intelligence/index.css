@@ -1,1 +1,0 @@
-#classifier,#main{grid-template-areas:"h2 image" "p image"}#image{grid-area:2}#classifier{grid-area:5}#main{grid-area:3}#code{grid-template-areas:"image h2" "image p";grid-area:4}@media only screen and (max-width:800px){.image{display:none}#image{display:block}}@media only screen and (max-width:640px){#classifier,#code,#main{grid-template-areas:"h2" "p"}}

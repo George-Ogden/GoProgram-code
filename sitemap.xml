@@ -1,87 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>/</loc>
+        <loc>https://www.goprogram.co.uk/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>/artificial-intelligence/code</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/code</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/artificial-intelligence/classifier</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/classifier</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/software/graph</loc>
+        <loc>https://www.goprogram.co.uk/software/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/software/graph</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/software/commands</loc>
+        <loc>https://www.goprogram.co.uk/software/commands</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/software/reminder</loc>
+        <loc>https://www.goprogram.co.uk/software/reminder</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/online/calculator</loc>
+        <loc>https://www.goprogram.co.uk/online/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/online/calculator</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/online/sudoku</loc>
+        <loc>https://www.goprogram.co.uk/online/sudoku</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/online/converter</loc>
+        <loc>https://www.goprogram.co.uk/online/converter</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/apps/</loc>
+        <loc>https://www.goprogram.co.uk/apps/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/turtle/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/turtle/fractals/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/turtle/fractals/line</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/</loc>
+        <loc>https://www.goprogram.co.uk/turtle/fractals/famous</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/fractals/</loc>
+        <loc>https://www.goprogram.co.uk/turtle/colours</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/fractals/line</loc>
+        <loc>https://www.goprogram.co.uk/turtle/maths</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/fractals/famous</loc>
+        <loc>https://www.goprogram.co.uk/turtle/circles</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/colours</loc>
+        <loc>https://www.goprogram.co.uk/about/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/about/updates</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/maths</loc>
+        <loc>https://www.goprogram.co.uk/about/tutorials</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/turtle/circles</loc>
+        <loc>https://www.goprogram.co.uk/about/source</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>/about/</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>/about/updates</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>/about/tutorials</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>/about/CV.pdf</loc>
+        <loc>https://www.goprogram.co.uk/about/CV.pdf</loc>
         <priority>0.80</priority>
     </url>
 </urlset>

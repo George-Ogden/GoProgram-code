@@ -365,6 +365,10 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^linked$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^link$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^source$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^git$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
@@ -384,3 +388,6 @@ RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php

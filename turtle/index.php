@@ -1,1 +1,33 @@
-<!doctype html><html><head><title>Turtle Projects</title><link rel=stylesheet href=index.css><link rel=stylesheet href=../fonts.css><link rel=stylesheet href=../main.css><link rel=stylesheet href=../colours.css><?php include "../meta.php"?><meta name=description content="A website with a wide variety of showcased programming projects, some of which are "><meta name=keywords content="code, programming, GoProgram, turtle, python"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=subject content=programming></head><?php include "../header.php"?><nav><ul><li><a href=#main>Welcome</a></li> |<li><a href=#python>Python</a></li> |<li><a href=#maths>Maths</a></li> |<li><a href=#fractals>Fractals</a></li> |<li><a href=#circles>Circles</a></li> |<li><a href=#colour>Colours</a></li></ul></nav><section><div id=return><span class="tooltip bottom">Top of page</span><div class=container><a href=#><i class="fa fa-angle-double-up"></i></a></div></div><div id=top><h1>Turtle Projects</h1></div><div class=image id=image><a target=_blank href=images/collage.jpg><span class="tooltip mouse">Collage</span><img src=images/collage.jpg alt="A collage of Python turtle projects"></a></div><div id=main class="box colour-1"><div class=h2><h2>Welcome</h2></div><div class=p>Welcome to the home of turtle projects. View an artistic array of Python programming done using the turtle library and be impressed by some artistic programming.</div><div class=image><a target=_blank href="images/collage (Portrait).jpg"><span class="tooltip mouse">Collage</span><img src="images/collage (Portrait).jpg" alt="A collage of Python turtle projects"></a></div></div><div id=python class="box colour-2"><div class=h2><span class="tooltip mouse">Click to go to the official Python website</span><a target=_blank href=https://www.python.org><h2> Python</h2></a></div><div class=p>Python is a powerful, high-level, general-purpose programming language. If you are new to Python, or do not have Python installed, click the picture of the logo to visit the Python website and install it, so that you can run .py files.</div><div class=image><a target=_blank href=https://www.python.org/downloads><span class="tooltip mouse">Click to download Python</span><img src=images/python.jpg alt="Python logo"></a></div></div><div id=maths class="box colour-3"><div class=h2><span class="tooltip mouse">View Maths Projects</span><a href=maths><h2> Maths</h2></a></div><div class=p>Whether you are a maths fan or not, it is hard to deny the beauty of the incredible mathematical designs.</div><div class=image><a target=_blank href="images/collage (maths).jpg"><span class="tooltip mouse">Maths Collage</span><img src="images/collage (maths).jpg" alt="A collage of maths-based projects"></a></div></div><div id=fractals class="box colour-4"><div class=h2><span class="tooltip mouse">View Fractals Projects</span><a href=fractals><h2> Fractals</h2></a></div><div class=p>Learn about recursive programming in some nature inspired and original design patterns.</div><div class=image><a target=_blank href="images/collage (fractals).jpg"><span class="tooltip mouse">Fractals Collage</span><img src="images/collage (fractals).jpg" alt="A collage of fractals"></a></div></div><div id=circles class="box colour-5"><div class=h2><span class="tooltip mouse">View Circles Projects</span><a href=circles><h2> Circles</h2></a></div><div class=p>View some simple, yet satisfying programming based on the ideas of a shape that has inspired centuries of maths.</div><div class=image><a target=_blank href="images/collage (circles).jpg"><span class="tooltip mouse">Circles Collage</span><img src="images/collage (circles).jpg" alt="A collage of circular projects"></a></div></div><div id=colour class="box colour-1"><div class=h2><span class="tooltip mouse">View Colour Projects</span><a href=colours><h2> Colours</h2></a></div><div class=p>Programming inspired by colour wheels and the three colours that make up a computer's display: red, green and blue.</div><div class=image><a target=_blank href="images/collage (colour).jpg"><span class="tooltip mouse">Colourful Collage</span><img src="images/collage (colour).jpg" alt="A collage of colourful projects"></a></div></div></section><div id=cookie></div><?php include "../footer.php"?><script src=../main.js></script><?php include "../scripts.php"?></html>
+<!doctype html>
+<html>
+
+<head>
+  <title>Turtle Projects</title>
+  <?php include "../main.php" ?>
+  <link rel=stylesheet href=index.css?v=1>
+  <?php include "../meta.php" ?>
+  <meta name=description content="A website with a wide variety of showcased programming projects, some of which are ">
+  <meta name=keywords content="code, programming, GoProgram, turtle, python">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta name=subject content=programming>
+</head><?php include "../header.php" ?>
+<section class="colour">
+  <?php echo image("images/collage.jpg", "Collage", "text-darken", ["id" => "top", "text" => "<h1>Turtle Projects</h1>"]);  ?>
+<hr>
+  <?php echo image("images/collage (landscape).jpg", "Collage", "text-darken", ["text" => "<p>Welcome to the home of turtle projects. View an artistic array of Python programming done using the turtle library and be impressed by some artistic programming.</p>"]);  ?>
+  
+  <div class="section icons">
+    <a class="icon" href="https://github.com/George-Ogden/Turtle-Projects" target="_blank"><ion-icon name="logo-github"></ion-icon><p>GitHub Code</p></a>
+    <a class="icon" href="/scripts/zip/turtle.zip"><ion-icon name="code-download-outline"></ion-icon><p>Download Zip</p></a>
+    <a class="icon" href="https://www.youtube.com/playlist?list=PL1_riyn9sOje6rn3A0QOWv1aJoNBNlR4b" target="_blank"><ion-icon name="logo-youtube"></ion-icon><p>YouTube Playlist</p></a>
+    </div>
+  <?php
+  echo section("Python", "Python is a powerful, high-level, general-purpose programming language. If you are new to Python, or do not have Python installed, <a href=https://python.org/downloads target=_blank>head over to the website to install it</a>, so that you can run .py files.", "../images/python.jpg");
+  echo section("Maths", "Whether you are a maths fan or not, it is hard to deny the beauty of <a href=maths>the incredible mathematical designs</a>.");
+  echo section("Fractals", "<a href=fractals>Learn about recursive programming</a> in some nature inspired and original design patterns.");
+  echo section("Circles", "<a href=circles>View some simple, yet satisfying programming</a> based on the ideas of a shape that has inspired centuries of maths.");
+  echo section("Colours", "<a href=colours>See some programming inspired by colour wheels and the three colours that make up a computer's display</a>: red, green and blue.");
+  ?>
+</section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+
+</html>

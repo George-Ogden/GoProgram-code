@@ -1,1 +1,1 @@
-#ann,#functions,#lambertw,#matrix{grid-template-areas:"h2" "code"}#about{grid-template-areas:"h2" "p";grid-area:2}#ann{grid-area:6}#matrix{grid-area:3}#lambertw{grid-area:4}#functions{grid-area:5}@media only screen and (max-width:950px){nav{display:none}}
+.content.section h2{padding-top:100px}

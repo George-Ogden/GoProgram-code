@@ -32,53 +32,53 @@ RewriteRule ^([^Y]*)Y(.*)$ $1y$2
 RewriteRule ^([^Z]*)Z(.*)$ $1z$2
 RewriteCond %{ENV:HASCAPS} TRUE
 RewriteCond %{HTTP_HOST} ^goprogram\.co\.uk$
-RewriteRule ^/?$ "https\:\/\/goprogram\.co\.uk\/index\.html" [R=301,L]
+RewriteRule ^/?$ "\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about$ "https\:\/\/goprogram\.co\.uk\/about\/index\.html" [R=301,L]
+RewriteRule ^about$ "\/about\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online$ "https\:\/\/goprogram\.co\.uk\/online\/index\.html" [R=301,L]
+RewriteRule ^online$ "\/online\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/index\.html" [R=301,L]
+RewriteRule ^fractals\/index$ "\/turtle\/fractals\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^cv$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
+RewriteRule ^cv$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^cv\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
+RewriteRule ^cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^CV\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
+RewriteRule ^CV\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv\.pdf$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
+RewriteRule ^about\/cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv$ "https\:\/\/goprogram\.co\.uk\/about\/CV\.pdf" [R=301,L]
+RewriteRule ^about\/cv$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^turtle\/line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^fractals\/line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/turtle\/line$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^fractals\/turtle\/line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/turtle\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
+RewriteRule ^fractals\/turtle\/famous$ "\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
+RewriteRule ^fractals\/famous$ "\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
+RewriteRule ^turtle\/famous$ "\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^famous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
+RewriteRule ^famous$ "\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^maths$ "https\:\/\/goprogram\.co\.uk\/turtle\/maths" [R=301,L]
+RewriteRule ^maths$ "\/turtle\/maths" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^circles$ "https\:\/\/goprogram\.co\.uk\/turtle\/circles" [R=301,L]
+RewriteRule ^circles$ "\/turtle\/circles" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^colours$ "https\:\/\/goprogram\.co\.uk\/turtle\/colours" [R=301,L]
+RewriteRule ^colours$ "\/turtle\/colours" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^calculator$ "https\:\/\/goprogram\.co\.uk\/online\/calculator" [R=301,L]
+RewriteRule ^calculator$ "\/online\/calculator" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^converter$ "https\:\/\/goprogram\.co\.uk\/online\/converter" [R=301,L]
+RewriteRule ^converter$ "\/online\/converter" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^sudoku$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^sudoku$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/primenumberchecker$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.primenumberchecker" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -128,63 +128,63 @@ RewriteRule ^sololearn$ "https\:\/\/sololearn\.com\/Profile\/12838639" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^replit$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^advertisement$ "HTTPS\:\/\/goprogram\.co\.uk\/ads" [R=301,L]
+RewriteRule ^advertisement$ "\/ads" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^ai\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence$1" [R=301,L]
+RewriteRule ^ai\/?(.*)$ "\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial_intelligence\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence$1" [R=301,L]
+RewriteRule ^artificial_intelligence\/?(.*)$ "\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligence$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/index\.html" [R=301,L]
+RewriteRule ^artificial\-intelligence$ "\/artificial\-intelligence\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligenceindex$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/index\.html" [R=301,L]
+RewriteRule ^artificial\-intelligenceindex$ "\/artificial\-intelligence\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligenceclassifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
+RewriteRule ^artificial\-intelligenceclassifier$ "\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligencecode$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/code" [R=301,L]
+RewriteRule ^artificial\-intelligencecode$ "\/artificial\-intelligence\/code" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals$1" [R=301,L]
+RewriteRule ^fractals\/?(.*)$ "\/turtle\/fractals$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^Online\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online$1" [R=301,L]
+RewriteRule ^Online\/?(.*)$ "\/online$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^mobile\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/apps$1" [R=301,L]
+RewriteRule ^mobile\/?(.*)$ "\/apps$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^appsssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/apps$1" [R=301,L]
+RewriteRule ^appsssssssssssssssss\/?(.*)$ "\/apps$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractalssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals$1" [R=301,L]
+RewriteRule ^fractalssssssssssssssss\/?(.*)$ "\/turtle\/fractals$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/fractalssssssssssssssss\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/$1" [R=301,L]
+RewriteRule ^turtle\/fractalssssssssssssssss\/?(.*)$ "\/turtle\/fractals\/$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^play$ "https\:\/\/play\.google\.com\/store\/apps\/developer\?id\=GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^sudoku\-solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^sudoku\-solver$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online\/sudoku\-solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^online\/sudoku\-solver$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online\/sudoku_solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^online\/sudoku_solver$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^sudoku_solver$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^sudoku_solver$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
+RewriteRule ^classifier$ "\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^code$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/code" [R=301,L]
+RewriteRule ^code$ "\/artificial\-intelligence\/code" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtlecircles$ "https\:\/\/goprogram\.co\.uk\/turtle\/circles" [R=301,L]
+RewriteRule ^turtlecircles$ "\/turtle\/circles" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtlecolours$ "https\:\/\/goprogram\.co\.uk\/turtle\/colours" [R=301,L]
+RewriteRule ^turtlecolours$ "\/turtle\/colours" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^onlinecalculator\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator$1" [R=301,L]
+RewriteRule ^onlinecalculator\/?(.*)$ "\/online\/calculator$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/fractalsline$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/line" [R=301,L]
+RewriteRule ^turtle\/fractalsline$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/fractalsfamous$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/famous" [R=301,L]
+RewriteRule ^turtle\/fractalsfamous$ "\/turtle\/fractals\/famous" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^onlineconverter$ "https\:\/\/goprogram\.co\.uk\/online\/converter" [R=301,L]
+RewriteRule ^onlineconverter$ "\/online\/converter" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^onlinesudoku$ "https\:\/\/goprogram\.co\.uk\/online\/sudoku" [R=301,L]
+RewriteRule ^onlinesudoku$ "\/online\/sudoku" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^colour\-classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
+RewriteRule ^colour\-classifier$ "\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^ai\/colour\-classifier$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/classifier" [R=301,L]
+RewriteRule ^ai\/colour\-classifier$ "\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^work\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -198,77 +198,77 @@ RewriteRule ^peopleperhour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^people\-per\-hour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^calc\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/online\/calculator$1" [R=301,L]
+RewriteRule ^calc\/?(.*)$ "\/online\/calculator$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^walk$ "https\:\/\/goprogram\.co\.uk\/about\/walk$1" [R=301,L]
+RewriteRule ^walk$ "\/about\/walk$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^hire\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/turtle\/index$1" [R=301,L]
+RewriteRule ^python\/?(.*)$ "\/turtle\/index$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^programs\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/software$1" [R=301,L]
+RewriteRule ^programs\/?(.*)$ "\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^Programs\/?(.*)$ "https\:\/\/goprogram\.co\.uk\/software$1" [R=301,L]
+RewriteRule ^Programs\/?(.*)$ "\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software$ "https\:\/\/goprogram\.co\.uk\/software\/index\.html" [R=301,L]
+RewriteRule ^software$ "\/software\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^software\/birthday$ "\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday_reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^software\/birthday_reminder$ "\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday\-reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^software\/birthday\-reminder$ "\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^birthday\-reminder$ "https\:\/\/goprogram\.co\.uk\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^birthday\-reminder$ "\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^birthday$ "https\:\/\/goprogram\.co\.uk\/software\/reminder" [R=301,L]
+RewriteRule ^birthday$ "\/software\/reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^Index$ "https\:\/\/goprogram\.co\.uk\/" [R=301,L]
+RewriteRule ^Index$ "\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^reminder$ "https\:\/\/goprogram\.co\.uk\/software\/reminder" [R=301,L]
+RewriteRule ^reminder$ "\/software\/reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^software\/creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/graph\-creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^software\/graph\-creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/graph_creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^software\/graph_creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^graph$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph_creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^graph_creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph\-creator$ "https\:\/\/goprogram\.co\.uk\/software\/graph" [R=301,L]
+RewriteRule ^graph\-creator$ "\/software\/graph" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^updates$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^updates$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^update$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^update$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/update$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^about\/update$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^whats_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^whats_new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s\-new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s\-new\.htm$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s\-new\.htm$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s\-new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s_new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s_new\.htm$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s_new\.htm$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^what\'s_new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/what\'s_new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^about\/what\'s_new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/what\'s\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^about\/what\'s\-new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/whats\-new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^about\/whats\-new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^about\/new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^new$ "https\:\/\/goprogram\.co\.uk\/about\/updates" [R=301,L]
+RewriteRule ^new$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/what\'sinstalled$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -302,63 +302,63 @@ RewriteRule ^installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/mypps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^tutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^tutorial$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials" [R=301,L]
+RewriteRule ^tutorial$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/tutorial$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials" [R=301,L]
+RewriteRule ^about\/tutorial$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/python\-tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/python\-tutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/python_tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/python_tutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/pythontutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/pythontutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^pythontutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^pythontutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python\-tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^python\-tutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python_tutorials$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^python_tutorials$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understanding_python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understanding_python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understanding\-python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understanding\-python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understandingpython$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understandingpython$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understandingpython$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understandingpython$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understanding\-python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understanding\-python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understanding_python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understanding_python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learnpython$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learnpython$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn_python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn_python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn\-python$ "http\:\/\/www\.goprogram\.co\.uk\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn\-python$ "\/about\/tutorials\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligence\/index$ "https\:\/\/goprogram\.co\.uk\/artificial\-intelligence\/" [R=301,L]
+RewriteRule ^artificial\-intelligence\/index$ "\/artificial\-intelligence\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/index$ "https\:\/\/goprogram\.co\.uk\/software\/" [R=301,L]
+RewriteRule ^software\/index$ "\/software\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online\/index$ "https\:\/\/goprogram\.co\.uk\/online\/" [R=301,L]
+RewriteRule ^online\/index$ "\/online\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^apps\/index$ "https\:\/\/goprogram\.co\.uk\/apps\/" [R=301,L]
+RewriteRule ^apps\/index$ "\/apps\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/" [R=301,L]
+RewriteRule ^turtle\/index$ "\/turtle\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^turtle\/fractals\/index$ "https\:\/\/goprogram\.co\.uk\/turtle\/fractals\/" [R=301,L]
+RewriteRule ^turtle\/fractals\/index$ "\/turtle\/fractals\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/index$ "https\:\/\/goprogram\.co\.uk\/about" [R=301,L]
+RewriteRule ^about\/index$ "\/about" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/unix$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^software\/unix$ "\/software\/commands" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^unix$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^unix$ "\/software\/commands" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^commands$ "https\:\/\/goprogram\.co\.uk\/software\/commands" [R=301,L]
+RewriteRule ^commands$ "\/software\/commands" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^linkedin$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

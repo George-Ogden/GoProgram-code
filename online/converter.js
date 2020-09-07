@@ -163,12 +163,6 @@ const colourArray = {
     yellow: "#ffff00",
     yellowgreen: "#9acd32",
 };
-let 
-    colourName = document.getElementById("colourName"),
-    colourHex = document.getElementById("hexColour"),
-    colourRGB = document.getElementById("rgbColour"),
-    colourCMYK = document.getElementById("cmykColour"),
-    colourHSL = document.getElementById("hslColour");
 function rgb(e, r, o) {
     return (
         "#" +
@@ -215,7 +209,7 @@ function hslConvert(e) {
     return 0 != f && (c = f / (1 - Math.abs(2 * u - 1))), String(Math.round(n)) + "°, " + String(Math.round(100 * c)) + "%, " + String(Math.round(100 * u)) + "%";
 }
 function hsltohex() {
-    if (((hslcolour = colourHSL.value.toLowerCase().replace(/ +/g, "").trim()), hslcolour.match(/^\d+\s*\°?\,\s*0*(100|[0-9][0-9]|[0-9])\s*\%?\,\s*0*(100|[0-9][0-9]|[0-9])+\s*\%?\,*$/))) {
+    if (((hslcolour = $("#hslColour").val().toLowerCase().replace(/ +/g, "").trim()), hslcolour.match(/^\d+\s*\°?\,\s*0*(100|[0-9][0-9]|[0-9])\s*\%?\,\s*0*(100|[0-9][0-9]|[0-9])+\s*\%?\,*$/))) {
         (hslcolour = hslcolour.replace("°", "")), (hslcolour = hslcolour.replace(/\%+/g, "")), (hslcolour = hslcolour.replace(/\s+/g, ""));
         let [e, r, o] = hslcolour.split(",");
         (e %= 360), (r /= 100), (o /= 100);
@@ -226,15 +220,15 @@ function hsltohex() {
         e < 60 ? ((f = a), (n = l)) : e < 120 ? ((f = l), (n = a)) : e < 180 ? ((n = a), (u = l)) : e < 240 ? ((u = a), (n = l)) : e < 300 ? ((f = l), (u = a)) : e < 360 && ((f = a), (u = l)),
             ([f, n, u] = [255 * (f + t), 255 * (n + t), 255 * (u + t)]);
         let c = rgb(Math.round(f), Math.round(n), Math.round(u));
-        if (((colourHex.value = c.toUpperCase()), (colourRGB.value = rgbConvert(c)), (colourCMYK.value = cmykConvert(c)), Object.values(colourArray).includes(c))) {
+        if ((($("#hexColour").val(c.toUpperCase())), ($("#rgbColour").val(rgbConvert(c))), ($("#cmykColour").val(cmykConvert(c))), Object.values(colourArray).includes(c))) {
             let e = Object.keys(colourArray);
-            for (let r = 0; r < e.length; r++) colourArray[e[r]] == c && (colourName.value = e[r]);
-        } else colourName.value = "no name";
+            for (let r = 0; r < e.length; r++) colourArray[e[r]] == c && ($("#colourName").val(e[r]));
+        } else $("#colourName").val("no name");
         set(c);
     }
 }
 function cmyktohex() {
-    let e = colourCMYK.value.trim().toLowerCase().replace(/ +/g, "");
+    let e = $("#cmykColour").val().trim().toLowerCase().replace(/ +/g, "");
     if (e.match(/^[0]*([0-9]|[0-9][0-9]|100)\s*\%?\s*\,[0]*([0-9]|[0-9][0-9]|100)\s*\%?\s*\,[0]*([0-9]|[0-9][0-9]|100)\s*\%?\s*\,[0]*([0-9]|[0-9][0-9]|100)\s*\%?\s*\,*$/)) {
         e = (e = e.replace(/\%+/g, "")).replace(/\s+/g, "");
         let [r, o, a, l] = e.split(","),
@@ -242,16 +236,16 @@ function cmyktohex() {
             f = 255 * (1 - o / 100) * (1 - l / 100),
             n = 255 * (1 - a / 100) * (1 - l / 100),
             u = rgb(Math.round(t), Math.round(f), Math.round(n));
-        if (((colourHex.value = u.toUpperCase()), (colourRGB.value = rgbConvert(u)), (colourHSL.value = hslConvert(u)), Object.values(colourArray).includes(u))) {
+        if ((($("#hexColour").val(u.toUpperCase())), ($("#rgbColour").val(rgbConvert(u))), ($("#hslColour").val(hslConvert(u))), Object.values(colourArray).includes(u))) {
             let e = Object.keys(colourArray);
-            for (let r = 0; r < e.length; r++) colourArray[e[r]] == u && (colourName.value = e[r]);
-        } else colourName.value = "no name";
+            for (let r = 0; r < e.length; r++) colourArray[e[r]] == u && ($("#colourName").val(e[r]));
+        } else $("#colourName").val("no name");
         set(u);
     }
 }
 function rgbtohex() {
     if (
-        ((rgbcolour = colourRGB.value.trim().toLowerCase().replace(/ +/g, "")),
+        ((rgbcolour = $("#rgbColour").val().trim().toLowerCase().replace(/ +/g, "")),
         rgbcolour.match(
             /^[0]*([0-9]|[0-9][0-9]|[0-1][0-9][0-9]|2[0-4][0-9]|25[0-5])\s*\,[0]*([0-9]|[0-9][0-9]|[0-1][0-9][0-9]|2[0-4][0-9]|25[0-5])\s*\,[0]*([0-9]|[0-9][0-9]|[0-1][0-9][0-9]|2[0-4][0-9]|25[0-5])\,*$/
         ))
@@ -259,27 +253,27 @@ function rgbtohex() {
         rgbcolour = rgbcolour.replace(/\s+/g, "");
         let [e, r, o] = rgbcolour.split(","),
             a = rgb(parseInt(e), parseInt(r), parseInt(o));
-        if (((colourHex.value = a.toUpperCase()), (colourHSL.value = hslConvert(a)), (colourCMYK.value = cmykConvert(a)), Object.values(colourArray).includes(a))) {
+        if ((($("#hexColour").val(a.toUpperCase())), ($("#hslColour").val(hslConvert(a))), ($("#cmykColour").val(cmykConvert(a))), Object.values(colourArray).includes(a))) {
             let e = Object.keys(colourArray);
-            for (let r = 0; r < e.length; r++) colourArray[e[r]] == a && (colourName.value = e[r]);
-        } else colourName.value = "no name";
+            for (let r = 0; r < e.length; r++) colourArray[e[r]] == a && ($("#colourName").val(e[r]));
+        } else $("#colourName").val("no name");
         set(a);
     }
 }
 function hex() {
-    let e = colourHex.value.trim().toLowerCase().replace(/ +/g, "");
+    let e = $("#hexColour").val().trim().toLowerCase().replace(/ +/g, "");
     if (e.match(/^\#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/)) {
         if (
             (3 == (e = (e = e.replace(/\s+/g, "")).replace(/\#+/g, "")).length && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]),
             (e = "#" + e),
-            (colourRGB.value = rgbConvert(e)),
-            (colourCMYK.value = cmykConvert(e)),
-            (colourHSL.value = hslConvert(e)),
+            ($("#rgbColour").val(rgbConvert(e))),
+            ($("#cmykColour").val(cmykConvert(e))),
+            ($("#hslColour").val(hslConvert(e))),
             Object.values(colourArray).includes(e))
         ) {
             let r = Object.keys(colourArray);
-            for (let o = 0; o < r.length; o++) colourArray[r[o]] == e && (colourName.value = r[o]);
-        } else colourName.value = "no name";
+            for (let o = 0; o < r.length; o++) colourArray[r[o]] == e && ($("#colourName").val(r[o]));
+        } else $("#colourName").val("no name");
         set(e);
     }
 }
@@ -287,11 +281,11 @@ function set(e) {
     $("#output").css("background",e)
 }
 function name() {
-    let e = colourName.value.toLowerCase().replace(/ +/g, "");
+    let e = $("#colourName").val().toLowerCase().replace(/ +/g, "");
     for (; -1 != e.search(" "); ) e = e.replace(/\s+/g, "");
     if (e in colourArray) {
         let r = colourArray[e].toUpperCase();
-        (colourHex.value = r.toUpperCase()), (colourRGB.value = rgbConvert(r)), (colourCMYK.value = cmykConvert(r)), (colourHSL.value = hslConvert(r)), set(r);
+        ($("#hexColour").val(r.toUpperCase())), ($("#rgbColour").val(rgbConvert(r))), ($("#cmykColour").val(cmykConvert(r))), ($("#hslColour").val(hslConvert(r))), set(r);
     }
 }
-name(), (colourName.oninput = name), (colourCMYK.oninput = cmyktohex), (colourRGB.oninput = rgbtohex), (colourHSL.oninput = hsltohex), (colourHex.oninput = hex);
+name(), ($("#colourName").on("input",name)), ($("#cmykColour").on("input",cmyktohex)), ($("#rgbColour").on("input",rgbtohex)), ($("#hslColour").on("input",hsltohex)), ($("#hexColour").on("input",hex));

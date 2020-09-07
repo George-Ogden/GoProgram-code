@@ -37,34 +37,34 @@ let network = Fully_Connected_Network.from_string({
             { data: [[0.001147359416745486]], rows: 1, cols: 1 },
         ],
     }),
-    redInput = document.getElementById("redInput"),
-    greenInput = document.getElementById("greenInput"),
-    blueInput = document.getElementById("blueInput"),
-    redSlider = document.getElementById("redSlider"),
-    greenSlider = document.getElementById("greenSlider"),
-    blueSlider = document.getElementById("blueSlider"),
-    output = document.getElementById("output");
+    redInput = $("#redInput"),
+    greenInput = $("#greenInput"),
+    blueInput = $("#blueInput"),
+    redSlider = $("#redSlider"),
+    greenSlider = $("#greenSlider"),
+    blueSlider = $("#blueSlider"),
+    output = $("#output");
 function set(e, t, n) {
     let l = "rgb(" + e + "," + t + "," + n + ")",
         r = network.forward_propagate(Matrix.fromArray([[e / 255, t / 255, n / 255]])).data[0][0] > 0 ? "rgb(0,0,0)" : "rgb(255,255,255)";
-    (output.getElementsByTagName("p")[0].style.background = l), (output.getElementsByTagName("p")[0].style.color = r);
+    (output.children("p").css("background",l)), (output.children("p").css("color",r));
 }
 function input() {
-    let e = redInput.value.trim(),
-        t = greenInput.value.trim(),
-        n = blueInput.value.trim();
-    (parseInt(e) == e && 0 <= e && e < 256) || ("" == e ? (e = 0) : ((e = redSlider.value), (redInput.value = e))),
-        (parseInt(t) == t && 0 <= t && t < 256) || ("" == t ? (t = 0) : ((t = greenSlider.value), (greenInput.value = t))),
-        (parseInt(n) == n && 0 <= n && n < 256) || ("" == n ? (n = 0) : ((t = greenSlider.value), (greenInput.value = t))),
-        (redSlider.value = e),
-        (greenSlider.value = t),
-        (blueSlider.value = n),
+    let e = redInput.val().trim(),
+        t = greenInput.val().trim(),
+        n = blueInput.val().trim();
+    (parseInt(e) == e && 0 <= e && e < 256) || ("" == e ? (e = 0) : ((e = redSlider.val()), (redInput.val(e)))),
+        (parseInt(t) == t && 0 <= t && t < 256) || ("" == t ? (t = 0) : ((t = greenSlider.val()), (greenInput.val(t)))),
+        (parseInt(n) == n && 0 <= n && n < 256) || ("" == n ? (n = 0) : ((t = greenSlider.val()), (greenInput.val(t)))),
+        (redSlider.val(e)),
+        (greenSlider.val(t)),
+        (blueSlider.val(n)),
         set(e, t, n);
 }
 function slider() {
-    let e = redSlider.value,
-        t = greenSlider.value,
-        n = blueSlider.value;
-    (redInput.value = e), (greenInput.value = t), (blueInput.value = n), set(e, t, n);
+    let e = redSlider.val(),
+        t = greenSlider.val(),
+        n = blueSlider.val();
+    (redInput.val(e)), (greenInput.val(t)), (blueInput.val(n)), set(e, t, n);
 }
-input(), (redInput.oninput = input), (greenInput.oninput = input), (blueInput.oninput = input), (redSlider.oninput = slider), (greenSlider.oninput = slider), (blueSlider.oninput = slider);
+input(), (redInput.on("input",input)), (greenInput.on("input",input)), (blueInput.on("input",input)), (redSlider.on("input",slider)), (greenSlider.on("input",slider)), (blueSlider.on("input",slider));

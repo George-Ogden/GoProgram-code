@@ -1,4 +1,4 @@
-<link rel=stylesheet href=/navigation-footer.css> <header class="w-100">
+<link rel=stylesheet href=/navigation-footer.css?v=1> <header class="w-100">
 <ul class=level-1>
     <li class="top level-1"><a href=/>
             <content><img class="top img" src=/images/icon.png> </content> </a> </li> <li class="intelligence level-1"><a href=/artificial-intelligence> <content>Artificial Intelligence</content>
@@ -46,10 +46,10 @@
     <ul class="about level-2">
         <li class="home level-2"><a href=/about> <content>About Index</content></a></li>
         <li class="updates level-2"><a href=/about/updates> <content>What's New?</content></a></li>
-        <li class="github level-2"><a href=https://github.com/George-Ogden/GoProgram> <content>Source Code</content></a></li>
+        <li class="github level-2"><a href=/source> <content>Source Code</content></a></li>
         <li class="tutorials level-2"><a href=/about/tutorials> <content>Python Tutorials</content></a></li>
         <li class="cv level-2"><a href=/about/CV.pdf> <content>CV</content></a></li>
     </ul>
 </ul>
 </header>
-<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script> <script src=/navigation-footer.js> </script>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script> <script src=/navigation-footer.js?v=1> </script>

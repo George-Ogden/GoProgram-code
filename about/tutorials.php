@@ -4,7 +4,7 @@
 <head>
     <title>Understanding Python</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=tutorials.css>
+    <link rel=stylesheet href=tutorials.css?v=1>
     <?php include "../meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects, as well as python tutorials.">
     <meta name=keywords content="code, programming, GoProgram, python, tutorials, learning">

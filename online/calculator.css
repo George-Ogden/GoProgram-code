@@ -135,3 +135,9 @@ input:invalid {
 #dot {
     grid-area: dot;
 }
+
+@media (max-width: 700px) {
+    #output,button {
+        font-size: 1em;
+    }
+}

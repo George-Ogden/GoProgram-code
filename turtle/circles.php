@@ -4,7 +4,6 @@
 <head>
     <title>Circles</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=circles.css>
     <?php include "../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are circular.">
     <meta name=keywords content="code, programming, GoProgram, circles, turtle, python">
     <meta name=viewport content="width=device-width,initial-scale=1">

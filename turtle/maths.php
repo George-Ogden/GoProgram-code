@@ -4,7 +4,6 @@
 <head>
     <title>Maths</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=maths.css>
     <?php include "../meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects, some of which are mathematical.">
     <meta name=keywords content="code, programming, GoProgram, pFython, turtle, maths">

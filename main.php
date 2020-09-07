@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-<link rel=stylesheet href=/main.css>
+<link rel=stylesheet href=/main.css?v=1>
 <?php
 function image($src,$description,$type="",$data=array()) {
     if (strpos($type, "text") !== false) {
@@ -33,7 +33,7 @@ function section($title,$description,$image="",$id=""){
             $image = "images/".strtolower($title).".jpg";
         }
     }
-    return "<div class='section image' id=$id><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
+    return "<div class='section image' id='$id'><div class='text'><h2>$title</h2><p>$description</p></div>".image($image, $title, "floor")."</div>";
 }
 function source($git,$code=""){
     if ($code == ""){
@@ -55,7 +55,7 @@ function display($title,$code, $git, $image=""){
     } else {
         $url .= "&mute=1";
     }
-    return "<div id='".str_replace(" ","_",strtolower($title))."' class='content d-none'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git) . "</div>";
+    return "<div id='".str_replace(" ","_",(str_replace("= ","",strtolower($title))))."' class='content d-none'><div class='section image'><div class='text'><h2>$title</h2></div>".image($image, $title, "none")."</div>"."<div class='section video mx-auto'>". video($url) ."</div>" .source($git) . "</div>";
 }
 function generate($data){
     $selector = "<div class='selection section'>";
@@ -64,7 +64,7 @@ function generate($data){
         if (! array_key_exists('image', $piece)){
             $piece["image"] = "images/$piece[title].jpg";
         }
-        $selector .= "<a class='select' href='#".str_replace(" ","_",strtolower($piece["title"]))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
+        $selector .= "<a class='select' href='#".str_replace(" ","_",(str_replace("= ","",strtolower($piece["title"]))))."'>".image($piece["image"],$piece["title"],"floor")."</a>";
         $main .= display($piece["title"],$piece["code"],$piece["git"],$piece["image"]);
     }
     return str_replace_n("selected ","",str_replace_n("class='","class='selected ",$selector,2),1) . "</div>" . str_replace_n(" d-none","",$main,1);
@@ -76,15 +76,15 @@ function str_replace_n($from, $to, $content,$n)
     return preg_replace($from, $to, $content, $n);
 }
 function code($data){
-    $selector = "<div class='selection section'><ul class=pagination>";
+    $selector = "<div class='selection section'><ul class='pagination mb-0'>";
     $main = "";
     foreach ($data as $piece){
             if (! array_key_exists('file', $piece)){
                 $piece["file"] = "";
             }
-            $selector .= "<li class='page-item text-center'><a class=page-link href='#".str_replace(" ","_",strtolower($piece["title"]))."'>$piece[title]</a></li>";
-            $main .= "<div class='section content code d-none' id=".str_replace(" ","_",strtolower($piece["title"]))."><h2>$piece[title]</h2>" . source($piece["git"],$piece["file"]) . "</div>";
+            $selector .= "<li class='page-item text-center'><a class=page-link href='#".str_replace(" ","_",(str_replace("= ","",strtolower($piece["title"]))))."'>$piece[title]</a></li>";
+            $main .= "<div class='section content code d-none' id=".str_replace(" ","_",(str_replace("= ","",strtolower($piece["title"]))))."><h2>$piece[title]</h2>" . source($piece["git"],$piece["file"]) . "</div>";
     }
     
-    return str_replace_n("selected ","",str_replace_n("class='","class='selected ",$selector,2),1) ."</ul></div>" . str_replace_n(" d-none","",$main,1);
+    return str_replace_n("page-link","'page-link selected'",$selector,1) ."</ul></div>" . str_replace_n(" d-none","",$main,1);
 }

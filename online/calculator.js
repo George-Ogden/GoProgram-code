@@ -80,13 +80,13 @@ for (let m in idToSymbol) mathSymbols.push(idToSymbol[m]);
 mathSymbols.remove(")");
 let symbolToMath = { "%": "/100", "×": "*", "÷": "/", "(": "(", ")": ")", "²": "**2" },
     buttons = [];
-buttonIds.forEach((m) => buttons.push(document.getElementById(m)));
+buttonIds.forEach((m) => buttons.push($("#"+m)));
 let command = "Welcome to the calculator",
     memory = 0,
     clear = !0,
     answer = 0;
 function output() {
-    document.getElementById("output").value = command;
+    $("#output").val(command);
 }
 function calculate() {
     let math = command;
@@ -207,12 +207,11 @@ function arrow(m) {
     m.key in keyToId && number(keyToId[m.key]);
 }
 output(),
-    (document.onkeydown = arrow),
-    (document.getElementById("output").oninput = output),
+    ($(document).on("keydown",arrow)),
+    ($("#output").on("input",output)),
     buttons.forEach(
         (m, a) =>
-            (m.onclick = function () {
-                number(buttonIds[a]);
-            })
+            (m.click(() =>
+                number(buttonIds[a])            ))
     ),
     output();

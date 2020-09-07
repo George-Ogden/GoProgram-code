@@ -4,7 +4,7 @@
 <head>
     <title>JavaScript AI Library</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=code.css>
+    <link rel=stylesheet href=code.css?v=1>
     <?php include "../meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects, some of which involve artificial intelligence.">
     <meta name=keywords content="code, programming, GoProgram, JavaScript, code, AI, artificial intelligence">
@@ -18,16 +18,16 @@
         <p>All of the files below can be downloaded and imported. They are all required to make a neural network and are all original. It is available on GitHub and can be used freely.</p>
     </div>    <?php 
         echo code([
-                ["title"=>"All Code","git"=> "https://github.com/George-Ogden/Machine-Learning","code"=>"/scripts/zip/ai library.zip"],
+                ["title"=>"All Code","git"=> "https://github.com/George-Ogden/Machine-Learning","file"=>"/scripts/zip/ai library.zip"],
                 ["title"=>"Matrix Library","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Matrix.js"],
                 ["title"=>"Lambert W Function","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/lambertw.js"],
                 ["title"=>"Activation Functions","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Activation_Functions.js"],
                 ["title"=>"Neural Network Parent Class","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/ANN.js"],
                 ["title"=>"Fully Connected Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/FCNN.js"],
-                ["title"=>"Convolutional Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/FCNN.js"],
-                ["title"=>"Pooling Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Convolutional%20Layers.js"],
+                ["title"=>"Convolutional Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Convolutional%20Layers.js"],
+                ["title"=>"Pooling Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Pooling%20Layers.js"],
                 ["title"=>"Flattening Layers","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Flatten.js"],
-                ["title"=>"Combined Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Combined%20Network.js.js"],
+                ["title"=>"Combined Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/Combined%20Network.js"],
                 ["title"=>"Convolutional Neural Network","git"=> "https://github.com/George-Ogden/Machine-Learning/blob/master/CNN.js"]               
                 ])
         ?>

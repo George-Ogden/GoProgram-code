@@ -4,7 +4,7 @@
 <head>
     <title>Calculator</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=calculator.css>
+    <link rel=stylesheet href=calculator.css?v=1>
     <?php include "../meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects, including a calculator.">
     <meta name=keywords content="code, programming, GoProgram, JavaScript, calculator">
@@ -28,6 +28,6 @@
         </calculator>
     </div>
 </section>
-<script src=calculator.js></script>
-<script src="https://kit.fontawesome.com/f6748a38ea.js" type="text/javascript"></script>
+<script src=calculator.js?v=1></script>
+<script src="https://kit.fontawesome.com/f6748a38ea.js?v=1" type="text/javascript"></script>
 <?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>

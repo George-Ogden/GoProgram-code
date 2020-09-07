@@ -3,7 +3,6 @@
 
 <head>
     <title>Birthday Reminder</title>
-    <link rel=stylesheet href=reminder.css>
     <?php include "../main.php" ?>
     <?php include "../meta.php" ?>
     <meta name=description content="A website with a wide variety of showcased programming projects, including a birthday reminder.">
@@ -20,8 +19,8 @@
         <?php echo image("images/birthday-reminder-demo.jpg", "Birthday Reminder Demo", "floor"); ?>
     </div>
     <?php 
-    echo section("Source Code","Download the python source files, and run the \"Birthday Reminder.py\" file. This code was written a very long time ago, and then revived, so it is not that clear. Hopefully, the comments will help! Note: the python files already contain the celebrity birthdays; to remove them, delete the files in the \"Months\" folder.","images/birthday-reminder-demo.jpg");
-echo section("Installer","You can run the Windows installer with a few options to customise the software for what you need. You can choose whether to include the celebrity birthdays or start from scratch. It no longer requires an interpreter to run and can be used just like any other software.","images/installer.png");
+    echo source("https://github.com/George-Ogden/Birthday-Reminder","/scripts/zip/birthday reminder.zip");
+echo section("Installer","You can <a href=/scripts/exe/birthday-reminder-setup.exe download> run the Windows installer</a> with a few options to customise the software for what you need. You can choose whether to include the celebrity birthdays or start from scratch. It no longer requires an interpreter to run and can be used just like any other software.","images/installer.jpg");
 ?>
 </section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
 

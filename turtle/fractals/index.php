@@ -4,7 +4,7 @@
 <head>
     <title>Fractals</title>
     <?php include "../../main.php" ?>
-    <link rel=stylesheet href=index.css>
+    <link rel=stylesheet href=index.css?v=1>
     <?php include "../../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are fractals.">
     <meta name=keywords content="code, programming, GoProgram, fractals, python, turtle">
     <meta name=viewport content="width=device-width,initial-scale=1">
@@ -18,11 +18,11 @@
 </div>
 
 <div class="section image">
-    <p>Welcome to the home of fractals. Enjoy an array of various exciting and interesting shapes. These fractals range from very famous to very original, but all share the same ideas of recursion and self-similarity.</p>
-    <?php echo image("../images/fractals.jpg","A collage of fractals"); ?>
+    <div class="text"><p>Welcome to the home of fractals. Enjoy an array of various exciting and interesting shapes. These fractals range from very famous to very original, but all share the same ideas of recursion and self-similarity.</p>
+  </div>  <?php echo image("../images/fractals.jpg","A collage of fractals"); ?>
 </div>
-<?php echo section("Famous Fractals","Meet some famous and beautiful fractals. Even if you have met them before, they are still mesmerising.","images/famous.jpg"); 
-echo section("Line Fractals","See some less well known fractals and even some that I made up! All these fractals are made up of a repeated iterator.","images/line.jpg"); 
+<?php echo section("Famous Fractals","<a href=famous>Meet some famous and beautiful fractals</a>. Even if you have met them before, they are still mesmerising.","images/famous.jpg"); 
+echo section("Line Fractals","<a href=line>See some less well known fractals and even some that I made up</a>! All these fractals are made up of a repeated iterator.","images/line.jpg"); 
 ?>
 </section><?php include "../../footer.php" ?><?php include "../../scripts.php" ?></script><?php include "../../scripts.php" ?>
 

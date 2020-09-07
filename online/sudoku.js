@@ -1,9 +1,6 @@
 class square {
     constructor(e, t) {
-        (this._value = document.getElementById("_" + e + t).value ? Number(document.getElementById("_" + e + t).value) : 0),
-            (this._isConstant = !!document.getElementById("_" + e + t).value),
-            (this.x = e),
-            (this.y = t);
+        (this._value = $("#_" + e + t).val() ? Number($("#_" + e + t).val()) : 0), (this._isConstant = !!$("#_" + e + t).val()), (this.x = e), (this.y = t);
     }
     get value() {
         return this._value;
@@ -26,12 +23,13 @@ class Sudoku {
         for (let i = 0; i < 9; i++)
             for (let j = 0; j < 9; j++)
                 try {
-                    let x = document.getElementById("_" + i + j).value;
+                    let x = $("#_" + i + j).val();
                     if (!x) continue;
                     if (((x = parseInt(x)), x % 1 != 0 || x > 9 || x < 0)) throw "";
-                    document.getElementById("_" + i + j).setCustomValidity("");
+                    $("#_" + i + j)[0].setCustomValidity("");
                 } catch (e) {
-                    return eval("_" + i + j).setCustomValidity("Invalid Input!"), !1;
+                    $("#valid").show();
+                    return $("#_" + i + j)[0].setCustomValidity("Invalid Input!"), !1;
                 }
         return !0;
     }
@@ -52,14 +50,12 @@ class Sudoku {
                         )
                     )
                 )
-                    return (document.getElementById("valid").innerHTML = "INVALID SUDOKU"), (this.data = []), !1;
+                    return $("#valid").show(), (this.data = []), !1;
         return !0;
     }
     set_data() {
         for (let e = 0; e < 9; e++)
-            for (let t = 0; t < 9; t++)
-                (document.getElementById("_" + e + t).value = this.data[e][t].value || ""),
-                    this.data[e][t].isConstant || (document.getElementById("_" + e + t).style.backgroundColor = "var(--secondary-light)");
+            for (let t = 0; t < 9; t++) $("#_" + e + t).val(this.data[e][t].value) || "", this.data[e][t].isConstant || $("#_" + e + t).css("background", "var(--secondary-light)");
     }
     print() {
         let e = [];
@@ -75,15 +71,14 @@ class Sudoku {
         return !0;
     }
     async solve() {
-        document.getElementById("solve").style.visibility = "collapse";
+        $("#solve").hide();
         try {
             for (var e = 0; e < 9; e++)
                 for (var t = 0; t < 9; )
                     if (
                         (await new Promise((e) => setTimeout(e, 0)),
                         (this.currentData = this.data[e][t]),
-                        this.currentData.value ||
-                            ((this.currentData.value = 1), (document.getElementById("_" + e + t).style.backgroundColor = "var(--secondary-light)"), (document.getElementById("_" + e + t).value = 1)),
+                        this.currentData.value || ((this.currentData.value = 1), $("#_" + e + t).css("background", "var(--secondary-light)"), $("#_" + e + t).val(1)),
                         Sudoku.difference(this.data[e]) &&
                             Sudoku.difference(this.data.map((e) => e[t])) &&
                             Sudoku.difference(
@@ -91,54 +86,57 @@ class Sudoku {
                                 2
                             ))
                     )
-                        (document.getElementById("_" + e + t).value = this.currentData.value || ""), t++;
+                        $("#_" + e + t).val(this.currentData.value || ""), t++;
                     else if (this.currentData.isConstant && 0 == t) (t = 8), e--;
                     else if (this.currentData.isConstant) t--;
                     else if (9 == this.currentData.value) {
                         for (
-                            document.getElementById("_" + e + t).value = "", document.getElementById("_" + e + t).style.backgroundColor = "var(--primary-light)", this.currentData.value = 0;
-                            0 == t ? ((t = 8), e--) : t--, this.data[e][t].isConstant || 9 == this.data[e][t].value++;
+                            $("#_" + e + t).val(""), this.currentData.value = 0;
+                            $("#_" + e + t).css("background", "var(--primary-light)"),
+                                this.data[e][t].isConstant ? $("#_" + e + t).val("") : {},
+                                0 == t ? ((t = 8), e--) : t--,
+                                this.data[e][t].isConstant || 9 == this.data[e][t].value++;
 
                         );
-                        (document.getElementById("_" + e + t).style.backgroundColor = "var(--secondary-light)"), (document.getElementById("_" + e + t).value = this.currentData.value || "");
-                    } else
-                        this.currentData.value++,
-                            (document.getElementById("_" + e + t).style.backgroundColor = "var(--secondary-light)"),
-                            (document.getElementById("_" + e + t).value = this.currentData.value || "");
-            (document.getElementById("valid").innerHTML = "<br>"), this.set_data(), (solve = !1), (document.getElementById("solve").style.visibility = "visible"), (document.getElementById("solve").style.visibility = "visible");
+                        $("#_" + e + t).css("background", "var(--secondary-light)"), $("#_" + e + t).val(this.currentData.value || "");
+                    } else this.currentData.value++, $("#_" + e + t).css("background", "var(--secondary-light)"), $("#_" + e + t).val(this.currentData.value || "");
+            this.set_data(), (solve = !1), ($("#solve").hide()), ($("#solve").show()),$("#solve").html("Reset");
         } catch (e) {
-            (document.getElementById("valid").innerHTML = "INVALID SUDOKU"), (document.getElementById("solve").innerHTML = "Solve"), (this.data = []);
+            $("#solve").show();
+            $("#valid").html("INVALID SUDOKU"), $("#solve").html("Solve"), (this.data = []);
         }
     }
     reset() {
-        for (let e = 0; e < 9; e++)
-            for (let t = 0; t < 9; t++)
-                this.data[e][t].isConstant || (document.getElementById("_" + e + t).value = ""), (document.getElementById("_" + e + t).style.backgroundColor = "var(--primary-light)");
+        for (let e = 0; e < 9; e++) {
+            for (let t = 0; t < 9; t++) {
+                this.data[e][t].isConstant || ($("#_" + e + t).val("")), $("#_" + e + t).css("background", "var(--primary-light)");
+            }
+        }
     }
 }
 let solve = !0,
     sudoku = new Sudoku();
 function run() {
-    solve
-        ? sudoku.check_data() && sudoku.get_data() && ((document.getElementById("solve").innerHTML = "Reset"), sudoku.solve())
-        : (sudoku.reset(), (document.getElementById("solve").innerHTML = "Solve"), (sudoku = new Sudoku()), (solve = !0));
+    $("#valid").hide();
+    solve ? sudoku.check_data() && sudoku.get_data() && ( sudoku.solve()) : (sudoku.reset(), $("#solve").html("Solve"), (sudoku = new Sudoku()), (solve = !0));
+    
 }
+$("#solve").click(function (e) {
+    e.preventDefault(), run();
+});
+$("#sudoku").change(sudoku.check_data);
+$("input").on("input", function () {
+    if (
+        $(this)
+            .val()
+            .match(/^[0-9]$/)
+    ) {
+        let t = $("#_" + (parseInt($(this).attr("id").slice(1, 3)) < 8 ? "0" : "") + (parseInt($(this).attr("id").slice(1, 3)) + (8 == $(this).attr("id")[2] ? 2 : 1)));
+        t ? t.focus() : {};
+    }
+});
 function resize() {
-    (document.getElementById("sudoku").style.height = window.getComputedStyle(document.getElementById("sudoku")).width), window.addEventListener("resize", resize);
+    $("#sudoku").height($("#sudoku").width());
 }
-resize(),
-    (document.getElementById("solve").onclick = function (e) {
-        e.preventDefault(), run();
-    }),
-    (document.getElementById("sudoku").onchange = sudoku.check_data),
-    (document.body.onload = function () {
-
-            [...document.getElementsByTagName("input")].forEach(function (e) {
-                e.oninput = function () {
-                    if (1 == this.value.length) {
-                        let t = document.getElementById("_" + (parseInt(e.id.slice(1, 3)) < 8 ? "0" : "") + (parseInt(e.id.slice(1, 3)) + (8 == e.id[2] ? 2 : 1)));
-                        t ? t.focus() : e.blur();
-                    }
-                };
-            });
-    });
+$(window).resize(resize);
+resize();

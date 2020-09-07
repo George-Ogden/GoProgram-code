@@ -27,13 +27,3 @@ class CNN_1 extends Combined_Network {
         new Softmax(connectedo,outputs,"sigmoid")],"CNN_1")
     }
 }
-const CNN = CNN_2.load("CNN_2","CNN")
-//let CNN = new CNN_2(28,28,3,3,2,2,2,3,3,2,2,2,2,12,50,62,1)
-const data = eval("(" + fs.readFileSync(`EMNIST/${1+Math.floor(Math.random()*9)}.json`) + ")")
-const training_set = Combined_Network.prepareTrainingImagesBW(data)
-//console.log(CNN.forward_propagate(training_set[0][0]),training_set[0][1])
-while (true){
-    CNN.train(training_set,1,64)
-    console.log(CNN.cross_entropy(training_set,512),CNN.cost(training_set,512),CNN.accuracy(training_set,500)+"%")
-    CNN.save("CNN")
-}

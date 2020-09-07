@@ -4,7 +4,7 @@
 <head>
     <title>403</title>
     <?php include "main.php" ?>
-    <link rel=stylesheet href=/400.css>
+    <link rel=stylesheet href=/400.css?v=1>
     <meta name=viewport content="width=device-width,initial-scale=1">
 </head><?php include "header.php" ?><section>
 <h1 class="colour d-flex justify-content-center align-items-center h-100 pad-1"> <span>4</span><?php echo image("/images/goprogram.png","GoProgram Logo","none",["id" => "BG"]); 

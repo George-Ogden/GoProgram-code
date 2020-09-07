@@ -4,7 +4,7 @@
 <head>
     <title>Line Fractals</title>
     <?php include "../../main.php" ?>
-    <link rel=stylesheet href=line.css>
+    <link rel=stylesheet href=line.css?v=1>
     <?php include "../../meta.php" ?> <meta name=description content="A website with a wide variety of showcased programming projects, some of which are line fractals.">
     <meta name=keywords content="code, programming, GoProgram, python, turtle, fractals, line">
     <meta name=viewport content="width=device-width,initial-scale=1">

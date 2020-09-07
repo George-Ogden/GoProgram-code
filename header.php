@@ -1,8 +1,9 @@
 <link rel=stylesheet href=/navigation-footer.css?v=1> <header class="w-100">
 <ul class=level-1>
-    <li class="top level-1"><a href=/>
-            <content><img class="top img" src=/images/icon.png> </content> </a> </li> <li class="intelligence level-1"><a href=/artificial-intelligence> <content>Artificial Intelligence</content>
-        </a></li>
+    <li class="top level-1"><a href= />
+        <content><img class="top img" src=/images/icon.png> </content> </a> </li> <li class="intelligence level-1"><a href=/artificial-intelligence> <content>Artificial Intelligence</content>
+        </a>
+    </li>
     <ul class="intelligence level-2">
         <li class="home level-2"><a href=/artificial-intelligence> <content>AI Index</content></a></li>
         <li class="code level-2"><a href=/artificial-intelligence/code> <content>Code</content></a></li>

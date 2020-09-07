@@ -17,15 +17,23 @@
         <h3 class="font-italic colour scale">"Knowledge has no value unless you share it".</h3>
         <p>Therefore, I am giving away Python tutorials to teach people an invaluable skill - programming. Whether you want to speed up mundane tasks or make a career out of writing software, Python is the best language to start with. Hopefully, the code on this website is evidence that I know what I am doing, and I hope that you can develop an awesome skill too.</p>
     </div>
-    
+
     <div class="section icons">
-    <a class="icon" href="https://github.com/George-Ogden/Understanding-Python" target="_blank"><ion-icon name="logo-github"></ion-icon><p>GitHub Code</p></a>
-    <a class="icon" href="https://www.youtube.com/playlist?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D" target="_blank"><ion-icon name="logo-youtube"></ion-icon><p>YouTube Videos</p></a>
+        <a class="icon" href="https://github.com/George-Ogden/Understanding-Python" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+            <p>GitHub Code</p>
+        </a>
+        <a class="icon" href="https://www.youtube.com/playlist?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+            <p>YouTube Videos</p>
+        </a>
     </div>
-    
+
     <div class="section video">
         <h2>Lesson Videos</h2>
         <?php echo video("https://youtube.com/embed/a4wymMoq_kc?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D") ?>
     </div>
 </section>
-<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?> </html>
+<?php include "../footer.php" ?> </script><?php include "../scripts.php" ?>
+
+</html>

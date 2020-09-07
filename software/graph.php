@@ -20,7 +20,7 @@
     </div>
     </div>
     <?php
-    echo source("https://github.com/George-Ogden/Graph-Creator","/scripts/zip/graph creator.zip");
+    echo source("https://github.com/George-Ogden/Graph-Creator", "/scripts/zip/graph creator.zip");
     echo section("Installer", "You can <a href=/scripts/exe/graph-creator-setup.exe download>run the Windows installer</a> with a few options to customise the software for what you need. It no longer requires an interpreter to run and can be used just like any other software.", "images/installer.jpg");
     ?>
 </section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>

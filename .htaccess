@@ -94,6 +94,10 @@ RewriteRule ^primes$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/foursquares$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/four$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^four$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/foursquare$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/workingmemorytrainer$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.workingmemorytrainer" [R=301,L]
@@ -368,7 +372,15 @@ RewriteRule ^link$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^source$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^about\/source$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^about\/git$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^about\/github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^git$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]

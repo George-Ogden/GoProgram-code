@@ -13,7 +13,7 @@
 <?php echo image("images/reminder.jpg", "Calendar", "text-darken", ["id" => "top", "text" => "<h1>Birthday Reminder</h1>"]);   ?>
 <div class='section image'>
 <div class='text'>
-<p>If you would like to use the birthday reminder, you can either download the python source code and run it or download the executable file. This software acts as a calendar, allowing you to add or remove birthdays of friends, family or other. Additionally This is such a useful tool to have running all the time!</p>
+<p>If you would like to use the birthday reminder, you can either download the python source code and run it or download the executable file. This software acts as a calendar, allowing you to add or remove birthdays of friends, family or other. Additionally, this is such a useful tool to have running all the time!</p>
 </div>
 <?php echo image("images/birthday-reminder-demo.jpg", "Birthday Reminder Demo", "floor"); ?>
 </div>

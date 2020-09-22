@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>404</title>
+<title>404 | GoProgram</title>
 <?php include "main.php" ?>
 <link rel=stylesheet href=/400.css?v=1><meta name=viewport content="width=device-width,initial-scale=1">
 </head><?php include "header.php" ?><section>

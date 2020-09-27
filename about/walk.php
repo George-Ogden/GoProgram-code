@@ -29,7 +29,7 @@
         </div>
         <div class=text-center>
             <p class=stat>These are the stats for George during the time spent walking.</p>
-            <p class=stat><b>£1,201.81</b> raised for GreenPeace</p>
+            <p class=stat><b>£1,201.81</b> raised for Greenpeace</p>
             <p class=stat><b>174.35</b> km walked</p>
             <p class=stat><b>41</b> hours, <b>57</b> minutes and <b>1</b> second active</p>
             <p class=stat><b>213,796</b> steps</p>

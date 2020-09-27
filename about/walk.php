@@ -3,16 +3,13 @@
 
 <head>
     <title>Walking</title>
-    <link rel=stylesheet href=../fonts.css> <link rel=stylesheet href=../colours.css> <meta name=description content="Walking the Sussex Border Path">
+    <meta name=description content="Walking the Sussex Border Path">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=subject content=hiking>
-    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css> <link rel=stylesheet href=walk.css>
+    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css> <link rel=stylesheet href=walk.css?v=1>
 </head>
 <div class="jumbotron text-center">
     <h1>Walking the Sussex Border Path</h1>
-</div>
-<div class="card text-white" id=donate>
-    <div class=card-body><button class="btn text-white" type=button onclick='window.location.href="https://uk.virginmoneygiving.com/donation-web/fundraiser?fundraiserActivityId=1178899&stop_mobi=yes"'>Donate</button></div>
 </div>
 <div class=card id=map>
     <div class=card-body>

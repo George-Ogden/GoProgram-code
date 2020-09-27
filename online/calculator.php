@@ -57,5 +57,5 @@
     </section>
     <script src=calculator.js?v=1></script>
     <script src="https://kit.fontawesome.com/f6748a38ea.js?v=1" type="text/javascript"></script>
-    <?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+    <?php include "../footer.php" ?><?php include "../scripts.php" ?>
     </html>

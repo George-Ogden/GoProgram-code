@@ -24,4 +24,4 @@
 </div>
 <div class="section text">
 <h2>UNIX Commands</h2>
-<p>If you use a command line interface, the best choice is undoubtedly Linux, as the commands in Windows are fairly limited. However, it is possible to <a href=/software/commands>download the Coreutils (as well as other commands), which have already been compiled for Windows</a> to increase the diversity and range of commands that can be used on Windows devices and make the command line seem more like a Linux machine.</p></div></section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?></html>
+<p>If you use a command line interface, the best choice is undoubtedly Linux, as the commands in Windows are fairly limited. However, it is possible to <a href=/software/commands>download the Coreutils (as well as other commands), which have already been compiled for Windows</a> to increase the diversity and range of commands that can be used on Windows devices and make the command line seem more like a Linux machine.</p></div></section><?php include "../footer.php" ?><?php include "../scripts.php" ?></html>

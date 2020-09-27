@@ -35,5 +35,5 @@ echo section("Fractals", "<a href=fractals>Learn about recursive programming</a>
 echo section("Circles", "<a href=circles>View some simple, yet satisfying programming</a> based on the ideas of a shape that has inspired centuries of maths.");
 echo section("Colours", "<a href=colours>See some programming inspired by colour wheels and the three colours that make up a computer's display</a>: red, green and blue.");
 ?>
-</section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

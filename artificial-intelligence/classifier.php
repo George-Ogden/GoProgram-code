@@ -36,5 +36,5 @@
 <p class="text-center display-3">This colour is chosen by an AI!</p>
 </div>
 <script src=/scripts/js/matrix.js?v=1></script><script src=/scripts/js/lambertw.js?v=1></script><script src=/scripts/js/activation_functions.js?v=1></script><script src=/scripts/js/ann.js?v=1></script><script src=/scripts/js/fcnn.js?v=1></script><script src=classifier.js?v=1></script>
-</section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

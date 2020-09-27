@@ -14,5 +14,5 @@
 echo image("images/network.jpg", "Neural Network", "text", ["text" => "<p>Welcome to an array of projects encorporating artificial intelligence. The huge development of artificial intellegence suggest that it will be of even greater importance in the future. It is a really exciting field to be involved in.</p>"]);  ?>
 <?php echo section("Code", "<a href=code>Have a look at the code library</a> behind the artificial intelligence projects. The code is written in JavaScript so that it can be run directly in the browser and is free and openly-sourced.");
 echo section("Colour Classifier", "A practical use of artificial-intelligence to change the colour of text based on the background. Although there are algorithms that do this, AI provides an alternative approach. Why not <a href=classifier>check it out</a>?"); ?>
-</section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

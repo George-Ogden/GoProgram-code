@@ -30,5 +30,5 @@ echo code([
 ])
 ?>
 
-</section><?php include "../footer.php" ?></script>
+</section><?php include "../footer.php" ?>
 </script><?php include "../scripts.php" ?>

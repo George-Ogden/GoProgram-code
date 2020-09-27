@@ -21,5 +21,5 @@
 <h2>Donate</h2>
 <p>The website costs money to run, as do all the open source projects that I work on and the weekly videos that I publish. These rely on an entirely donation-based system. Please, consider <a href="/patreon" target="blank" data-toggle="tooltip" title="Donate">donating via Patreon</a> to support the site as well as receiving exclusive benefits and early access.</p>
 </div>
-<?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

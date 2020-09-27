@@ -20,5 +20,5 @@ echo section("Graph Creator", "Whether you need to analyse or visualise data, or
 echo section("Birthday Reminder", "Unless you have a memory like a hard drive, <a href=reminder>lighten the load with this birthday reminder software</a> to take note of birthdays and other special occasions.", "images/birthday-reminder-icon.jpg");
 echo section("UNIX Commands", "The Windows command tools are fairly limited compared to Linux, but <a href=commands>these executable files</a> allow you to run the Coreutils, as well as other commands on a Windows device without WSL.", "images/gnu.jpg");
 ?>
-</section><?php include "../footer.php" ?></script><?php include "../scripts.php" ?>
+</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

@@ -44,10 +44,6 @@ RewriteRule ^cv$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^CV\.pdf$ "\/about\/CV\.pdf" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about\/cv$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^line$ "\/turtle\/fractals\/line" [R=301,L]

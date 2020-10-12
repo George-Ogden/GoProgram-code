@@ -30,7 +30,7 @@ echo "</tr>";
 </form>
 </div>
 <script src=sudoku.js?v=1></script>
-</section><?php include "../footer.php" ?>
+<?php include "../footer.php" ?></section>
 <?php include "../scripts.php" ?>
 </script>
 </html>

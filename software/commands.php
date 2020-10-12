@@ -17,5 +17,5 @@
      <?php
         echo section("Installer", "You can <a href=/scripts/exe/birthday-reminder-setup.exe download>run the Windows installer</a> with a few options to customise the software for what you need. Additionally, it will add the program to the PATH environmental variable so that the tools are available from the command line.", "images/installer.jpg");
         ?>
- </section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+ <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
  </html>

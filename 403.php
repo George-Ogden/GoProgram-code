@@ -11,5 +11,5 @@
 <p class="text-center display-4">You're not allowed here!</p>
 </div>
 </section>
-<?php include "footer.php" ?></script><?php include "scripts.php" ?>
+<?php include "footer.php" ?><?php include "scripts.php" ?>
 </html>

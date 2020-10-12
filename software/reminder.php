@@ -21,5 +21,5 @@
 echo source("https://github.com/George-Ogden/Birthday-Reminder", "/scripts/zip/birthday reminder.zip");
 echo section("Installer", "You can <a href=/scripts/exe/birthday-reminder-setup.exe download> run the Windows installer</a> with a few options to customise the software for what you need. You can choose whether to include the celebrity birthdays or start from scratch. It no longer requires an interpreter to run and can be used just like any other software.", "images/installer.jpg");
 ?>
-</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

@@ -18,7 +18,6 @@ echo generate([
 ["title" => "Line Fractal", "code" => "Rg-IVdXFi0M", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Line%20Fractal.py"]
 ])
 ?>
-</section>
-<?php include "../../footer.php" ?></script>
+<?php include "../../footer.php" ?></section>
 </script><?php include "../../scripts.php" ?>
 </html>

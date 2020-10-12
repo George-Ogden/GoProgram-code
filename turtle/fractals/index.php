@@ -24,5 +24,5 @@
 <?php echo section("Famous Fractals", "<a href=famous>Meet some famous and beautiful fractals</a>. Even if you have met them before, they are still mesmerising.", "images/famous.jpg");
 echo section("Line Fractals", "<a href=line>See some less well known fractals and even some that I made up</a>! All these fractals are made up of a repeated iterator.", "images/line.jpg");
 ?>
-</section><?php include "../../footer.php" ?><?php include "../../scripts.php" ?></script><?php include "../../scripts.php" ?>
+<?php include "../../footer.php" ?></section><?php include "../../scripts.php" ?></script><?php include "../../scripts.php" ?>
 </html>

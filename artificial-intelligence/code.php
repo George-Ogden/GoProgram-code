@@ -29,6 +29,5 @@ echo code([
 ["title" => "Convolutional Neural Network", "git" => "https://github.com/George-Ogden/Machine-Learning/blob/master/CNN.js"]
 ])
 ?>
-
-</section><?php include "../footer.php" ?>
+<?php include "../footer.php" ?></section>
 </script><?php include "../scripts.php" ?>

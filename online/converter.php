@@ -30,5 +30,5 @@
 <div id="output" class="scale w-100"></div>
 </div>
 <script src=converter.js></script>
-</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

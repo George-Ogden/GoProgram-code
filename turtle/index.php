@@ -7,8 +7,9 @@
 <?php include "../meta.php" ?>
 <meta name=description content="Python turtle projects that are available to download and run. They are showcased across a range of pages media available in each project.">
 <meta name=keywords content="code, programming, GoProgram, turtle, python">
-<meta name=viewport content="	python turtle shapes">
+<meta name=viewport content="python turtle shapes">
 <meta name=subject content="Python turtle">
+<meta name=viewport content="width=device-width,initial-scale=1">
 </head><?php include "../header.php" ?>
 <section class="colour">
 <?php echo image("images/collage.jpg", "Collage", "text-darken", ["id" => "top", "text" => "<h1>Turtle Projects</h1>"]);  ?>
@@ -35,5 +36,5 @@ echo section("Fractals", "<a href=fractals>Learn about recursive programming</a>
 echo section("Circles", "<a href=circles>View some simple, yet satisfying programming</a> based on the ideas of a shape that has inspired centuries of maths.");
 echo section("Colours", "<a href=colours>See some programming inspired by colour wheels and the three colours that make up a computer's display</a>: red, green and blue.");
 ?>
-</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

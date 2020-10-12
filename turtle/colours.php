@@ -24,6 +24,6 @@ echo generate([
 ["title" => "Colourful Circles", "code" => "knpAHoGCFhU", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Colourful%20Circles.py"], ["title" => "Colour Wheel", "code" => "7_EMslgw3cE", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Colour%20Wheel.py"]
 ])
 ?>
-</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 
 </html>

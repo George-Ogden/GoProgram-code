@@ -17,5 +17,5 @@ echo generate([
 ["title" => "Koch Snowflake", "code" => "1coK5WjWqvU", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Koch%20Snowflake.py"]
 ])
 ?>
-</section><?php include "../../footer.php" ?><?php include "../../scripts.php" ?>
+<?php include "../../footer.php" ?></section><?php include "../../scripts.php" ?>
 </html>

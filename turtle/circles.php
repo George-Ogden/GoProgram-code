@@ -17,5 +17,5 @@ echo generate([
 ["title" => "Square = Circle", "code" => "x3-MtfG8UkM?start=8&end=24", "git" => "https://github.com/George-Ogden/Turtle-Projects/blob/master/Square%20%3D%20Circle.py"]
 ])
 ?>
-</section><?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

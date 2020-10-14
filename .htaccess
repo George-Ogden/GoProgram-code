@@ -129,7 +129,7 @@ RewriteRule ^replit$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^advertisement$ "\/ads" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^ai\/?(.*)$ "\/artificial\-intelligence$1" [R=301,L]
+RewriteRule ^ai\/?(.*)$ "\/artificial\-intelligence\/$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^artificial_intelligence\/?(.*)$ "\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

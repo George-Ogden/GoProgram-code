@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="Python tutorials">
 </head><?php include "../header.php" ?>
-<section class=scroll>
+<section>
 <?php echo image("images/learn.jpg", "Learning", "text-darken", ["id" => "top", "text" => "<h1>Understanding Python</h1>"]);  ?>
 <div class="section text">
 <h3 class="font-italic colour scale">"Knowledge has no value unless you share it".</h3>
@@ -30,6 +30,7 @@
 <h2>Lesson Videos</h2>
 <?php echo video("https://youtube.com/embed/a4wymMoq_kc?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D") ?>
 </div>
+<?php include "../footer.php" ?>
 </section>
-<?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../scripts.php" ?>
 </html>

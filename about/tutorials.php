@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="Python tutorials">
 </head><?php include "../header.php" ?>
-<section>
+<section class=scroll>
 <?php echo image("images/learn.jpg", "Learning", "text-darken", ["id" => "top", "text" => "<h1>Understanding Python</h1>"]);  ?>
 <div class="section text">
 <h3 class="font-italic colour scale">"Knowledge has no value unless you share it".</h3>

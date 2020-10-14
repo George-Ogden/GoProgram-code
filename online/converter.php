@@ -10,12 +10,12 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="colour converter">
 </head><?php include "../header.php" ?>
-<section>
-<div class="section" id=top>
-<h1 class="colour">Colour Converter</h1>
+<section class=scroll>
+<div class=section id=top>
+<h1 class=colour>Colour Converter</h1>
 </div>
 <div class="section image">
-<div class="text">
+<div class=text>
 <h2>Name</h2>
 <div><input id=colourName value=black placeholder="Enter a colour"></div>
 <h2>Hex</h2>

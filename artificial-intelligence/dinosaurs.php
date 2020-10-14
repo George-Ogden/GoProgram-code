@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="colour classifier">
 </head><?php include "../header.php" ?>
-<section class="colour">
+<section class=colour>
 <?php echo image("images/dinosaur.jpg", "Dinosaur Generator", "text-darken", ["id" => "top", "text" => "<h1>Dinosaur Generator</h1>"]); ?>
 </div>
 <div class="section text">

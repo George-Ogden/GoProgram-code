@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="graph creator">
 </head><?php include "../header.php" ?>
-<section class="colour">
+<section class="colour scroll">
 <?php echo image("images/graph.jpg", "Graph Creator", "text-darken", ["id" => "top", "text" => "<h1>Graph Creator</h1>"]);  ?>
 <div class="section image">
 <div class='text'>

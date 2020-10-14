@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="artificial intelligence">
 </head><?php include "../header.php" ?>
-<section class="colour">
+<section class="colour scroll">
 <?php echo image("images/brain.jpg", "Intelligence", "text-darken", ["id" => "top", "text" => "<h1>Artificial Intelligence</h1>"]);
 echo image("images/network.jpg", "Neural Network", "text", ["text" => "<p>Welcome to an array of projects encorporating artificial intelligence. The huge development of artificial intellegence suggest that it will be of even greater importance in the future. It is a really exciting field to be involved in.</p>"]);  ?>
 <?php echo section("Code", "<a href=code>Have a look at the code library</a> behind the artificial intelligence projects. The code is written in JavaScript so that it can be run directly in the browser and is free and openly-sourced.");

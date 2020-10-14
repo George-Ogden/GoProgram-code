@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="updates">
 </head><?php include "../header.php" ?>
-<section>
+<section class=scroll>
 <?php echo image("images/updates.jpg", "Main Image", "text-darken", ["id" => "top", "text" => "<h1>Updates</h1>"]);  ?>
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>

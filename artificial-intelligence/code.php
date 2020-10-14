@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="AI code library">
 </head><?php include "../header.php" ?>
-<section class="colour showcase">
+<section class="colour showcase scroll">
 <?php echo image("images/library.jpg", "Library", "text-darken", ["id" => "top", "text" => "<h1>AI Library</h1>"]); ?>
 <div class="section text text-center">
 <p>All of the files below can be downloaded and imported. They are all required to make a neural network and are all original. It is available on GitHub and can be used freely.</p>

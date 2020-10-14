@@ -10,14 +10,14 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=fractals>
 </head><?php include "../../header.php" ?>
-<section>
+<section class=scroll>
 <?php echo image("images/mandelbrot.jpg", "The Mandelbrot Set", "text-darken", ["id" => "top", "text" => "<h1>Fractals</h1>"]); ?>
 <div class="section text">
 <h2>From Wikipedia</h2>
 <?php echo json_decode(file_get_contents("https://en.wikipedia.org/api/rest_v1/page/summary/Fractal"), true)["extract_html"]; ?>
 </div>
 <div class="section image">
-<div class="text">
+<div class=text>
 <p>Welcome to the home of fractals. Enjoy an array of various exciting and interesting shapes. These fractals range from very famous to very original, but all share the same ideas of recursion and self-similarity.</p>
 </div><?php echo image("../images/fractals.jpg", "A collage of fractals"); ?>
 </div>

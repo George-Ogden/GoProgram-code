@@ -30,6 +30,7 @@
 <h2>Lesson Videos</h2>
 <?php echo video("https://youtube.com/embed/a4wymMoq_kc?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D") ?>
 </div>
+<?php include "../footer.php" ?>
 </section>
-<?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../scripts.php" ?>
 </html>

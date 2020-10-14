@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="colour classifier">
 </head><?php include "../header.php" ?>
-<section class="colour">
+<section class=colour>
 <div class="section text py-0 border border-dark border-bottom" id="top">
 <h1 class="text-right">Colour&nbsp;</h1>
 <h1 class="text-left bg-dark text-white">&nbsp;Classifier</h1>

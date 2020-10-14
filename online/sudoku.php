@@ -11,8 +11,8 @@
 <meta name=subject content="sudoku solver">
 </head><?php include "../header.php" ?>
 <section>
-<div class="section" id=top>
-<h1 class="colour">Sudoku Solver</h1>
+<div class=section id=top>
+<h1 class=colour>Sudoku Solver</h1>
 </div>
 <form class="mb-5">
 <div id=valid>Invalid Sudoku!</div>

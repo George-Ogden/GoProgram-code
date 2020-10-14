@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=about>
 </head><?php include "../header.php" ?>
-<section>
+<section class=scroll>
 <?php echo image("../images/home.jpg", "Main Image", "text", ["id" => "top", "text" => "<h1 class='colour'>About</h1>"]);  ?>
 <div id=main class="section text">
 <h2>Welcome</h2>

@@ -141,6 +141,12 @@ RewriteRule ^artificial\-intelligenceclassifier$ "\/artificial\-intelligence\/cl
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^artificial\-intelligencecode$ "\/artificial\-intelligence\/code" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^artificial\-intelligence\/dinosaur$ "\/artificial\-intelligence\/dinosaurs" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^dinosaur$ "\/artificial\-intelligence\/dinosaurs" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^dinosaurs$ "\/artificial\-intelligence\/dinosaurs" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^fractals\/?(.*)$ "\/turtle\/fractals$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^Online\/?(.*)$ "\/online$1" [R=301,L]

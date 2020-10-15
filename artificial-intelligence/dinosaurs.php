@@ -27,5 +27,5 @@
 <p class="text-center display-3 container" id=output><span class="typed font-weight-bold"></span><span class="generated font-weight-light"></span></p>
 </div>
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
-<script src=dinosaurs.js?v=2></script>
+<script src=dinosaurs.js?v=3></script>
 </html>

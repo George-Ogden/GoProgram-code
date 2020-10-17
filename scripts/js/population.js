@@ -98,4 +98,3 @@ class Population {
         return population;
     }
 }
-module.exports = Population

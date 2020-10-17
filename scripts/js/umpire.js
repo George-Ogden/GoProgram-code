@@ -86,4 +86,3 @@ class Umpire {
         return a;
     }
 }
-module.exports = Umpire

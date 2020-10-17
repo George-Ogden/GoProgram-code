@@ -25,7 +25,7 @@ class Gamer extends Player {
         super(umpire,max_depth)
         this.network = network
         this.mirror = connect4_mirroring
-    }/*
+    }
     mirror(boards) {
         for (let i in boards) {
             for (let j in boards) {
@@ -45,9 +45,8 @@ class Gamer extends Player {
                 }
             }
         }
-    }*/
+    }
     evaluate(board) {
         return this.network.forward_propagate(Matrix.flatten(board)).data[0][0]
     }
 }
-module.exports = Gamer;

@@ -106,11 +106,3 @@ class Noughts_and_Crosses extends Umpire {
         return 0;
     }
 }
-// let umpire = new Noughts_and_Crosses(7, 4);
-// let player1 = new Player(umpire,5);
-// let player2 = new Player(umpire,5 );
-// player1.mirror = connect4_mirroring
-// player2.mirror = connect4_mirroring
-// console.log(umpire.play(player1, player2))
-module.exports = Noughts_and_Crosses;
-

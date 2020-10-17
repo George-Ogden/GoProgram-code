@@ -377,4 +377,3 @@ class Matrix {
         return [matrix.subsection(0,0,n),matrix.subsection(n,0,matrix.cols-n)]
     }
 }
-module.exports = Matrix;

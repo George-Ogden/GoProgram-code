@@ -53,27 +53,5 @@ class Gamers extends Population {
 
         return gamers
     }
-    static load(name=type){
-        return Gamers.from_string(eval("(" + fs.readFileSync(name+".json").toString() + ")"))
-    }
-    save(name = this.type){
-        fs.writeFileSync(name+".json",JSON.stringify(this))
-    }
       
-}
-let p = Gamers.load("players")
-// const umpire = new Noughts_and_Crosses(7, 4);
-// let p = new Gamers(40,umpire,1,5)
-/*
-let p1 = new Gamer(p.population[0],umpire,4)
-let p2 = new Gamer(p.population[1],umpire,4)
-console.log(umpire.spectate(p1,p2))
-exit(0)
-*/
-p.save("players")
-let x = 0
-while (true){
-    p.reproduce(1)
-    p.save("players")
-    console.log(++x)
 }

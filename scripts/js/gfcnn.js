@@ -56,4 +56,3 @@ class Genetic_Fully_Connected_Neural_Network extends Genetic_Neural_Network {
         return output;
     }
 }
-module.exports = Genetic_Fully_Connected_Neural_Network

@@ -33,12 +33,6 @@ class Genetic_Neural_Network {
         //return results
         return network1.mutate(0.02)
     }
-    static load(type,name=type){
-        return eval(type).from_string(eval("(" + fs.readFileSync(name+".json").toString() + ")"))
-    }
-    save(name = this.type){
-        fs.writeFileSync(name+".json",JSON.stringify(this))
-    }
     copy() {
         //create network from string of self
         return eval(this.type).from_string(eval("(" + JSON.stringify(this) + ")"));
@@ -54,4 +48,3 @@ class Genetic_Neural_Network {
         return JSON.stringify(copy)
     }
 }
-module.exports = Genetic_Neural_Network

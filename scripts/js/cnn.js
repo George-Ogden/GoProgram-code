@@ -9,9 +9,6 @@ class CNN_2 extends Combined_Network {
         new Fully_Connected_Network(Math.ceil((Math.ceil((inputsx-(convoluting1x-1)*convoluting1n)/pooling1x)-(convoluting2x-1)*convoluting2n)/pooling2x)*Math.ceil((Math.ceil((inputsy-(convoluting1y-1)*convoluting1n)/pooling1y)-(convoluting2y-1)*convoluting2n)/pooling2y)*colours,connectedl,connectedw,connectedo,"swish",0.01), 
         new Softmax(connectedo,outputs,"sigmoid")],"CNN_2")
     }
-    static load(type,name=type){
-        return eval(type).from_string(eval("(" + fs.readFileSync(name+".json").toString() + ")"))
-    }
     static from_string(dict) {
         //create a copy of self
         return new Combined_Network(dict.networks.map(x => eval(x.type).from_string(x)),"CNN_2")

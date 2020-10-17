@@ -5,7 +5,7 @@ class Player {
     }
     move(board, aim) {
         let best = this.check(Matrix.multiply(board,aim), 1, 1);
-        best =/* Umpire.shuffle(Object.keys(best))*/Object.keys(best).reduce((max, move) => (best[max] > best[move] ? max : move), 0);
+        best = Object.keys(best).reduce((max, move) => (best[max] > best[move] ? max : move), 0);
         let move = Matrix.blank(board.rows, board.cols);
         move.data[best % board.rows][Math.floor(best / board.rows)] = aim;
         return move;
@@ -83,9 +83,8 @@ class Player {
                 }
             }
         }
-    }/*
+    }
     evaluate() {
         return Math.random();
-    }*/
+    }
 }
-module.exports = Player;

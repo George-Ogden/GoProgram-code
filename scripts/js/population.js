@@ -1,9 +1,3 @@
-const Noughts_and_Crosses = require("./Noughts_and_Crosses");
-const Matrix = require("./Matrix");
-const Umpire = require("./Umpire");
-const Player = require("./Player");
-const Genetic_Fully_Connected_Neural_Network = require("./GFCNN");
-const Convoluting = require("./Convolutional Layers")
 class Population {
     constructor(number, inputs, umpire, hidden_layers, layer_thickness, activation_function="tanh") {
         this.population = [];

@@ -33,25 +33,29 @@ class Umpire {
 
         return 0
     }
-    challenge(computer, starter = Math.random() > 0.5 ? 1 : 0) {
+    async challenge(computer, starter = Math.random() > 0.5 ? 1 : 0) {
         this.board.reset()
         //loop through number of points depending on who starts
         for (let i = -starter; i < this.size * this.size - starter; i++) {
-            Matrix.map(Matrix.multiply(this.board, -1), x => x > 0 ? "X" : x < 0 ? "O" : " ").show();
+            displayBoard(this.board)
             //decide which player plays
             if (i % 2 == 0) {
                 //add move to board
-                this.board.add(computer.move())
+                this.board.add(computer.move(this.board,1))
             } else {
-                //display board
-                let move = prompt("Your move!")
-                this.board.data[0][move] = -1
+                // display board
+                let move = new Promise(resolve => move_promise = resolve)
+                move = await move
+                console.log(move)
+                this.board.data[Math.floor(move[0])][move[1]] = -1
             }
             let state = this.check_state()
             if (state != 0) {
+                displayBoard(this.board)
                 return state
             }
         }
+        displayBoard(this.board)
         return 0
     }
     spectate(computer1, computer2, starter = Math.random() > 0.5 ? 1 : 0) {

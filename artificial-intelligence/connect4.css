@@ -1,0 +1,30 @@
+#board {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+td {
+    border: 2px solid;
+    padding: 0;
+    height: 14.3%;
+    width: 14.3%;
+}
+table {
+    border: 5px solid;
+    border-collapse: collapse;
+}
+button {
+    cursor: pointer;
+    font-size: 2em;
+    width: 50%;
+    margin: 50px auto;
+    display: block;
+    background: var(--secondary-dark);
+    color: #fff;
+    border: none;
+}
+#valid {
+    display: none;
+    font-size: 250%;
+    text-align: center;
+}

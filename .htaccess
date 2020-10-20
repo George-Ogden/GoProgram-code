@@ -30,14 +30,12 @@ RewriteRule ^([^X]*)X(.*)$ $1x$2
 RewriteRule ^([^Y]*)Y(.*)$ $1y$2
 RewriteRule ^([^Z]*)Z(.*)$ $1z$2
 RewriteCond %{ENV:HASCAPS} TRUE
-RewriteCond %{HTTP_HOST} ^goprogram\.co\.uk$
-RewriteRule ^/?$ "\/index\.html" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about$ "\/about\/index\.html" [R=301,L]
+RewriteRule ^about$ "\/about\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^online$ "\/online\/index\.html" [R=301,L]
+RewriteRule ^online$ "\/online\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^fractals\/index$ "\/turtle\/fractals\/index\.html" [R=301,L]
+RewriteRule ^fractals\/index$ "\/turtle\/fractals\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^cv$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -133,9 +131,9 @@ RewriteRule ^ai\/?(.*)$ "\/artificial\-intelligence\/$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^artificial_intelligence\/?(.*)$ "\/artificial\-intelligence$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligence$ "\/artificial\-intelligence\/index\.html" [R=301,L]
+RewriteRule ^artificial\-intelligence$ "\/artificial\-intelligence\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^artificial\-intelligenceindex$ "\/artificial\-intelligence\/index\.html" [R=301,L]
+RewriteRule ^artificial\-intelligenceindex$ "\/artificial\-intelligence\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^artificial\-intelligenceclassifier$ "\/artificial\-intelligence\/classifier" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -231,7 +229,7 @@ RewriteRule ^programs\/?(.*)$ "\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^Programs\/?(.*)$ "\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software$ "\/software\/index\.html" [R=301,L]
+RewriteRule ^software$ "\/software\/index" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^software\/birthday$ "\/software\/birthday\-reminder" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -323,43 +321,43 @@ RewriteRule ^installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/mypps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^tutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^tutorial$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about\/tutorial$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/python\-tutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/python\-tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/python_tutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/python_tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/pythontutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/pythontutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^pythontutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^pythontutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python\-tutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^python\-tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python_tutorials$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^python_tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understanding_python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understanding_python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understanding\-python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understanding\-python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^understandingpython$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^understandingpython$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understandingpython$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understandingpython$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understanding\-python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understanding\-python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/understanding_python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^about\/understanding_python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learnpython$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learnpython$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn_python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn_python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^learn\-python$ "\/about\/tutorials\.html" [R=301,L]
+RewriteRule ^learn\-python$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^artificial\-intelligence\/index$ "\/artificial\-intelligence\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -398,6 +396,8 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^git$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^index$ "\/" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]

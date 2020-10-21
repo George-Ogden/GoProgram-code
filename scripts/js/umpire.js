@@ -46,12 +46,11 @@ class Umpire {
                 // display board
                 let move = new Promise(resolve => move_promise = resolve)
                 move = await move
-                console.log(move)
                 this.board.data[Math.floor(move[0])][move[1]] = -1
             }
             let state = this.check_state()
+            displayBoard(this.board)
             if (state != 0) {
-                displayBoard(this.board)
                 return state
             }
         }

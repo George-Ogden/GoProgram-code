@@ -83,31 +83,35 @@ const player = new Gamer(
         score: 43,
     }),
     umpire,
-    3
+    5
 );
-let move_promise
+let move_promise;
 function displayBoard(board) {
-    for (let i = 0; i < board.rows; i ++){
-        for (let j = 0; j < board.cols; j ++){
-            let x = board.data[i][j]
-            $(`[row=${i}][col=${j}].box`).text(x > 0 ? "X" : x < 0 ? "O" : "")
+    for (let i = 0; i < board.rows; i++) {
+        for (let j = 0; j < board.cols; j++) {
+            let x = board.data[i][j];
+            if (x != 0) {
+                $(`[row=${i}][col=${j}].box circle`).css("background",x < 0 ? "var(--secondary-light)" : "var(--base)");
+                $(`[row=${i}][col=${j}].box`).css("background","var(--dark)");
+                if (!$(`[row=${i}][col=${j}].box`).hasClass("taken")){
+                    $(`[row=${i}][col=${j}].box`).addClass("taken")
+                }
+            }
         }
     }
     Matrix.map(board, (x) => (x > 0 ? "X" : x < 0 ? "O" : " ")).show();
 }
-umpire.challenge(player)
+umpire.challenge(player);
 function resize() {
     $("#board").height($("#board").width());
 }
 $(window).resize(resize), resize();
-$("td.box").on("mouseover",function(){
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background","var(--primary-light)")
-})
-$("td.box").on("click",function(){
-    console.log(1)
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background","var(--primary-light)")
-    move_promise([$(this).attr("row"),$(this).attr("col")])
-})
-$("td.box").on("mouseout",function(){
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background","#fff")
-})
+$("td.box").on("mouseover", function () {
+    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--secondary)");
+});
+$("td.box").on("click", function () {
+    move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((a, b) => Math.max(a, $(b).attr("row") || 0), 0), $(this).attr("col")]);
+});
+$("td.box").on("mouseout", function () {
+    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--dark)");
+});

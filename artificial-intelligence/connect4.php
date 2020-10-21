@@ -9,7 +9,8 @@
 <meta name=keywords content="">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="">
-</head><?php include "../header.php" ?><table id=board>
+</head><?php include "../header.php" ?>
+<div class="main"><table id=board>
 <?php
 for ($i = 0; $i < 7; $i++) {
 echo "<tr>";
@@ -19,6 +20,9 @@ echo "<td class=box row=$i col=$j><circle></circle></td>";
 echo "</tr>";
 } ?>
 </table>
+    <div class="cover d-none w-100 h-100">
+        <div id="spinner" class="m-auto"></div>
+    </div></div>
 <script src=/scripts/js/activation_functions.js></script>
 <script src=/scripts/js/matrix.js></script>
 <script src=/scripts/js/gnn.js></script>

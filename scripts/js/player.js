@@ -3,14 +3,19 @@ class Player {
         this.umpire = umpire;
         this.max_depth = max_depth;
     }
-    move(board, aim) {
-        let best = this.check(Matrix.multiply(board,aim), 1, 1);
-        best = Object.keys(best).reduce((max, move) => (best[max] > best[move] ? max : move), 0);
+    async move(board, aim) {
         let move = Matrix.blank(board.rows, board.cols);
-        move.data[best % board.rows][Math.floor(best / board.rows)] = aim;
+        if (board.equals(Matrix.blank(board.rows, board.cols))){
+            move.data[board.cols-1][(board.rows-1)/2] = aim
+        } else {
+            let best = await this.check(Matrix.multiply(board,aim), 1, 1);
+            best = Object.keys(best).reduce((max, move) => (best[max] > best[move] ? max : move), 0);
+            move.data[best % board.rows][Math.floor(best / board.rows)] = aim;
+        }
         return move;
     }
-    check(board, player, depth) {
+    async check(board, player, depth) {
+        await new Promise(r => setTimeout(r, 0))
         let state;
         if ((state = this.umpire.check_state(board)) != 0) {
             return state;
@@ -34,7 +39,7 @@ class Player {
             let choice = {};
             let best = -1;
             for (let i in moves) {
-                choice[i] = this.check(moves[i], -1, depth + 1);
+                choice[i] = await this.check(moves[i], -1, depth + 1);
                 best = Math.max(best, choice[i]);
 
                 if (best == 1) {
@@ -55,7 +60,7 @@ class Player {
             let choice = {};
             let best = 1;
             for (let i in moves) {
-                choice[i] = this.check(moves[i], 1, depth + 1);
+                choice[i] = await this.check(moves[i], 1, depth + 1);
                 best = Math.min(best, choice[i]);
                 if (best == -1) {
                     break;

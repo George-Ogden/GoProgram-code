@@ -1,4 +1,5 @@
-const umpire = new Noughts_and_Crosses(7, 4);
+const size = 7;
+const umpire = new Noughts_and_Crosses(size, 4);
 const player = new Gamer(
     Genetic_Fully_Connected_Neural_Network.from_string({
         type: "Genetic_Fully_Connected_Neural_Network",
@@ -83,23 +84,40 @@ const player = new Gamer(
         score: 43,
     }),
     umpire,
-    5
+    1
 );
 let move_promise;
-function displayBoard(board) {
+let thinking = false;
+function endGame(){
+    finishMove()
+    thinking = true
+}
+function finishMove(){
+    thinking = false
+    $(".cover").addClass("d-none")
+    $(".cover").removeClass("darken d-flex")
+}
+async function displayBoard(board) {
     for (let i = 0; i < board.rows; i++) {
         for (let j = 0; j < board.cols; j++) {
             let x = board.data[i][j];
             if (x != 0) {
-                $(`[row=${i}][col=${j}].box circle`).css("background",x < 0 ? "var(--secondary-light)" : "var(--base)");
-                $(`[row=${i}][col=${j}].box`).css("background","var(--dark)");
-                if (!$(`[row=${i}][col=${j}].box`).hasClass("taken")){
-                    $(`[row=${i}][col=${j}].box`).addClass("taken")
+                $(`[row=${i}][col=${j}].box circle`).css({ background: x < 0 ? "red" : "blue", opacity: 1 });
+                $(`[row=${i}][col=${j}].box`).css("background", "var(--primary-light)");
+                if (!$(`[row=${i}][col=${j}].box`).hasClass("taken")) {
+                    $(`[row=${i}][col=${j}].box`).addClass("taken");
                 }
             }
         }
     }
-    Matrix.map(board, (x) => (x > 0 ? "X" : x < 0 ? "O" : " ")).show();
+}
+async function animateMove(row, col) {
+    row = parseInt(row);
+    distance = $("#board").offset().top - $(`[row=${row}][col=${col}].box circle`).offset().top;
+    $(`[row=${row}][col=${col}].box circle`).css("transform", `translate(0,${distance}px`);
+    await new Promise((r) => setTimeout(r, 100));
+    $(`[row=${row}][col=${col}].box circle`).css("transition", `transform ${Math.sqrt(-1 * distance) / 100}s cubic-bezier(.3,0,.69,.17)`);
+    $(`[row=${row}][col=${col}].box circle`).css("transform", "translate(0,0)");
 }
 umpire.challenge(player);
 function resize() {
@@ -107,11 +125,28 @@ function resize() {
 }
 $(window).resize(resize), resize();
 $("td.box").on("mouseover", function () {
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--secondary)");
+    if (!thinking && $(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0) {
+        $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--base)");
+        $(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((a, b) => Math.max(a, $(b).attr("row") || 0),0)}][col=${$(this).attr("col")}] circle`).css({
+            opacity: "0.3",
+            background: "red",
+        });
+    }
 });
 $("td.box").on("click", function () {
-    move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((a, b) => Math.max(a, $(b).attr("row") || 0), 0), $(this).attr("col")]);
+    if (!thinking && $(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0) {
+        move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((a, b) => Math.max(a, $(b).attr("row") || 0),0), $(this).attr("col")]);
+        thinking = true;
+        $(".cover").removeClass("d-none")
+        $(".cover").addClass("darken d-flex")
+        $(`.box:not(.taken) circle`).css("background", "transparent");
+        $(`.box`).css("background", "var(--primary-light)");
+    }
 });
 $("td.box").on("mouseout", function () {
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--dark)");
+    if ($(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0) {
+    $(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--primary-light)");
+    $(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((a, b) => Math.max(a, $(b).attr("row") || 0),0)}][col=${$(this).attr("col")}] circle`).css({
+        background: "transparent",
+    });}
 });

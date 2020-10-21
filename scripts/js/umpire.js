@@ -30,7 +30,6 @@ class Umpire {
             }
 
         }
-
         return 0
     }
     async challenge(computer, starter = Math.random() > 0.5 ? 1 : 0) {
@@ -41,20 +40,26 @@ class Umpire {
             //decide which player plays
             if (i % 2 == 0) {
                 //add move to board
-                this.board.add(computer.move(this.board,1))
+                let move = await computer.move(this.board,1)
+                finishMove()
+                this.board.add(move)
+                animateMove(...move.find(1))
             } else {
                 // display board
                 let move = new Promise(resolve => move_promise = resolve)
                 move = await move
                 this.board.data[Math.floor(move[0])][move[1]] = -1
+                animateMove(...move)
             }
             let state = this.check_state()
             displayBoard(this.board)
             if (state != 0) {
+                endGame()
                 return state
             }
         }
         displayBoard(this.board)
+        endGame()
         return 0
     }
     spectate(computer1, computer2, starter = Math.random() > 0.5 ? 1 : 0) {

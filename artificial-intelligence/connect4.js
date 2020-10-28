@@ -84,7 +84,7 @@ const player = new Gamer(
         score: 43,
     }),
     umpire,
-    1
+    4
 );
 let move_promise;
 let thinking = false;

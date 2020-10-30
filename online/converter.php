@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section class=scroll>
 <div class=section id=top>
-<h1 class=colour>Colour Converter</h1>
+<h1 class="colour pad-1">Colour Converter</h1>
 </div>
 <div class="section image">
 <div class=text>

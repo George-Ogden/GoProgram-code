@@ -39,6 +39,6 @@
 </select><input id=time placeholder="Time" time=60></div>
 </div>
 </div>
-<script src=timings.js?v=3></script>
+<script src=timings.js?v=4></script>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

@@ -19,24 +19,24 @@
 <h2>Laps (400m)</h2>
 <div><input id=lap value=80s placeholder="Lap time"></div>
 <h2>Kilometres</h2>
-<div><input id=km placeholder="Kilometre time"></div>
+<div><input id=km placeholder="Kilometre time" time=60></div>
 <h2>Miles</h2>
-<div><input id=mi placeholder="Mile time"></div>
+<div><input id=mi placeholder="Mile time" time=60></div>
 <h2>Custom Distance</h2>
-<div><select class="mdb-select md-form">
-  <option value="" disabled selected>Distance</option>
+<div><select class="mdb-select md-form" id=distance>
+  <option value="" disabled>Distance</option>
   <option value=100>100m</option>
   <option value=200>200m</option>
   <option value=300>300m</option>
   <option value=800>800m</option>
-  <option value=1500>1500m</option>
-  <option value=3000>3000m / 3km</option>
-  <option value=5000>5000m / 5km</option>
-  <option value=10000>1000m / 10 km</option>
-  <option value=16093>10 miles</option>
-  <option value=21081>Half Marathon</option>
-  <option value=42162>Marathon</option>
-</select><input id=time placeholder="Time"></div>
+  <option value=1500 selected time=60>1500m</option>
+  <option value=3000 time=60>3000m / 3km</option>
+  <option value=5000 time=60>5000m / 5km</option>
+  <option value=10000 time=60>1000m / 10 km</option>
+  <option value=16093 time=60>10 miles</option>
+  <option value=21081 time=60>Half Marathon</option>
+  <option value=42162 time=3600>Marathon</option>
+</select><input id=time placeholder="Time" time=60></div>
 </div>
 </div>
 <script src=timings.js></script>

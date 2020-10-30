@@ -1,9 +1,1 @@
-const distances = {
-    "mi":1609.25,
-    "km":1000,
-    "lap":400,
-}
-function run(input){
-    
-}
-name(), $("#colourName").on("input", name), $("#cmykColour").on("input", cmyktohex), $("#rgbColour").on("input", rgbtohex), $("#hslColour").on("input", hsltohex), $("#hexColour").on("input", hex);
+String.prototype.reverse=function(){return this.split("").reverse().join("")};const distances={mi:1609.3,km:1e3,lap:400};function parse(t,e){return t.match(/^ *\d+ *s *$/)?(console.log(t),parseInt(t)):t.match(/^ *\d+ *$/)?(console.log($(`#${e}`).attr("time")),$(`#${e}`).attr("time")?parseInt(t)*parseInt($(`#${e}`).attr("time")):parseInt(t)):t.match(/^( *\d+ *\:){1,2} *\d+ *$/)?t.split(":").reverse().reduce((t,e,n)=>t+e*60**n,0):void 0}function format(t,e){if(t>215999)return"too long";switch(e){case"lap":return t.toFixed(0);default:let n="";for(;t>1;)n=":"+("00"+Math.floor(t%60)).reverse().substr(0,2).reverse()+n,t=Math.floor(t/60);return"0"==n[1]?n.substr(2):n.substr(1)}}function run(t){let e=0,n=parse($(`#${t}`).val(),t);if(!isNaN(n)){for(distance in e=Object.keys(distances).includes(t)?distances[t]/n:parseInt($("#distance").val())/n,distances)console.log(t),distance!=t&&$(`#${distance}`).val(format(distances[distance]/e,distance));"time"!=t&&$("#time").val(format(parseInt($("#distance").val())/e))}}run("lap"),$("#lap").on("input",()=>run("lap")),$("#mi").on("input",()=>run("mi")),$("#km").on("input",()=>run("km")),$("#time").on("input",()=>run("time")),$("#distance").on("input",()=>($("#time").attr("time",$("#distance :selected").attr("time")||"1"),run("time")));

@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<title>Colour Converter</title>
+<title>Timings Converter</title>
 <?php include "../main.php" ?>
 <link rel=stylesheet href=timings.css?v=1>
 <?php include "../meta.php" ?>
-<!-- <meta name=description content="Play with this colour converter or use it as a tool in design. It will convert colours into different formats from hex to HLS.">
-<meta name=keywords content="colour converter"> -->
+<meta name=description content="Convert timings for different running distances to figure out what pace you should run at.">
+<meta name=keywords content="running time converter calculator">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="colour converter">
+<meta name=subject content="timings converter">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class=colour>Timings Converter</h1>
+<h1 class="colour pad-1">Timings Converter</h1>
 </div>
 <div class="section image">
 <div class=text>
@@ -34,8 +34,8 @@
   <option value=5000 time=60>5000m / 5km</option>
   <option value=10000 time=60>1000m / 10 km</option>
   <option value=16093 time=60>10 miles</option>
-  <option value=21081 time=60>Half Marathon</option>
-  <option value=42162 time=3600>Marathon</option>
+  <option value=21097 time=60>Half Marathon</option>
+  <option value=42195 time=3600>Marathon</option>
 </select><input id=time placeholder="Time" time=60></div>
 </div>
 </div>

@@ -1,1 +1,4 @@
 input{border:5px solid;font-size:2em;margin:5px auto;text-align:center;width:100%}#output{border:5px solid;min-height:300px}.section.image{padding:100px 0!important;flex-direction:row!important}input::selection{color:#fff;background-color:#000}@media (max-width:1000px){.section.image{padding:50px 0!important}#output{margin:50px 0 0}}
+h2 {
+    margin-top: 50px!important;
+}

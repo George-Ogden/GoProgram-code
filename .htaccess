@@ -29,6 +29,7 @@ RewriteRule ^([^W]*)W(.*)$ $1w$2
 RewriteRule ^([^X]*)X(.*)$ $1x$2
 RewriteRule ^([^Y]*)Y(.*)$ $1y$2
 RewriteRule ^([^Z]*)Z(.*)$ $1z$2
+RewriteRule ^([^_]*)_(.*)$ $1_$2
 RewriteCond %{ENV:HASCAPS} TRUE
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about$ "\/about\/index" [R=301,L]
@@ -394,6 +395,31 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about\/github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^git$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^timings$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^times$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/times$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^timing-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/timing-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^time-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/time-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^times-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/times-converter$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^pacing$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/pacing$ "\/online\/timings" [R=301,L]
+RewriteRule ^pacer$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^online/pacer$ "\/online\/timings" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

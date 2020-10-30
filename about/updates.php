@@ -15,6 +15,7 @@
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>
-<?php echo section("Dinosaur Generator", "This new page uses and n-gram-like algorithm to generate realistic dinosaur names. <a href=/ai/dinosaurs>Check it out</a> and have a play with the cool feature.","../artificial-intelligence/images/dinosaur.jpg");
+<?php echo section("Timings Converter", "This combines my passion for running and programming, as it converts paces between different distances for athletics. It will give pacing for laps, kilometres and miles for different competitive distances. <a href=timings>Check it out!</a>", "/online/images/track.jpg");
+echo section("Dinosaur Generator", "This new page uses and n-gram-like algorithm to generate realistic dinosaur names. <a href=/ai/dinosaurs>Check it out</a> and have a play with the cool feature.","../artificial-intelligence/images/dinosaur.jpg");
 echo section("Redesign", "The site has been redesigned to transform the look. After taking a visual design course, I applied what I learnt to create a clean, more modern look with some cool new features.","images/paint.jpg"); ?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?></html>

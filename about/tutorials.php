@@ -12,8 +12,8 @@
 </head><?php include "../header.php" ?>
 <section>
 <?php echo image("images/learn.jpg", "Learning", "text-darken", ["id" => "top", "text" => "<h1>Understanding Python</h1>"]);  ?>
-<div class="section text">
-<h3 class="font-italic colour scale">"Knowledge has no value unless you share it".</h3>
+<div class="section text flex-row">
+<h3 class="font-italic colour scale pad-1">"Knowledge has no value unless you share it".</h3>
 <p>Therefore, I am giving away Python tutorials to teach people an invaluable skill - programming. Whether you want to speed up mundane tasks or make a career out of writing software, Python is the best language to start with. Hopefully, the code on this website is evidence that I know what I am doing, and I hope that you can develop an awesome skill too.</p>
 </div>
 <div class="section icons">

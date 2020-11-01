@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=software>
 </head><?php include "../header.php" ?>
-<section class="colour scroll">
+<section class="colour">
 <?php echo image("images/software-development.jpg", "Software Development", "text-darken", ["id" => "top", "text" => "<h1>Software</h1>"]);  ?>
 <div class="section text text-center">
 <p>Welcome to a range of software that you can just download and run. You can view the source code or just install with an installer.

@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="apps">
 </head><?php include "../header.php" ?>
-<section class="colour scroll">
+<section class="colour">
 <?php echo image("images/apps.jpg", "Mobile Phones", "text-darken", ["id" => "top", "text" => "<h1>Apps</h1>"]);  ?>
 <div class="section icons">
 <div class="icon">

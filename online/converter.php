@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="colour converter">
 </head><?php include "../header.php" ?>
-<section class=scroll>
+<section>
 <div class=section id=top>
 <h1 class="colour pad-1">Colour Converter</h1>
 </div>

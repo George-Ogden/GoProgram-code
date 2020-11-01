@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="online projects">
 </head><?php include "../header.php" ?>
-<section class="colour scroll">
+<section class="colour">
 <?php echo image("images/code.jpg", "Computer Code", "text-darken", ["id" => "top", "text" => "<h1>Online Projects</h1>"]);  ?>
 <div class="section text text-center">
 <p>Welcome to an array of online projects. View a variety of projects in browser. They have been written in HTML, CSS and JS to create a fun, interactive display.

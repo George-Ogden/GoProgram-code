@@ -11,7 +11,7 @@
 <meta name=subject content="Python turtle">
 <meta name=viewport content="width=device-width,initial-scale=1">
 </head><?php include "../header.php" ?>
-<section class="colour scroll">
+<section class="colour">
 <?php echo image("images/collage.jpg", "Collage", "text-darken", ["id" => "top", "text" => "<h1>Turtle Projects</h1>"]);  ?>
 <hr>
 <?php echo image("images/collage (landscape).jpg", "Collage", "text-darken", ["text" => "<p>Welcome to the home of turtle projects. View an artistic array of Python programming done using the turtle library and be impressed by some artistic programming.</p>"]);  ?>

@@ -32,13 +32,13 @@
 <option value=1500m id=1500m time=60>1500m</option>
 <option value=3km id=3km time=60>3000m / 3 km</option>
 <option value=5km id=5km time=60>5000m / 5 km</option>
-<option value=10km id=10km time=60>1000m / 10 km</option>
+<option value=10km id=10km time=60>10000m / 10 km</option>
 <option value=10-miles id=10-miles time=60>10 miles</option>
 <option value=half id=half time=60>Half Marathon</option>
 <option value=marathon id=marathon time=3600>Marathon</option>
 </select><input id=time placeholder="Time" time=60></div>
 </div>
 </div>
-<script src=timings.js?v=4></script>
+<script src=timings.js?v=5></script>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

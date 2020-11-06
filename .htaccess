@@ -435,6 +435,8 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

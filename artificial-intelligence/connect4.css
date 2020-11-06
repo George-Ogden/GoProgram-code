@@ -32,13 +32,13 @@ circle {
     width: 90%;
     height: 90%;
     display: table;
-    margin: auto
+    margin: auto;
 }
 .main {
     position: relative;
     max-width: 800px;
     width: 90%;
-    margin: auto
+    margin: auto;
 }
 .cover {
     position: absolute;

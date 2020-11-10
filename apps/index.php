@@ -21,6 +21,6 @@
 echo section("Four Squares", "Repeat the pattern to test and improve your working memory, an invaluable skill closely linked to IQ and academic success. <a href=https://play.google.com/store/apps/details?id=uk.co.goprogram.workingmemorytrainer>This app is great to use every day.</a>");
 echo section("What's Installed?", "<a href=https://play.google.com/store/apps/details?id=uk.co.goprogram.myapps>Find out everything that is installed on your device</a>, from the applications that you use daily to the apps you didn't know existed.", "images/whats installed.jpg", "installed");
 ?>
-</section>
-<?php include "../footer.php" ?><?php include "../scripts.php" ?>
+<?php include "../footer.php" ?>
+</section><?php include "../scripts.php" ?>
 </html>

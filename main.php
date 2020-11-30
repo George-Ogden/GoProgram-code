@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=22><?php
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=23><?php
 function image($src, $description, $type = "", $data = array())
 {
 if (strpos($type, "text") !== false) {
@@ -32,7 +32,7 @@ if ($image == "") {
 $image = "images/" . strtolower($title) . ".jpg";
 }
 }
-return "<div class='section image' id='$id'><div class='text'><h2 class=pad-1>$title</h2><p>$description</p></div>" . image($image, $title, "floor") . "</div>";
+return "<div class='section image' id='$id'><div class='text'><h2 class=pb-5>$title</h2><p class=pb-5>$description</p></div>" . image($image, $title, "floor") . "</div>";
 }
 function source($git, $code = "")
 {

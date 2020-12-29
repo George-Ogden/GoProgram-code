@@ -110,21 +110,9 @@ RewriteRule ^git$ "https\:\/\/github\.com\/George\-Ogden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^github$ "https\:\/\/github\.com\/George\-Ogden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^repl$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^patreon$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^give$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^donate$ "https\:\/\/patreon\.com\/goprogram" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^youtube$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^video$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^sololearn$ "https\:\/\/sololearn\.com\/Profile\/12838639" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^replit$ "https\:\/\/repl\.it\/\@GeorgeOgden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^advertisement$ "\/ads" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

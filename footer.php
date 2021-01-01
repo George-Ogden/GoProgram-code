@@ -7,4 +7,5 @@ icon("YouTube");
 icon("GitHub");
 icon("PeoplePerHour");
 icon("LinkedIn");
+icon("CodeChef");
 icon("email"); ?></footer>

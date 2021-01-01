@@ -412,6 +412,12 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^github$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^index$ "\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^codechef$ "https://www.codechef.com/users/george_ogden" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^competitive$ "https://www.codechef.com/users/george_ogden" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^programming$ "https://www.codechef.com/users/george_ogden" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]

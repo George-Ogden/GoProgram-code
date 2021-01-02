@@ -3,7 +3,7 @@
 <head>
 <title>Timings Converter</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=timings.css?v=1>
+<link rel=stylesheet href=online.css?v=1>
 <?php include "../meta.php" ?>
 <meta name=description content="Convert timings for different running distances to figure out what pace you should run at.">
 <meta name=keywords content="running time converter calculator">
@@ -14,15 +14,15 @@
 <div class=section id=top>
 <h1 class="colour pad-1">Timings Converter</h1>
 </div>
-<div class="section image">
-<div class=text>
-<h2>Laps (400m)</h2>
+<div class="section interactive">
+<div class=main>
+<h2 class=mt-5>Laps (400m)</h2>
 <div><input id=lap value=80s placeholder="Lap time"></div>
-<h2>Kilometres</h2>
+<h2 class=mt-5>Kilometres</h2>
 <div><input id=km placeholder="Kilometre time" time=60></div>
-<h2>Miles</h2>
+<h2 class=mt-5>Miles</h2>
 <div><input id=mi placeholder="Mile time" time=60></div>
-<h2>Custom Distance</h2>
+<h2 class=mt-5>Custom Distance</h2>
 <div><select class="mdb-select md-form" id=distance>
 <option value="" disabled>Distance</option>
 <option value=100m id=100m>100m</option>

@@ -52,7 +52,7 @@ apigClientFactory.newClient = function (config) {
     }
 
     // extract endpoint and path from url
-    var invokeUrl = "https://31z0kcmst1.execute-api.eu-west-2.amazonaws.com/main";
+    var invokeUrl = "https://hangman.goprogram.co.uk";
     var endpoint = /(^https?:\/\/[^\/]+)/g.exec(invokeUrl)[1];
     var pathComponent = invokeUrl.substring(endpoint.length);
 
@@ -90,9 +90,9 @@ apigClientFactory.newClient = function (config) {
 
         var guessGetRequest = {
             verb: "get".toUpperCase(),
-            path: pathComponent + uritemplate("/guess").expand(apiGateway.core.utils.parseParametersToObject(params, ["clue", "used"])),
+            path: pathComponent + uritemplate("/guess").expand(apiGateway.core.utils.parseParametersToObject(params, Object.keys(params))),
             headers: "",
-            queryParams: apiGateway.core.utils.parseParametersToObject(params, ["clue", "used"]),
+            queryParams: apiGateway.core.utils.parseParametersToObject(params, Object.keys(params)),
             body: "",
         };
 

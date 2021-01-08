@@ -405,6 +405,7 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^pacing$ "\/online\/timings" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^online/pacing$ "\/online\/timings" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^pacer$ "\/online\/timings" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^online/pacer$ "\/online\/timings" [R=301,L]
@@ -418,7 +419,12 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^competitive$ "https://www.codechef.com/users/george_ogden" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^programming$ "https://www.codechef.com/users/george_ogden" [R=301,L]
-
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^hangman$ "\/ai\/hangman" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^hangman-solver$ "\/ai\/hangman" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^artificial-intelligence\/hangman-solver$ "\/ai\/hangman" [R=301,L]
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{THE_REQUEST} /([^.]+)\.htm [NC]

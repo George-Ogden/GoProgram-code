@@ -51,6 +51,6 @@ echo "<option value=$i>$i</option>";
 <script type="text/javascript" src=sdk/apigClient.js></script>
 <?php include "../footer.php" ?></section>
 <?php include "../scripts.php" ?>
-<script src=hangman.js?v=1></script>
+<script src=hangman.js?v=2></script>
 </script>
 </html>

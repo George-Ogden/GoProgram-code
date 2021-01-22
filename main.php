@@ -88,6 +88,22 @@ $piece["file"] = "";
 $selector .= "<li class='page-item text-center'><a class=page-link href='#" . str_replace(" ", "_", (str_replace("= ", "", strtolower($piece["title"])))) . "'>$piece[title]</a></li>";
 $main .= "<div class='section content code d-none' id=" . str_replace(" ", "_", (str_replace("= ", "", strtolower($piece["title"])))) . "><h2>$piece[title]</h2>" . source($piece["git"], $piece["file"]) . "</div>";
 }
-
 return str_replace_n("page-link", "'page-link selected'", $selector, 1) . "</ul></div>" . str_replace_n(" d-none", "", $main, 1);
-}?>
+}
+$pos = 1;
+function feedback($name,$quote,$p=""){
+    GLOBAL $pos;
+    $string = "<div class='section text flex-row'>";
+    if ($pos){
+        $string.= "<h2>$name</h2><h3 class='colour scale pad-1 font-italic'>\"$quote\"</h3>";
+    } else {
+        $string.= "<h3 class='colour scale pad-1 font-italic'>\"$quote\"</h3><h2>$name</h2>";
+    }
+    $pos = 1- $pos;
+    if ($p){
+        $string .= "<p>$p</p>";
+    }
+    $string .= "</div>";
+    return $string;
+}
+?>

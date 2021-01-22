@@ -196,11 +196,7 @@ RewriteRule ^ai\/colour\-classifier$ "\/artificial\-intelligence\/classifier" [R
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^work\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^freelancing\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^pph\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^freelance\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^peopleperhour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

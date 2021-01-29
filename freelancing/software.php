@@ -12,19 +12,16 @@
 <?php include "../header.php" ?>
 <link rel=stylesheet href=software.css>
 <section class="colour">
-<?php echo image("images/software.jpg", "Software Development", "text-darken", ["id" => "top", "text" => "<h1>Software Development</h1>"]);  ?>
-<div class="section text text-center">
-<p>I have completed a wide range of software development projects, and some highlights are listed below.</p>
+<?php echo image("images/software.jpg", "Software Development", "text-darken", ["id" => "top", "text" => "<h1>Software Development</h1>"]);
+echo image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>"]);?>
+<div class="section image" id=python><div class=text><h2 class=pb-5>Python</h2><p class=pb-5>Python is my main language for software development. I have an extensive knowledge of various frameworks that allows me to implement efficient and effective code to solve a variety of problems.</p></div>
+<?php echo image("images/python.jpg","Python logo","none") ?>
 </div>
-<?php 
-echo feedback("Automated Email System","Another great project completed quickly and professionally. We look forward to working with you again soon.");
-echo feedback("Software Lifecycle Management Milestone","More great python code from George! Great communication and very supportive.");
-echo feedback("SolarSteam Workflow Tasks","Highly recommend George to solve your complex python programming problems.");
-echo feedback("AWS Lambda Python Function","Excellent work from George for this small project, he delivered quick and good");
-echo feedback("User interface development","Quick turnaround with a quality output that fit the brief.");
-echo feedback("Python Development - Web Scraping and Comparisons","Fantastic, great communication and completed to a high standard");
-echo feedback("Betfair API Python Project","Fantastic, great communication and completed to a high standard");
-echo feedback("Write Python Code","...");
-?>
+<div class="section image" id=code><div class=text><h2 class=pb-5>Code</h2><p class=pb-5>All code that I produce is commented and laid out in a clear manner with obvious meaning so that anyone can follow along. It is reusable and robust so that it can be used for many problems.</p></div>
+<?php echo image("images/python-code.jpg","Python code","none") ?>
+</div>
+<div class="section image" id=code><div class=text><h2 class=pb-5>PeoplePerHour</h2><p class=pb-5>PeoplePerHour is the platform that I use for my freelancing. They have a wide range of features that make freelancing easier for buyers and freelancers. These include an escrow account, which keeps your money safe until work is complete, a rating system so that you can find the best freelancers and communications features so that we can keep in touch during work. <a href=https://www.goprogram.co.uk/pph>Have a look at my profile to see some of my previous work.</a></p></div>
+<?php echo image("/about/images/george ogden.jpg","George Ogden","floor") ?>
+</div>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

@@ -17,6 +17,5 @@
 </div>
 <?php echo section("George Ogden","I have a vision to make high-quality, automated technology services available to everyone so that the world functions better. I use my experience as a software and web developer to create websites and software that present or demonstrate the power of technology to others through clean, yet beautifully crafted code that solves problems effectively.<br><br>Working as a freelance software and web developer allows me to apply my knowledge and creativity to other people’s ideas and problems. Hence, I can rise to new challenges and learn new skills in each job that enhance my ability as a programmer.","images/george ogden.jpg");
 echo image("images/code.jpg", "Computer Code", "text-darken", ["text" => "<h2>Programs</h2><p>With passions in maths and computer science, you will notice a wide range of mathematical concepts display throughout the projects on the website.</p>"]);
-echo image("../images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>"]); ?>
-<?php include "../footer.php" ?><?php include "../scripts.php" ?>
+echo skills(); include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

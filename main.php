@@ -91,19 +91,10 @@ $main .= "<div class='section content code d-none' id=" . str_replace(" ", "_", 
 return str_replace_n("page-link", "'page-link selected'", $selector, 1) . "</ul></div>" . str_replace_n(" d-none", "", $main, 1);
 }
 $pos = 1;
-function feedback($name,$quote,$p=""){
-    GLOBAL $pos;
-    $string = "<div class='section text flex-row'>";
-    if ($pos){
-        $string.= "<h2>$name</h2><h3 class='colour scale pad-1 font-italic'>\"$quote\"</h3>";
-    } else {
-        $string.= "<h3 class='colour scale pad-1 font-italic'>\"$quote\"</h3><h2>$name</h2>";
-    }
-    $pos = 1- $pos;
-    if ($p){
-        $string .= "<p>$p</p>";
-    }
-    $string .= "</div>";
-    return $string;
+function skills(){
+return image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>"]);
+}
+function pph(){
+return "<div class='section image' id=pph><div class=text><h2 class=pb-5>PeoplePerHour</h2><p class=pb-5>PeoplePerHour is the platform that I use for my freelancing. They have a wide range of features that make freelancing easier for buyers and freelancers. These include an escrow account, which keeps your money safe until work is complete, a rating system so that you can find the best freelancers and communications features so that we can keep in touch during work. <a href=https://www.goprogram.co.uk/pph>Have a look at my profile to see some of my previous work.</a></p></div>" . image("/about/images/george ogden.jpg","George Ogden","floor") . "</div>";
 }
 ?>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Software</title>
+<title>Software Development</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <meta name=description content="George Ogden does freelance software development and he is always looking for new and interesting challenges.">
@@ -10,7 +10,6 @@
 <meta name=subject content="freelance software development">
 </head>
 <?php include "../header.php" ?>
-<link rel=stylesheet href=software.css>
 <section class="colour">
 <?php echo image("images/software.jpg", "Software Development", "text-darken", ["id" => "top", "text" => "<h1>Software Development</h1>"]);
 echo image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>"]);?>

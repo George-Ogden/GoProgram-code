@@ -27,7 +27,7 @@
 <h2 class=mt-5>HSL</h2>
 <div><input id=hslColour placeholder="Enter an HSL code"></div>
 </div>
-<div id="output" class="scale w-100"></div>
+<div id="output" class="scale w-100 my-5 mx-auto"></div>
 </div>
 <script src=converter.js></script>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>

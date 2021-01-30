@@ -12,7 +12,11 @@
 </head>
 <?php include "../header.php" ?>
 <section class="colour">
-<?php echo image("images/aws.jpg", "AWS", "text-darken", ["id" => "top", "text" => "<h1>AWS</h1>"]);?>
-
+<?php echo image("images/aws.svg", "AWS Logo", "none", ["id" => "top"]);?>
+<div class="section icons">
+<div class="icon d-flex">
+<?php echo image("images/devops.png", "AWS DevOps Engineer Professional", "none") . image("images/developer.png", "AWS Developer Associate", "none") ;?>
+</div>
+</div>
 <?php echo pph(); include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

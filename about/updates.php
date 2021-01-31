@@ -15,8 +15,8 @@
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>
+<div class="section text"><h2>Freelancing</h2><p>After a year of freelancing at PeoplePerHour, I thought that it was finally time to add a section to the website to let people know what I can do. In <a href=/freelancing>this section</a>, I provide details about the kind of work that I can do!</div>
 <?php echo section("Hangman Solver", "Usually, hangman is about guessing another person's word. But here, the artificial intelligence tries to guess your word, and it learns with every attempt! Why not <a href=/ai/hangman>have a play with it?</a>","/artificial-intelligence/images/hangman.jpg")?>
-<div class='section image'><div class='text'><h2 class=pb-5>New Logo</h2><p class=pb-5>The old logo for GoProgram had been used since its creation a couple of years ago. Since the website was redesigned a few months ago, it was time for the logo to change too!</p></div><?php echo image("/images/goprogram.png", "New Logo", "") ?></div>
-<?php echo section("Timings Converter", "This combines my passion for running and programming, as it converts paces between different distances for athletics. It will give pacing for laps, kilometres and miles for different competitive distances. <a href=timings>Check it out!</a>", "/online/images/track.jpg");
-echo section("Dinosaur Generator", "This new page uses and n-gram-like algorithm to generate realistic dinosaur names. <a href=/ai/dinosaurs>Check it out</a> and have a play with the cool feature.","../artificial-intelligence/images/dinosaur.jpg") ?>
+<div class='section image'><div class='text'><h2 class=pb-5>New Logo</h2><p class=pb-5>The old logo for GoProgram had been used since its creation a couple of years ago. Since the website was redesigned a few months ago, it was time for the logo to change too!</p></div><?php echo image("/images/goprogram.png", "New Logo", "none") ?></div>
+<?php echo section("Timings Converter", "This combines my passion for running and programming, as it converts paces between different distances for athletics. It will give pacing for laps, kilometres and miles for different competitive distances. <a href=timings>Check it out!</a>", "/online/images/track.jpg");?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?></html>

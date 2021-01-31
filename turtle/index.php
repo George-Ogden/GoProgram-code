@@ -15,6 +15,15 @@
 <?php echo image("images/collage.jpg", "Collage", "text-darken", ["id" => "top", "text" => "<h1>Turtle Projects</h1>"]);  ?>
 <hr>
 <?php echo image("images/collage (landscape).jpg", "Collage", "text-darken", ["text" => "<p>Welcome to the home of turtle projects. View an artistic array of Python programming done using the turtle library and be impressed by some artistic programming.</p>"]);  ?>
+<div class="section image" id=python><div class=text><h2 class=pb-5>Python</h2><p class=pb-5>Python is a powerful, high-level, general-purpose programming language. If you are new to Python, or do not have Python installed, <a href=https://python.org/downloads target=_blank>head over to the website to install it</a>, so that you can run .py files.</p></div>
+<?php echo image("../images/python.jpg","Python logo","none")?>
+</div>
+<?php 
+echo section("Maths", "Whether you are a maths fan or not, it is hard to deny the beauty of <a href=maths>the incredible mathematical designs</a>.");
+echo section("Fractals", "<a href=fractals>Learn about recursive programming</a> in some nature inspired and original design patterns.");
+echo section("Circles", "<a href=circles>View some simple, yet satisfying programming</a> based on the ideas of a shape that has inspired centuries of maths.");
+echo section("Colours", "<a href=colours>See some programming inspired by colour wheels and the three colours that make up a computer's display</a>: red, green and blue.");
+?>
 <div class="section icons">
 <a class="icon" href="https://github.com/George-Ogden/Turtle-Projects" target="_blank">
 <ion-icon name="logo-github"></ion-icon>
@@ -29,12 +38,5 @@
 <p>YouTube Playlist</p>
 </a>
 </div>
-<?php
-echo section("Python", "Python is a powerful, high-level, general-purpose programming language. If you are new to Python, or do not have Python installed, <a href=https://python.org/downloads target=_blank>head over to the website to install it</a>, so that you can run .py files.", "../images/python.jpg");
-echo section("Maths", "Whether you are a maths fan or not, it is hard to deny the beauty of <a href=maths>the incredible mathematical designs</a>.");
-echo section("Fractals", "<a href=fractals>Learn about recursive programming</a> in some nature inspired and original design patterns.");
-echo section("Circles", "<a href=circles>View some simple, yet satisfying programming</a> based on the ideas of a shape that has inspired centuries of maths.");
-echo section("Colours", "<a href=colours>See some programming inspired by colour wheels and the three colours that make up a computer's display</a>: red, green and blue.");
-?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

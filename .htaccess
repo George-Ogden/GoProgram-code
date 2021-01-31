@@ -196,11 +196,7 @@ RewriteRule ^ai\/colour\-classifier$ "\/artificial\-intelligence\/classifier" [R
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^work\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^freelancing\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^pph\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^freelance\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^peopleperhour\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -212,41 +208,93 @@ RewriteRule ^walk$ "\/about\/walk$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^hire\/?(.*)$ "https\:\/\/pph\.me\/george\-ogden$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^python\/?(.*)$ "\/turtle\/index$1" [R=301,L]
+RewriteRule ^python\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^programs\/?(.*)$ "\/software$1" [R=301,L]
+RewriteRule ^python-developer\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^Programs\/?(.*)$ "\/software$1" [R=301,L]
+RewriteRule ^python-development\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software$ "\/software\/index" [R=301,L]
+RewriteRule ^pythondeveloper\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday$ "\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^pythondevelopment\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday_reminder$ "\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^\/freelancing\/python\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/birthday\-reminder$ "\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^\/freelancing\/python-developer\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^birthday\-reminder$ "\/software\/birthday\-reminder" [R=301,L]
+RewriteRule ^\/freelancing\/python-development\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^birthday$ "\/software\/reminder" [R=301,L]
+RewriteRule ^\/freelancing\/pythondeveloper\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^Index$ "\/" [R=301,L]
+RewriteRule ^\/freelancing\/pythondevelopment\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^reminder$ "\/software\/reminder" [R=301,L]
+RewriteRule ^\/freelancing\/software-development\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^\/freelancing\/softwaredeveloper\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/graph\-creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^\/freelancing\/softwaredevelopment\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/graph_creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^\/freelancing\/software-developer\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph$ "\/software\/graph" [R=301,L]
+RewriteRule ^python\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^software\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph_creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^software-development\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^graph\-creator$ "\/software\/graph" [R=301,L]
+RewriteRule ^softwaredeveloper\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^softwaredevelopment\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^software-developer\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^programs\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^program\/?(.*)$ "\/freelancing\/software$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^developer\/?(.*)$ "\/freelancing$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^development\/?(.*)$ "\/freelancing$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^web-developer\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^webdevelopment\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^webdeveloper\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^web-development\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^web\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^websites\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^website\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/web-developer\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/webdevelopment\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/webdeveloper\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule \/freelancing\/web-development\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/websites\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/website\/?(.*)$ "\/freelancing\/web$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/amazon-web-services\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/amazon\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^\/freelancing\/amazonwebservices\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^amazon-web-services\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^amazonwebservices\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^aws\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^amazon\/?(.*)$ "\/freelancing\/aws$1" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^updates$ "\/about\/updates" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
@@ -362,11 +410,11 @@ RewriteRule ^turtle\/fractals\/index$ "\/turtle\/fractals\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^about\/index$ "\/about" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^software\/unix$ "\/software\/commands" [R=301,L]
+RewriteRule ^software\/unix$ "\/unix" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^unix$ "\/software\/commands" [R=301,L]
+RewriteRule ^unix$ "https://github.com/george-ogden/unix" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^commands$ "\/software\/commands" [R=301,L]
+RewriteRule ^commands$ "\/unix" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^linkedin$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

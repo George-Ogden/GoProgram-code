@@ -17,23 +17,27 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/hangman</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.goprogram.co.uk/artificial-intelligence/classifier</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/</loc>
+        <loc>https://www.goprogram.co.uk/freelancing/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/graph</loc>
+        <loc>https://www.goprogram.co.uk/freelancing/software</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/commands</loc>
+        <loc>https://www.goprogram.co.uk/freelancing/web</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/reminder</loc>
+        <loc>https://www.goprogram.co.uk/freelancing/aws</loc>
         <priority>0.80</priority>
     </url>
     <url>

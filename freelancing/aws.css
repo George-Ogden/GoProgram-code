@@ -3,4 +3,10 @@
     width: 100%!important;
     margin: 0;
 }
-.icon 
+.icon {
+    max-width: 800px;
+}
+.icon .image {
+    width: 40%!important;
+    min-width: 150px;
+}

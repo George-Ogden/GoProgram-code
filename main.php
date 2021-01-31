@@ -97,4 +97,7 @@ return image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" =>
 function pph(){
 return "<div class='section image' id=pph><div class=text><h2 class=pb-5>PeoplePerHour</h2><p class=pb-5>PeoplePerHour is the platform that I use for my freelancing. They have a wide range of features that make freelancing easier for buyers and freelancers. These include an escrow account, which keeps your money safe until work is complete, a rating system so that you can find the best freelancers and communications features so that we can keep in touch during work. <a href=https://www.goprogram.co.uk/pph>Have a look at my profile to see some of my previous work.</a></p></div>" . image("/about/images/george ogden.jpg","George Ogden","floor") . "</div>";
 }
+function about(){
+return section("George Ogden","I have a vision to make high-quality, automated technology services available to everyone so that the world functions better. I use my experience as a software and web developer to create websites and software that present or demonstrate the power of technology to others through clean, yet beautifully crafted code that solves problems effectively.<br><br>Working as a freelance software and web developer allows me to apply my knowledge and creativity to other people’s ideas and problems. Hence, I can rise to new challenges and learn new skills in each job that enhance my ability as a programmer.","/about/images/george ogden.jpg");
+}
 ?>

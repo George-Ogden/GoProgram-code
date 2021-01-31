@@ -50,7 +50,7 @@ html {
     background: linear-gradient(rgba(0, 0, 0, 0), 70%, rgba(0, 0, 0, 0.8));
 }
 .cover.darken {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
 }
 .overlay {
     transition: 0.5s ease;

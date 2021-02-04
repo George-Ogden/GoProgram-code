@@ -3,7 +3,7 @@
 <head>
 <title>Timings Converter</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=online.css?v=1>
+<link rel=stylesheet href=online.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Convert timings for different running distances to figure out what pace you should run at.">
 <meta name=keywords content="running time converter calculator">

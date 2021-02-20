@@ -358,6 +358,72 @@ RewriteRule ^installed$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^apps\/mypps$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.myapps" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathing$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathing$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathbuddy$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathbuddy$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath-buddy$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath-buddy$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathbuddypro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathbuddypro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath-buddy-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath-buddy-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathingpro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathingpro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathing-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathing-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathpro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathpro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath-pro$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.pro" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathbuddylite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathbuddylite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath-buddy-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath-buddy-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathinglite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathinglite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathing-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathing-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breathlite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breathlite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^breath-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^apps\/breath-lite$ "https\:\/\/play\.google\.com\/store\/apps\/details\?id\=uk\.co\.goprogram\.breathing\.lite" [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^tutorials$ "\/about\/tutorials" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^tutorial$ "\/about\/tutorials" [R=301,L]

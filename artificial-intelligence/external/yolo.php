@@ -1,17 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<title>YOLOv4</title>
+<title>YOLO</title>
 <?php include "../../main.php" ?>
 <?php include "../../meta.php" ?>
-<meta name=description content="Colourful projects that have written in Python and are available to download and run or just watch in the browser.">
-<meta name=keywords content="python turtle colours">
+<link rel=stylesheet href=yolo.css?v=1>
+<meta name=description content="This is an implementation of YOLO to detect objects that has been trained on the COCO dataset or to classify cards using a custom dataset.">
+<meta name=keywords content="yolo object detection">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="Python turtle">
+<meta name=subject content="YOLO implemntation">
 </head><?php include "../../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-1">YOLOv4</h1>
+<h1 class="colour pad-1 loaded text-left w-25"><span class=highlight>Y</span>ou<br><span class=highlight>O</span>nly<br><span class=highlight>L</span>ook<br><span class=highlight>O</span>nce</h1>
 </div>
 <div class="section text flex-row">
 <h3 class="font-italic colour scale pad-1">"Knowledge has no value unless you share it".</h3>
@@ -22,9 +23,9 @@
 <ion-icon name="logo-github"></ion-icon>
 <p>GitHub Code</p>
 </a>
-<a class="icon" href="https://www.youtube.com/playlist?list=PL1_riyn9sOjcKIAYzo7f8drxD-Yg9La-D" target="_blank">
-<ion-icon name="logo-youtube"></ion-icon>
-<p>YouTube Videos</p>
+<a class="icon" href="https://arxiv.org/pdf/2004.10934.pdf" target="_blank">
+<ion-icon name="paper"></ion-icon>
+<p>Original Paper</p>
 </a>
 </div>
 <div class="section video">

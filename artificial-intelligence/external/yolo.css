@@ -13,4 +13,5 @@
     font-family: "Roboto Mono", monospace;
     opacity: 1;
     line-height: 1em;
+    width: min-content;
 }

@@ -12,7 +12,7 @@
 </head><?php include "../../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-1 loaded text-left"><span class=highlight>Y</span>ou<br><span class=highlight>O</span>nly<br><span class=highlight>L</span>ook<br><span class=highlight>O</span>nce</h1>
+<h1 class="colour pad-2 loaded text-left"><span class=highlight>Y</span>ou<br><span class=highlight>O</span>nly<br><span class=highlight>L</span>ook<br><span class=highlight>O</span>nce</h1>
 </div>
 <?php echo section("YOLO","YOLO is an artificial intelligence algorithm for object detection. As well as classification, YOLO identifies where in an image an object is. It is fast enough to be run in real-time and achieves very a high level of accuracy. The output is a series of bounding boxes with labelled classes, which identify eac object in the image.","/about/images/george ogden.jpg","about") . image("images/yolo.jpg","Custom Playing Card Detector","none") ?>
 <div class="section icons">

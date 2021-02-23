@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>YOLO</title>
+<title>MuseGAN</title>
 <?php include "../../main.php" ?>
 <?php include "../../meta.php" ?>
 <link rel=stylesheet href=external.css?v=1>
@@ -12,7 +12,7 @@
 </head><?php include "../../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-2 loaded text-left"><span class=highlight>Y</span>ou<br><span class=highlight>O</span>nly<br><span class=highlight>L</span>ook<br><span class=highlight>O</span>nce</h1>
+<h1 class="colour pad-2 loaded text-left"><span class=highlight>Mu</span>lti-track<br><span class=highlight>se</span>equential<br><span class=highlight>G</span>enerative<br><span class=highlight>A</span>dversarial<br><span class=highlight>N</span>etwork</h1>
 </div>
 <?php echo section("YOLO","YOLO is an artificial intelligence algorithm for object detection. As well as classification, YOLO identifies where in an image an object is. It is fast enough to be run in real-time and achieves very a high level of accuracy. The output is a series of bounding boxes with labelled classes, which identify eac object in the image.","/about/images/george ogden.jpg","about") . image("images/yolo.jpg","Custom Playing Card Detector","none") ?>
 <div class="section icons">
@@ -20,7 +20,7 @@
 <ion-icon name="logo-github"></ion-icon>
 <p>GitHub Code</p>
 </a>
-<a class="icon" href="https://arxiv.org/pdf/2004.10934.pdf" target="_blank">
+<a class="icon" href="https://arxiv.org/pdf/1709.06298.pdf" target="_blank">
 <ion-icon name="document"></ion-icon>
 <p>Original Paper</p>
 </a>

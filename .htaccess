@@ -1,8 +1,6 @@
 RewriteEngine on
 RewriteOptions inherit
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv\.pdf$ "\/about\/cv"
 RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]
 RewriteRule ![A-Z] - [S=28]
 RewriteRule ^([^A]*)A(.*)$ $1a$2

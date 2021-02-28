@@ -1,8 +1,6 @@
 RewriteEngine on
 RewriteOptions inherit
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]
 RewriteRule ![A-Z] - [S=28]
 RewriteRule ^([^A]*)A(.*)$ $1a$2
@@ -44,7 +42,9 @@ RewriteRule ^cv$ "\/about\/cv\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^cv\.pdf$ "\/about\/CV\.pdf" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^about\/cv$ "\/about\/CV\.pdf" [NC,L]
+RewriteRule ^about\/cv$ "\/about\/CV\.pdf" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^about\/cv\.pdf$ "\/about\/CV.pdf" [L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^line$ "\/turtle\/fractals\/line" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$

@@ -20,6 +20,10 @@
 <ion-icon name="logo-github"></ion-icon>
 <p>GitHub Code</p>
 </a>
+<a class="icon" href="https://pjreddie.com/darknet/yolo/" target="_blank">
+<ion-icon name="link"></ion-icon>
+<p>Website</p>
+</a>
 <a class="icon" href="https://arxiv.org/pdf/2004.10934.pdf" target="_blank">
 <ion-icon name="document"></ion-icon>
 <p>Original Paper</p>

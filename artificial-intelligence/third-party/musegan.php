@@ -8,7 +8,7 @@
 <meta name=description content="This is an implementation of MuseGAN to generate melodies based on tracks by The Beatles.">
 <meta name=keywords content="music generation artificial intelligence">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="MuseGAN implmentation">
+<meta name=subject content="MuseGAN implementation">
 </head><?php include "../../header.php" ?>
 <section class=colour>
 <div class=section id=top>
@@ -25,6 +25,10 @@
 <a class="icon" href="https://arxiv.org/pdf/1709.06298.pdf" target="_blank">
 <ion-icon name="document"></ion-icon>
 <p>Original Paper</p>
+</a>
+<a class="icon" href="https://salu133445.github.io/musegan/" target="_blank">
+<ion-icon name="link"></ion-icon>
+<p>Website</p>
 </a>
 <a class="icon" href="https://youtu.be/WOHWmnyZ6zc" target="_blank">
 <ion-icon name="logo-youtube"></ion-icon>

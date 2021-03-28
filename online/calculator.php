@@ -12,7 +12,7 @@
     </head><?php include "../header.php" ?>
     <section>
     <div class=section id=top>
-    <h1 class=colour>Calculator</h1>
+    <h1 class="colour pad-1">Calculator</h1>
     </div>
     <div class=section>
     <calculator class="mx-auto"><input id=output class=w-100 disabled>

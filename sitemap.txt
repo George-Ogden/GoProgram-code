@@ -4,6 +4,11 @@ https://www.goprogram.co.uk/artificial-intelligence/dinosaurs
 https://www.goprogram.co.uk/artificial-intelligence/hangman
 https://www.goprogram.co.uk/artificial-intelligence/classifier
 https://www.goprogram.co.uk/artificial-intelligence/code
+https://www.goprogram.co.uk/artificial-intelligence/third-party/
+https://www.goprogram.co.uk/artificial-intelligence/third-party/faceswap
+https://www.goprogram.co.uk/artificial-intelligence/third-party/yolo
+https://www.goprogram.co.uk/artificial-intelligence/third-party/posenet
+https://www.goprogram.co.uk/artificial-intelligence/third-party/musegan
 https://www.goprogram.co.uk/freelancing/
 https://www.goprogram.co.uk/freelancing/software
 https://www.goprogram.co.uk/freelancing/web

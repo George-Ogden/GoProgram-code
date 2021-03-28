@@ -16,6 +16,6 @@
 <p>Welcome to GoProgram, a website showcasing programming. Everything is coded from scratch and it is all entirely original. Enjoy browsing round the projects and using them, and feel free to use some of the code in your own projects if you wish!</p>
 </div>
 <?php echo about();
-echo image("images/code.jpg", "Computer Code", "text-darken", ["text" => "<h2>Programs</h2><p>With passions in maths and computer science, you will notice a wide range of mathematical concepts display throughout the projects on the website.</p>"]);
+echo image("images/code.jpg", "Computer Code", "text-darken", ["text" => "<h2 class=pad-1>Programs</h2><p>With passions in maths and computer science, you will notice a wide range of mathematical concepts display throughout the projects on the website.</p>"]);
 echo skills(); include "../footer.php" ?><?php include "../scripts.php" ?>
 </html>

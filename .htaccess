@@ -32,10 +32,6 @@ RewriteRule ^([^Y]*)Y(.*)$ $1y$2
 RewriteRule ^([^Z]*)Z(.*)$ $1z$2
 RewriteCond %{ENV:HASCAPS} TRUE
 RewriteRule ^fractals\/index\/?$ "\/turtle\/fractals\/index" [R=301,L]
-RewriteRule ^cv\/?$ "\/about\/cv\.pdf" [R=301,L]
-RewriteRule ^cv\.pdf\/?$ "\/about\/cv\.pdf" [R=301,L]
-RewriteRule ^about(?!\/)(.*)$  "\/about\/$1" [R=301,L]
-RewriteRule ^about\/cv\/?$ "\/about\/cv\.pdf" [R=301,L]
 RewriteRule ^turtle(?!\/)(.*)$  "\/turtle\/$1" [R=301,L]
 RewriteRule ^turtle\/fractals(?!\/)(.*)$  "\/turtle\/fractals\/$1" [R=301,L]
 RewriteRule ^fractals\/turtle\/?(.*)$ "\/turtle\/fractals\/$1" [R=301,L]
@@ -109,6 +105,7 @@ RewriteRule ^(?!artificial-intelligence\/third-party\/musegan)(artificial-intell
 RewriteRule ^(?!artificial-intelligence\/third-party\/yolo)(artificial-intelligence\/)?(third-party\/)?yolo[-_]?v?3?\/?$ "\/artificial-intelligence\/third-party\/yolo" [R=301,L]
 RewriteRule ^(?!artificial-intelligence\/third-party\/posenet)(artificial-intelligence\/)?(third-party\/)?pose(net)?\/?$ "\/artificial-intelligence\/third-party\/posenet" [R=301,L]
 RewriteRule ^(?!artificial-intelligence\/third-party\/faceswap)(artificial-intelligence\/)?(third-party\/)?face(swap)?\/?$ "\/artificial-intelligence\/third-party\/faceswap" [R=301,L]
+RewriteRule ^(?!about\/(CV|cv)\.pdf)(about)?\/?(cv|CV)(\.?pdf)?\/?$ "\/about\/CV\.pdf" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
@@ -126,7 +123,6 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,L]
 Header always set Content-Security-Policy: upgrade-insecure-requests
-RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,L]

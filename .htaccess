@@ -80,7 +80,7 @@ RewriteRule ^(?!about\/tutorials)(about\/)?(understanding)?[-_]?(python)?[-_]?tu
 RewriteRule ^(about\/)?learn[-_]?(python)?\/?$ "\/about\/tutorials" [R=301,L]
 RewriteRule ^(.*)\/index$ "$1" [R=301,L]
 RewriteRule ^link(ed)?[-_]?(in)?\/?$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
-RewriteRule ^(about\/)?(source|git(hub)?)\/?$ "https://github.com/George-Ogden/GoProgram" [R=301,L]
+RewriteRule ^(about\/)?(source|git(hub)?)\/?$ "https://github.com/George-Ogden/GoProgram-code" [R=301,L]
 RewriteRule ^(?!online\/timings)(online\/)?time(s|ing)?[-_]?(convert(er)?)?[-_]?tutorials?\/?$ "\/online\/timings" [R=301,L]
 RewriteRule ^(online\/)?pace(r|ing)?\/?$ "\/online\/timings" [R=301,L]
 RewriteRule ^codechef\/?$ "https://www.codechef.com/users/george_ogden" [R=301,L]

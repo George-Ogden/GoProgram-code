@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
 <head>
-<title>YOLO</title>
+<title>CycleGAN</title>
 <?php include "../../main.php" ?>
 <?php include "../../meta.php" ?>
 <link rel=stylesheet href=external.css?v=1>
-<meta name=description content="This is an implementation of YOLO to detect objects that has been trained on the COCO dataset or to classify cards using a custom dataset.">
+<meta name=description content="This is an implementation of a CycleGAN to convert between male and female faces.">
 <meta name=keywords content="yolo object detection">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="YOLO implmentation">
+<meta name=subject content="YOLO implementation">
 </head><?php include "../../header.php" ?>
 <section class=colour>
 <div class=section id=top>
@@ -16,7 +16,7 @@
 </div>
 <?php echo section("YOLO","YOLO is an artificial intelligence algorithm for object detection. As well as classification, YOLO identifies where in an image an object is. It is fast enough to be run in real-time and achieves very a high level of accuracy. The output is a series of bounding boxes with labelled classes, which identify each object in the image.","images/coco.jpg","about") . image("images/yolo.jpg","Custom Playing Card Detector","none") ?>
 <div class="section icons">
-<a class="icon" href="https://github.com/pjreddie/darknet" target="_blank">
+<a class="icon" href="https://github.com/LynnHo/CycleGAN-Tensorflow-2" target="_blank">
 <ion-icon name="logo-github"></ion-icon>
 <p>GitHub Code</p>
 </a>
@@ -24,7 +24,7 @@
 <ion-icon name="link"></ion-icon>
 <p>Website</p>
 </a>
-<a class="icon" href="https://arxiv.org/pdf/2004.10934.pdf" target="_blank">
+<a class="icon" href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">
 <ion-icon name="document"></ion-icon>
 <p>Original Paper</p>
 </a>

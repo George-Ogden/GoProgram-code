@@ -105,7 +105,7 @@ RewriteRule ^(?!artificial-intelligence\/third-party\/musegan)(artificial-intell
 RewriteRule ^(?!artificial-intelligence\/third-party\/yolo)(artificial-intelligence\/)?(third-party\/)?yolo[-_]?v?3?\/?$ "\/artificial-intelligence\/third-party\/yolo" [R=301,L]
 RewriteRule ^(?!artificial-intelligence\/third-party\/posenet)(artificial-intelligence\/)?(third-party\/)?pose(net)?\/?$ "\/artificial-intelligence\/third-party\/posenet" [R=301,L]
 RewriteRule ^(?!artificial-intelligence\/third-party\/faceswap)(artificial-intelligence\/)?(third-party\/)?face(swap)?\/?$ "\/artificial-intelligence\/third-party\/faceswap" [R=301,L]
-RewriteRule ^(?!artificial-intelligence\/third-party\/cyclegan)(artificial-intelligence\/)?(third-party\/)?(cycle(gan)?)|(fe)?male|gender\/?$ "\/artificial-intelligence\/third-party\/cyclegan" [R=301,L]
+RewriteRule ^(?!artificial-intelligence\/third-party\/cyclegan)(artificial-intelligence\/)?(third-party\/)?(cycle(gan)?)|gender\/?$ "\/artificial-intelligence\/third-party\/cyclegan" [R=301,L]
 RewriteRule ^(?!about\/(CV|cv)\.pdf)(about)?\/?(cv|CV)(\.?pdf)?\/?$ "\/about\/CV\.pdf" [R=301,L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]

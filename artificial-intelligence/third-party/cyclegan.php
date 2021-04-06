@@ -20,11 +20,11 @@
 <div class="image my-2"><img src="images/female.jpg" alt="Image Unavailable (Female to Male CycleGAN)"><div class="cover floor"><div class="bottom caption text-white text-center">Female → Male</div></div></div>
 </div>
 <div class="section icons">
-<a class="icon" href="https://github.com/pjreddie/darknet" target="_blank">
+<a class="icon" href="https://github.com/LynnHo/CycleGAN-Tensorflow-2" target="_blank">
 <ion-icon name="logo-github"></ion-icon>
 <p>GitHub Code</p>
 </a>
-<a class="icon" href="https://arxiv.org/pdf/2004.10934.pdf" target="_blank">
+<a class="icon" href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">
 <ion-icon name="document"></ion-icon>
 <p>Original Paper</p>
 </a>

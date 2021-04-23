@@ -47,6 +47,6 @@ class Gamer extends Player {
         }
     }
     evaluate(board) {
-        return this.network.forward_propagate(Matrix.flatten(board)).data[0][0]
+        return this.network.forward_propagate(board).data[0][0]
     }
 }

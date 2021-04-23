@@ -25,8 +25,13 @@ echo "</tr>";
     </div></div>
 <script src=/scripts/js/activation_functions.js></script>
 <script src=/scripts/js/matrix.js></script>
+<script src=/scripts/js/ann.js></script>
 <script src=/scripts/js/gnn.js></script>
 <script src=/scripts/js/gfcnn.js></script>
+<script src=/scripts/js/convoluting.js></script>
+<script src=/scripts/js/gcnn.js></script>
+<script src="/scripts/js/genetic flatten.js"></script>
+<script src="/scripts/js/genetic combined network.js"></script>
 <script src=/scripts/js/player.js></script>
 <script src=/scripts/js/umpire.js></script>
 <script src="/scripts/js/noughts and crosses.js"></script>

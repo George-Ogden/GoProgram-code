@@ -19,7 +19,9 @@ const SoftPlus = new Activation_Function(x => Math.log(1 + Math.exp(x)), x => 1 
 //swish
 const swish = new Activation_Function(x => x / (1 + Math.exp(-x)), x => x == 0 ? 0.5 : x + x * (1 - x) / (lambert_W(x * Math.exp(-x)) + x));
 //softplus
-const softplus = new Activation_Function(x =>Math.log(1+Math.exp(x)),x => 1-Math.exp(-x));
+const softplus = new Activation_Function(x => x > 100 ? x : Math.log(1+Math.exp(x)),x => 1-Math.exp(-x));
+//elu
+const elu = new Activation_Function(x => x > 0 ? x : Math.exp(x)-1,x => x > 0 ? 1 : x+1);
 
 activation_functions = {
     "sigmoid": sigmoid,
@@ -29,5 +31,6 @@ activation_functions = {
     "SoftPlus": SoftPlus,
     "swish": swish,
     "identity": identity,
-    "softplus": softplus
+    "softplus": softplus,
+    "elu": elu
 };

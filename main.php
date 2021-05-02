@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=26><?php
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=27><?php
 function image($src, $description, $type = "", $data = array())
 {
 if (strpos($type, "text") !== false) {

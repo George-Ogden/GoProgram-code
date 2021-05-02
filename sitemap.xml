@@ -33,6 +33,10 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/emotion</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/yolo</loc>
         <priority>0.80</priority>
     </url>

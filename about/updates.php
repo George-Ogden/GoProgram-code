@@ -15,7 +15,7 @@
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>
-<?php echo section("Third-Party AI", "There are many researchers and organisations working on a wide range of open-sourced AI projects. I have experimented with some of these to create <a href=/ai/3/>my own work</a> based on their code.", "/artificial-intelligence/third-party/images/coco.jpg");
-echo section("BreathBuddy", "<a href=https://play.google.com/store/apps/details?id=uk.co.goprogram.breathing.pro>Practise some breathing exercises</a> that will decrease blood pressure, heart rate and stress levels, while increasing lung capacity, VO<sub>2</sub> max at the same time! There is both a <a href=https://play.google.com/store/apps/details?id=uk.co.goprogram.breathing.lite>free trial</a> and a <a href=https://play.google.com/store/apps/details?id=uk.co.goprogram.breathing.pro>full version</a> available.", "/apps/images/breathing.jpg")?>
-<div class="section text"><h2>Freelancing</h2><p>After a year of freelancing at PeoplePerHour, I thought that it was finally time to add a section to the website to let people know what I can do. In <a href=/freelancing>this section</a>, I provide details about the kind of work that I can do!</div>
+<?php 
+echo section("Emotion Detection", "After playing around with object detection in the past, I thought that I could train a model to detect emotion. This proved harder than anticipated, so I ended up using two AIs, working together, to detect facial expressions in images. You can find out more about it <a href=/ai/3/emotion>here</a>.", "/artificial-intelligence/third-party/images/emotions.jpg");
+echo section("Third-Party AI", "There are many researchers and organisations working on a wide range of open-sourced AI projects. I have experimented with some of these to create <a href=/ai/3/>my own work</a> based on their code.", "/artificial-intelligence/third-party/images/coco.jpg")?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?></html>

@@ -13,7 +13,7 @@
 <section class=colour>
 <div class=section id=top>
 <?php echo image("images/emojis.jpg", "Emojis", "text-darken", ["id" => "top", "text" => "<h1>Emotion Detection</h1>"]); 
-echo section("Emotion Detection","I trained two AIs to classify faces into emotions and wrote some code so that they worked together to do this in real time (20 fps). The first is YOLOv5, which was trained on WIDER FACE to detect faces in images. The second is RepVGG which was trained on AffectNet to classify emotions. Alongside the code that merges them together, I made a few changes to enhance the code and together they detect 8 different emotions from facial expressions.","images/emotions.jpg");
+echo section("Emotion Detection","I trained two AIs to classify faces into emotions and wrote some code so that they worked together to do this in real-time (20 fps). The first is YOLOv5, which was trained on WIDER FACE to detect faces in images. The second is RepVGG which was trained on AffectNet to classify emotions. Alongside the code that merges them together, I made a few changes to enhance the code and together they detect 8 different emotions from facial expressions.","images/emotions.jpg");
 ?>
 <div class="section icons">
 <a class="icon" href="https://github.com/ultralytics/yolov5" target="_blank">

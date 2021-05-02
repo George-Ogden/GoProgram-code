@@ -5,10 +5,10 @@
 <?php include "../../main.php" ?>
 <?php include "../../meta.php" ?>
 <link rel=stylesheet href=external.css?v=1>
-<meta name=description content="This is an implementation of a CycleGAN to convert between male and female faces.">
-<meta name=keywords content="yolo object detection">
+<meta name=description content="Using two AIs, the emotion detector detects faces and then identifies the emotion of each face in the image.">
+<meta name=keywords content="emotion detection">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="gender cycleGAN">
+<meta name=subject content="emotion detection">
 </head><?php include "../../header.php" ?>
 <section class=colour>
 <div class=section id=top>

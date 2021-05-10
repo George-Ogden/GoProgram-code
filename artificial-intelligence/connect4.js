@@ -466,8 +466,7 @@ const size = 7,
 				]
 			  }
 			],
-			"length": 3,
-			"score": 53
+			"length": 3
 		  }),
 		umpire,
 		3
@@ -520,7 +519,7 @@ async function animateMove(t, o) {
 function resize() {
 	$("#board").height($("#board").width());
 }
-umpire.challenge(player),
+$("#board").on("mouseenter",function() {$(this).off("mouseenter");umpire.challenge(player)}),
 	$(window).resize(resize),
 	resize(),
 	$("td.box").on("mouseover", function () {

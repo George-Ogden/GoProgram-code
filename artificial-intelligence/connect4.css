@@ -11,6 +11,7 @@ td {
 table {
     border: 5px solid;
     border-collapse: collapse;
+    margin: 100px auto;
 }
 button {
     cursor: pointer;

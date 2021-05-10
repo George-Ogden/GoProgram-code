@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <link rel=stylesheet href=connect4.css?v=1>
 <?php include "../meta.php" ?>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="Play connect 4 against an AI that has learned the game and improved just by playing itself thousands of times.">
+<meta name=keywords content="connect 4 ai oinline">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="Connect 4 AI">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>

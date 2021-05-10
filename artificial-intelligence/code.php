@@ -6,7 +6,7 @@
 <link rel=stylesheet href=code.css?v=1>
 <?php include "../meta.php" ?>
 <meta name=description content="Download or view this vast library of code for different AI models. There are a lot of files that can be used together and make up the code for the colour classifier.">
-<meta name=keywords content="	artificial intelligence algorithms code">
+<meta name=keywords content="artificial intelligence algorithms code">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="AI code library">
 </head><?php include "../header.php" ?>

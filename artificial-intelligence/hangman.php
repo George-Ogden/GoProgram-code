@@ -14,17 +14,9 @@
 <div class=section id=top>
 <h1 class="colour pad-1">Hangman Solver</h1>
 </div>
-<div class="section text">
-<h2>What it is</h2>
-<p>This hangman solver uses a <span class=font-italic>Reward-based selection algorithmn</span> to determine the most likely letter that you are thinking of by searching through a lexicon of text. It evaluates the words that come up more frequently, so it learns over time which words are more common in hangman than in the dictionary!</p>
-</div>
-<div class="section text">
-<h2>How to use</h2>
-<p>Think of a word and input the length. Then, select the letters as it makes each guess. If there are none, just click next and see how long it takes to guess your word!</p>
-</div>
 <div class="section interactive" id=main>
 <div class="main mx-0 w-100">
-<p>Think of a word:</4>
+<p>Think of a word</4>
 <h2 class=pad-1>Length</h2>
 <div class="main d-none"><div class="mx-auto pad-2 w-100"><p class=guess></p><div class=buttons></div><p class=info></p><button class="major done">Done</button></div></div>
 <select class="mdb-select md-form my-2 mx-auto" id=length>

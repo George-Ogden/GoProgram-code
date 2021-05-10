@@ -1,5 +1,6 @@
 https://www.goprogram.co.uk/
 https://www.goprogram.co.uk/artificial-intelligence/
+https://www.goprogram.co.uk/artificial-intelligence/connect4
 https://www.goprogram.co.uk/artificial-intelligence/dinosaurs
 https://www.goprogram.co.uk/artificial-intelligence/hangman
 https://www.goprogram.co.uk/artificial-intelligence/classifier

@@ -81,10 +81,4 @@ class Neural_Network {
             return [[Matrix.multiply(Matrix.fromArray(x[0]),1/255)], Matrix.fromArray([result])]
         })
     }
-    static load(type,name=type){
-        return eval(type).from_string(eval("(" + fs.readFileSync(name+".json").toString() + ")"))
-    }
-    save(name = this.type){
-        fs.writeFileSync(name+".json",JSON.stringify(this))
-    }
 }

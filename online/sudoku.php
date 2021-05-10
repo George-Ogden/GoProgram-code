@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class=colour>Sudoku Solver</h1>
+<h1 class="colour pad-1">Sudoku Solver</h1>
 </div>
 <form class="mb-5">
 <div id=valid>Invalid Sudoku!</div>

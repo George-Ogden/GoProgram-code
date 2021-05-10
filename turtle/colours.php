@@ -11,7 +11,7 @@
 </head><?php include "../header.php" ?>
 <section class="showcase">
 <div class="section pad-4 bg-dark" id=top>
-<h1>
+<h1 class=loaded style=opacity:1>
 <?php foreach ([["C", "#f94144"], ["O", "#f3722c"], ["L", "#f8961e"], ["O", "#f9c74f"], ["U", "#90be6d"], ["R", "#43aa8b"], ["S", "#577590"]] as list($letter, $colour)) {
 echo "<span style='color:$colour'>$letter</span>";
 } ?>

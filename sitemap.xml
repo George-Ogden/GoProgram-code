@@ -17,23 +17,55 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/hangman</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.goprogram.co.uk/artificial-intelligence/classifier</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/graph</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/faceswap</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/commands</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/emotion</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/software/reminder</loc>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/yolo</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/posenet</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/musegan</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/artificial-intelligence/third-party/cyclegan</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/freelancing/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/freelancing/software</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/freelancing/web</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/freelancing/aws</loc>
         <priority>0.80</priority>
     </url>
     <url>
@@ -50,6 +82,10 @@
     </url>
     <url>
         <loc>https://www.goprogram.co.uk/online/converter</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/online/timings</loc>
         <priority>0.80</priority>
     </url>
     <url>

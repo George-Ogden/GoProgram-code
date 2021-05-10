@@ -10,7 +10,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=fractals>
 </head><?php include "../../header.php" ?>
-<section class=scroll>
+<section>
 <?php echo image("images/mandelbrot.jpg", "The Mandelbrot Set", "text-darken", ["id" => "top", "text" => "<h1>Fractals</h1>"]); ?>
 <div class="section text">
 <h2>From Wikipedia</h2>

@@ -46,31 +46,31 @@
                 <h2>Day 1</h2>
             </div>
             <div class=card-body>
-                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=true scrolling=no src=https://www.strava.com/activities/3960564100/embed/4d5f4296c5f1e8213e30c5273ed55ada97326885> </iframe> </div> </div> </div> </div> <div class=card id=day-2>
+                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=trueing=no src=https://www.strava.com/activities/3960564100/embed/4d5f4296c5f1e8213e30c5273ed55ada97326885> </iframe> </div> </div> </div> </div> <div class=card id=day-2>
                         <div class=card-body>
                             <div class=card-title>
                                 <h2>Day 2</h2>
                             </div>
                             <div class=card-body>
-                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=true scrolling=no src=https://www.strava.com/activities/3963999623/embed/836396178251e170a804571152a6846601736916> </iframe> </div> </div> </div> </div> <div class=card id=day-3>
+                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=trueing=no src=https://www.strava.com/activities/3963999623/embed/836396178251e170a804571152a6846601736916> </iframe> </div> </div> </div> </div> <div class=card id=day-3>
                                         <div class=card-body>
                                             <div class=card-title>
                                                 <h2>Day 3</h2>
                                             </div>
                                             <div class=card-body>
-                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=true scrolling=no src=https://www.strava.com/activities/3969332977/embed/21705e4353de1e1bc1df1d905514aa2fb43241b7> </iframe> </div> </div> </div> </div> <div class=card id=day-4>
+                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=trueing=no src=https://www.strava.com/activities/3969332977/embed/21705e4353de1e1bc1df1d905514aa2fb43241b7> </iframe> </div> </div> </div> </div> <div class=card id=day-4>
                                                         <div class=card-body>
                                                             <div class=card-title>
                                                                 <h2>Day 4</h2>
                                                             </div>
                                                             <div class=card-body>
-                                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=true scrolling=no src=https://www.strava.com/activities/3973960450/embed/4a7ba4dbda76734f9cfeeaed379dd69dadc68d0b> </iframe> </div> </div> </div> </div> <div class=card id=day-5>
+                                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=trueing=no src=https://www.strava.com/activities/3973960450/embed/4a7ba4dbda76734f9cfeeaed379dd69dadc68d0b> </iframe> </div> </div> </div> </div> <div class=card id=day-5>
                                                                         <div class=card-body>
                                                                             <div class=card-title>
                                                                                 <h2>Day 5</h2>
                                                                             </div>
                                                                             <div class=card-body>
-                                                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=true scrolling=no src=https://www.strava.com/activities/3977223717/embed/fdf1ab8651450ab5771ba7b8718e795df78fcfd1> </iframe> </div> </div> </div> </div> </div> <div class=card id=gallery>
+                                                                                <div class="container strava"><iframe height=405 width=590 frameborder=0 allowtransparency=trueing=no src=https://www.strava.com/activities/3977223717/embed/fdf1ab8651450ab5771ba7b8718e795df78fcfd1> </iframe> </div> </div> </div> </div> </div> <div class=card id=gallery>
                                                                                         <div class=card-body>
                                                                                             <div class=card-title>
                                                                                                 <h2>Gallery</h2>

@@ -10,11 +10,12 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="updates">
 </head><?php include "../header.php" ?>
-<section class=scroll>
+<section class=colour>
 <?php echo image("images/updates.jpg", "Main Image", "text-darken", ["id" => "top", "text" => "<h1>Updates</h1>"]);  ?>
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>
-<?php echo section("Dinosaur Generator", "This new page uses and n-gram-like algorithm to generate realistic dinosaur names. <a href=/ai/dinosaurs>Check it out</a> and have a play with the cool feature.","../artificial-intelligence/images/dinosaur.jpg");
-echo section("Redesign", "The site has been redesigned to transform the look. After taking a visual design course, I applied what I learnt to create a clean, more modern look with some cool new features.","images/paint.jpg"); ?>
+<?php 
+echo section("Emotion Detection", "After playing around with object detection in the past, I thought that I could train a model to detect emotion. This proved harder than anticipated, so I ended up using two AIs, working together, to detect facial expressions in images. You can find out more about it <a href=/ai/3/emotion>here</a>.", "/artificial-intelligence/third-party/images/emotions.jpg");
+echo section("Third-Party AI", "There are many researchers and organisations working on a wide range of open-sourced AI projects. I have experimented with some of these to create <a href=/ai/3/>my own work</a> based on their code.", "/artificial-intelligence/third-party/images/coco.jpg")?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?></html>

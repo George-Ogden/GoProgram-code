@@ -2,14 +2,14 @@
 <html>
 <head>
 <title>Emotion Detection</title>
-<?php include "../../main.php" ?>
-<?php include "../../meta.php" ?>
+<?php include "../main.php" ?>
+<?php include "../meta.php" ?>
 <link rel=stylesheet href=external.css?v=1>
 <meta name=description content="Using two AIs, the emotion detector detects faces and then identifies the emotion of each face in the image.">
 <meta name=keywords content="emotion detection">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="emotion detection">
-</head><?php include "../../header.php" ?>
+</head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>
 <?php echo image("images/emojis.jpg", "Emojis", "text-darken", ["id" => "top", "text" => "<h1>Emotion Detection</h1>"]); 
@@ -51,6 +51,6 @@ echo section("Emotion Detection","I trained two AIs to classify faces into emoti
 <p>WIDER FACE Website</p>
 </a>
 </div>
-<?php include "../../footer.php" ?></section><?php include "../../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 
 </html>

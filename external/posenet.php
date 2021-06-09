@@ -2,14 +2,14 @@
 <html>
 <head>
 <title>PoseNet</title>
-<?php include "../../main.php" ?>
-<?php include "../../meta.php" ?>
+<?php include "../main.php" ?>
+<?php include "../meta.php" ?>
 <link rel=stylesheet href=external.css?v=1>
 <meta name=description content="This is an implementation of PosNet to count exercise reps during a training routine.">
 <meta name=keywords content="pose estimation deep learning">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="PoseNet implmentation">
-</head><?php include "../../header.php" ?>
+</head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>
 <h1 class="colour pad-2 highlight">PoseNet</h1>
@@ -31,6 +31,6 @@ echo video("https://youtube.com/embed/ZHyjRYK9F3A") ?>
 <p>YouTube Video</p>
 </a>
 </div>
-<?php include "../../footer.php" ?></section><?php include "../../scripts.php" ?>
+<?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 
 </html>

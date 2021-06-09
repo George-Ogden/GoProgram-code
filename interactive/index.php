@@ -16,7 +16,6 @@
 </div>
 </div>
 <?php echo section("Sudoku Solver", "As sudoku puzzles are known for their notorious difficulty, why not <a href=sudoku>use a computer to solve it</a>, instead of wasting brain power?", "images/sudoku.gif");
-echo section("Calculator", "If you need a hand with some maths or just want to <a href=calculator>try it out, give the calculator a go</a>. It is a mix between the classic model and a modernistic version.");
 echo section("Colour Converter", "If you want to convert a named colour into RGB, hexadecimal, CMYK or HSL, this is the tool. If not, <a href=converter>have some fun with it</a> anyway.", "images/colours.jpg");
 echo section("Timings Converter", "This combines my passion for running and programming, as it converts paces between different distances for athletics. It will give pacing for laps, kilometres and miles for different competitive distances. <a href=timings>Check it out!</a>", "images/track.jpg"); ?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>

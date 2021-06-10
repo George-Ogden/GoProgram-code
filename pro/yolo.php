@@ -4,7 +4,7 @@
 <title>YOLO</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=external.css?v=1>
+<link rel=stylesheet href=pro.css?v=1>
 <meta name=description content="This is an implementation of YOLO to detect objects that has been trained on the COCO dataset or to classify cards using a custom dataset.">
 <meta name=keywords content="cyclegan tensorflow">
 <meta name=viewport content="width=device-width,initial-scale=1">

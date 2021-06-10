@@ -5,11 +5,11 @@
             <content><img class="top img" src=/images/icon.png></content></a>
         </li>
         <li class="scratch level-1"><a href=/scratch>
-                <content>Projects from Scratch</content>
+                <content>AI from Scratch</content>
             </a></li>
         <ul class="scratch level-2">
             <li class="home level-2"><a href=/scratch>
-                    <content>Projects from Scratch</content>
+                    <content>Home</content>
                 </a></li>
             <li class="connect4 level-2"><a href=/scratch/connect4>
                     <content>Connect 4</content>
@@ -21,35 +21,46 @@
                     <content>Hangman Solver</content>
                 </a></li>
         </ul>
-        <li class="external level-1"><a href=/external>
-                <content>Projects with External Code</content>
+        <li class="fork level-1"><a href=/fork>
+                <content>Code Forks</content>
             </a></li>
-        <ul class="external level-2">
-            <li class="emotion level-2"><a href=/external/emotion>
+        <ul class="fork level-2">
+            <li class="emotion level-2"><a href=/fork/>
+                    <content>Home</content>
+                </a></li>
+            <li class="emotion level-2"><a href=/fork/emotion>
                     <content>Emotion Detection</content>
                 </a></li>
-            <li class="faceswap level-2"><a href=/external/faceswap>
+            <li class="faceswap level-2"><a href=/fork/faceswap>
                     <content>Faceswap</content>
                 </a></li>
-            <li class="yolo level-2"><a href=/external/yolo>
-                    <content>YOLO</content>
-                </a></li>
-            <li class="posenet level-2"><a href=/external/posenet>
-                    <content>PoseNet</content>
-                </a></li>
-            <li class="musegan level-2"><a href=/external/musegan>
+            <li class="musegan level-2"><a href=/fork/musegan>
                     <content>MuseGAN</content>
                 </a></li>
-            <li class="cyclegan level-2"><a href=/external/cyclegan>
+            <li class="cyclegan level-2"><a href=/fork/cyclegan>
                     <content>CycleGAN</content>
                 </a></li>
         </ul>
+        <li class="professional level-1"><a href=/pro>
+                <content>Professional Projects</content>
+            </a></li>
+        <ul class="professional level-2">
+            <li class="emotion level-2"><a href=/pro>
+                    <content>Home</content>
+                </a></li>
+            <li class="yolo level-2"><a href=/pro/yolo>
+                    <content>YOLO</content>
+                </a></li>
+            <li class="posenet level-2"><a href=/pro/posenet>
+                    <content>PoseNet</content>
+                </a></li>
+        </ul>
         <li class="interactive level-1"><a href=/interactive>
-                <content>Interactive Projects</content>
+                <content>Interactive Non-AI</content>
             </a></li>
         <ul class="interactive level-2">
             <li class="home level-2"><a href=/interactive>
-                    <content>Interactive Projects Index</content>
+                    <content>Home</content>
                 </a></li>
             <li class="sudoku level-2"><a href=/interactive/sudoku>
                     <content>Sudoku Solver</content>

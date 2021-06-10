@@ -21,31 +21,35 @@
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/</loc>
+        <loc>https://www.goprogram.co.uk/fork/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/faceswap</loc>
+        <loc>https://www.goprogram.co.uk/fork/faceswap</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/emotion</loc>
+        <loc>https://www.goprogram.co.uk/fork/emotion</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/yolo</loc>
+        <loc>https://www.goprogram.co.uk/fork/musegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/posenet</loc>
+        <loc>https://www.goprogram.co.uk/fork/cyclegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/musegan</loc>
+        <loc>https://www.goprogram.co.uk/pro/</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/pro/yolo</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/external/cyclegan</loc>
+        <loc>https://www.goprogram.co.uk/pro/posenet</loc>
         <priority>0.80</priority>
     </url>
     <url>

@@ -6,7 +6,7 @@
 <link rel=stylesheet href=tutorials.css?v=1>
 <?php include "../meta.php" ?>
 <meta name=description content="Free Python tutorials that start at the beginning and end up covering advanced topics. New videos are released every week on YouTube.">
-<meta name=keywords content="python tutorial">
+<meta name=keywords content="python tutorial free">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="Python tutorials">
 </head><?php include "../header.php" ?>

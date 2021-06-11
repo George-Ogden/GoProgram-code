@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=28><?php
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"><link rel=stylesheet href=/main.css?v=29><?php
 function image($src, $description, $type = "", $data = array())
 {
 if (strpos($type, "text") !== false) {
@@ -92,12 +92,9 @@ return str_replace_n("page-link", "'page-link selected'", $selector, 1) . "</ul>
 }
 $pos = 1;
 function skills(){
-return image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2 class=pad-1>Skills</h2><p>These are the main skills that I am proficient in, in picture format. If you are looking for a skill that is not listed, feel free to contact me.</p>"]);
-}
-function pph(){
-return "<div class='section image' id=pph><div class=text><h2 class=pb-5>PeoplePerHour</h2><p class=pb-5>PeoplePerHour is the platform that I use for my freelancing. They have a wide range of features that make freelancing easier for buyers and freelancers. These include an escrow account, which keeps your money safe until work is complete, a rating system so that you can find the best freelancers and communications features so that we can keep in touch during work. <a href=https://www.goprogram.co.uk/pph>Have a look at my profile to see some of my previous work.</a></p></div>" . image("/about/images/george ogden.jpg","George Ogden","floor") . "</div>";
+return image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2 class=pad-1>Skills</h2><p>I specialise in machine-learning, which is what I'm passionate about, but I've worked with many other technologies (as you can see here)!</p>"]);
 }
 function about(){
-return section("George Ogden","I have a vision to make high-quality, automated technology services available to everyone so that the world functions better. I use my experience as a software and web developer to create websites and software that present or demonstrate the power of technology to others through clean, yet beautifully crafted code that solves problems effectively.<br><br>Working as a freelance software and web developer allows me to apply my knowledge and creativity to other people’s ideas and problems. Hence, I can rise to new challenges and learn new skills in each job that enhance my ability as a programmer.","/about/images/george ogden.jpg");
+return section("George Ogden","I am making the world a better place! AI and code are an important part, but it's so much more than just that.","/about/images/george ogden.jpg");
 }
 ?>

@@ -30,15 +30,25 @@ RewriteRule ^(.*?)W(.*)$ $1w$2
 RewriteRule ^(.*?)X(.*)$ $1x$2
 RewriteRule ^(.*?)Y(.*)$ $1y$2
 RewriteRule ^(.*?)Z(.*)$ $1z$2
-RewriteCond %{ENV:HASCAPS} TRUE
-RewriteRule ^(youtube|video|yt)\/?$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
-RewriteRule ^(play|app(s)?)\/?$ "https\:\/\/play\.google\.com\/store\/apps\/developer\?id\=GoProgram" [R=301,L]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{THE_REQUEST} /([^.]+)\.htm [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+RewriteRule ^(youtube|yt)\/?$ "https\:\/\/youtube\.com\/channel\/UCZz0eP4YQ\-EXPBtDYgKTAsg" [R=301,L]
+RewriteRule ^(play|(app(s)?))\/?$ "https\:\/\/play\.google\.com\/store\/apps\/developer\?id\=GoProgram" [R=301,L]
 RewriteRule ^online\/?(.*)$  "\/interactive\/$1" [R=301,L]
 RewriteRule ^work\/?(.*)$ "/pro/$1" [R,L]
-RewriteRule ^(pph|freelanc((ing)|e)|(people[-_\s]?per[-_?]hour)|hire)\/?(.*)\/?$ "https\:\/\/pph\.me\/george\-ogden" [R=301,L]
+RewriteRule ^(pph|freelanc((ing)|e)|(people[-_\s]?per[-_\s]?hour)|hire)(.*)\/?$ "https\:\/\/pph\.me\/george\-ogden" [R=301,L]
 RewriteRule ^(.*\/)?(?!.*\.(jpg|png))(.*)\/index$ "$1" [R=301,L]
 RewriteRule ^(.*\/)?(?!.*\.(jpg|png))link(ed)?[-_\s]?(in)?\/?$ "https://www.linkedin.com/in/george-ogden-2770541b4" [R=301,L]
-RewriteRule ^(.*\/)?(?!.*\.(jpg|png))(source|git(hub)?)\/?$ "https://github.com/George-Ogden/GoProgram-code" [R=301,L]
+RewriteRule ^(.*\/)?(?!.*\.(jpg|png))(source[-_\s]?code?)\/?$ "https://github.com/George-Ogden/GoProgram-code" [R=301,L]
+RewriteRule ^(.*\/)?(?!.*\.(jpg|png))git(hub)?\/?$ "https://github.com/George-Ogden/" [R=301,L]
 RewriteRule ^(?!.*\.(jpg|png))(.*\/)?(codechef|competitive[-_\s]?(programming)?)\/?$ "https://www.codechef.com/users/george_ogden" [R=301,L]
 RewriteRule ^(?!scratch\/hangman)(?!.*\.jpg)(.*\/)?hangman[-_\s]?(solver)?\/?$ "\/scratch\/hangman" [R=301,L]
 RewriteRule ^(?!scratch\/connect4)(?!.*\.jpg)(.*\/)?((connect[-_\s]?(4|four)?)|((connect)?[-_\s]?(4|four)))\/?$ "\/scratch\/connect4" [R=301,L]
@@ -55,15 +65,6 @@ RewriteRule ^(?!interactive\/converter)(interactive\/)?((colo(u)?r)[-_\s]?(conve
 RewriteRule ^(?!about\/updates)(?!.*\.jpg)(.*\/)?(((what\'?s[-_\s]?)?new)|update(s))\/?$ "\/about\/updates" [R=301,L]
 RewriteRule ^(?!about\/tutorials)(?!.*\.jpg)(.*\/)?(learn[-_\s]?(python)?|(python)?[-_\s]?tutorial(s)?)\/?$ "\/about\/tutorials" [R=301,L]
 RewriteRule ^(?!about\/(CV|cv)\.pdf)(about)?\/?(cv|CV)(\.?pdf)?\/?$ "\/about\/CV\.pdf" [R=301,L]
-
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
-RewriteCond %{THE_REQUEST} /([^.]+)\.htm [NC]
-RewriteRule ^ /%1 [NC,L,R]
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
-RewriteRule ^ /%1 [NC,L,R]
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} !^www\.

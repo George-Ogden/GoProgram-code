@@ -6,6 +6,6 @@ echo "<div  class='$lower icon'><a href=/$lower target=_blank data-toggle=toolti
 icon("YouTube");
 icon("GitHub");
 icon("PeoplePerHour");
-icon("LinkedIn");
 icon("CodeChef");
-icon("email"); ?></footer>
+icon("LinkedIn"); ?>
+</footer>

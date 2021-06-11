@@ -4,7 +4,7 @@
 <title>Professional Projects</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<meta name=description content="There are many researchers working on a wide range of awesome projects and these are some that I have used to create my own projects.">
+<meta name=description content="As part of my job, I've been able to work with some AI in freelancing projects to make a difference to others' code.">
 <meta name=keywords content="artificial intelligence algorithms">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="artificial intelligence">

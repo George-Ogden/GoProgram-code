@@ -4,7 +4,7 @@
 <title>About</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<meta name=description content="A wide variety of programming projects, ranging from AI to apps and everything in between. Have a play online or download some software to try.">
+<meta name=description content="A website created by George Ogden for sharing AI and other programming projects.">
 <meta name=keywords content="programming portfolio projects">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=about>

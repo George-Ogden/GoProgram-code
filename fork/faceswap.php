@@ -5,7 +5,7 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <link rel=stylesheet href=fork.css?v=1>
-<meta name=description content="A deepfake has been used to change the McFly's face from the famous hoverboard scene in Back to the Future">
+<meta name=description content='A faceswap has been used to create a deepfake of McFly from the famous hoverboard scene in "Back to the Future."'>
 <meta name=keywords content="deepfake technology">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="deepfake faceswap">

@@ -4,7 +4,7 @@
 <title>AI from Scratch</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<meta name=description content="AI is a dynamic field that is quickly advancing. Try out the colour classifier to see one example of its use or download the code library for your own projects.">
+<meta name=description content="AI is a dynamic field that is quickly advancing. Try out some projects that I've written from scratch!">
 <meta name=keywords content="artificial intelligence algorithms">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="artificial intelligence">

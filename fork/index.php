@@ -4,8 +4,7 @@
 <title>Code Forks</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<meta name=description content="There are many researchers working on a wide range of awesome projects and these are some that I have used to create my own projects.">
-<meta name=keywords content="artificial intelligence algorithms">
+<meta name=description content="There are many researchers working on a wide range of awesome projects and these have been used to implement original ideas.">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="artificial intelligence">
 </head><?php include "../header.php" ?>

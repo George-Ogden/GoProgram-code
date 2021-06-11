@@ -4,7 +4,7 @@
 <title>Interactive Non-AI</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<meta name=description content="There are a few projects online that you can use or play with without downloading anything. There as a sudoku solver, a calculator and a colour converter.">
+<meta name=description content="Play with some interactive projects in your browser.">
 <meta name=keywords content="online projects ideas">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="online projects">

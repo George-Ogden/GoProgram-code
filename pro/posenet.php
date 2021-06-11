@@ -15,7 +15,7 @@
 <h1 class="colour pad-2 highlight">PoseNet</h1>
 </div>
 <div class=section>
-<?php echo section("PoseNet","PoseNet is an artificial intelligence model that estimates the positions of various limbs and facial points in in an image. It generates a set of keypoints and then connects them to display the outline of a skeleton. I used this AI to count the number of reps during an exercise and analyse some running poses.");
+<?php echo section("PoseNet","PoseNet is an artificial intelligence model that estimates the positions of various limbs and facial points in in an image. It generates a set of keypoints and then connects them to display the outline of a skeleton. I used this AI to count the number of reps during a workout so that a client could use the code in a gym.");
 echo video("https://youtube.com/embed/ZHyjRYK9F3A") ?>
 <div class="section icons">
 <a class="icon" href="https://github.com/google-coral/project-posenet" target="_blank">

@@ -5,9 +5,9 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <meta name=description content="Play with some interactive projects in your browser.">
-<meta name=keywords content="online projects ideas">
+<meta name=keywords content="interactive projects and design">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="online projects">
+<meta name=subject content="interactive projects">
 </head><?php include "../header.php" ?>
 <section class="colour">
 <?php echo image("images/code.jpg", "Computer Code", "text-darken", ["id" => "top", "text" => "<h1>Interactive Non-AI</h1>"]);  ?>

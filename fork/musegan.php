@@ -4,7 +4,7 @@
 <title>MuseGAN</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=fork.css?v=1>
+<link rel=stylesheet href=/ai.css?v=1>
 <meta name=description content='An implementation of MuseGAN to generate melodies based on tracks by "The Beatles".'>
 <meta name=keywords content="music generation artificial intelligence">
 <meta name=viewport content="width=device-width,initial-scale=1">

@@ -7,7 +7,7 @@
 <meta name=description content="AI is a dynamic field that is quickly advancing. Try out some projects that I've written from scratch!">
 <meta name=keywords content="artificial intelligence algorithms">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="artificial intelligence">
+<meta name=subject content="ai from scratch">
 </head><?php include "../header.php" ?>
 <section class="colour">
 <?php echo image("images/brain.jpg", "Intelligence", "text-darken", ["id" => "top", "text" => "<h1>AI from Scratch</h1>"]);

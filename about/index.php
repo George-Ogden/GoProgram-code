@@ -5,7 +5,7 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <meta name=description content="A website created by George Ogden for sharing AI and other programming projects.">
-<meta name=keywords content="programming portfolio projects">
+<meta name=keywords content="ai projects ideas">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content=about>
 </head><?php include "../header.php" ?>

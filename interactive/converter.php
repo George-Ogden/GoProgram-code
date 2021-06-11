@@ -6,7 +6,7 @@
 <link rel=stylesheet href=online.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Play with this colour converter or use it as a tool in design. It will convert colours into different formats from hex to HLS.">
-<meta name=keywords content="colour converter">
+<meta name=keywords content="colour converter rgb to hex">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="colour converter">
 </head><?php include "../header.php" ?>

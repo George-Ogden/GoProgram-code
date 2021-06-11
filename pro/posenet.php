@@ -4,7 +4,7 @@
 <title>PoseNet</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=pro.css?v=1>
+<link rel=stylesheet href=/ai.css?v=1>
 <meta name=description content="An implementation of PosNet to count exercise reps during a workout.">
 <meta name=keywords content="pose estimation deep learning">
 <meta name=viewport content="width=device-width,initial-scale=1">

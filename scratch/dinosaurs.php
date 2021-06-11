@@ -6,9 +6,9 @@
 <link rel=stylesheet href=dinosaurs.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="An interactive piece of AI that generates dinasaur names with the input.">
-<meta name=keywords content="color classifier">
+<meta name=keywords content="random dinosaur name generator">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="random dinosaur name generator">
+<meta name=subject content="dinosaur generator">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>

@@ -4,9 +4,9 @@
 <title>YOLO</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=pro.css?v=1>
+<link rel=stylesheet href=/ai.css?v=1>
 <meta name=description content="An implementation of YOLO to detect solar panels or objects in the COCO dataset or to classify cards using a custom dataset.">
-<meta name=keywords content="cyclegan tensorflow">
+<meta name=keywords content="yolo implementation in python">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="YOLO implementation">
 </head><?php include "../header.php" ?>

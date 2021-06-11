@@ -4,11 +4,11 @@
 <title>CycleGAN</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=fork.css?v=1>
+<link rel=stylesheet href=/ai.css?v=1>
 <meta name=description content="An implementation of a CycleGAN to convert between male and female faces.">
 <meta name=keywords content="yolo object detection">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="gender cycleGAN">
+<meta name=subject content="YOLO object detection">
 </head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>

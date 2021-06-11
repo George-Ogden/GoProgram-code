@@ -4,9 +4,9 @@
 <title>Emotion Detection</title>
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
-<link rel=stylesheet href=fork.css?v=1>
+<link rel=stylesheet href=/ai.css?v=1>
 <meta name=description content="Using two AIs, the emotion detector detects faces and then identifies the emotion of each face in the image.">
-<meta name=keywords content="emotion detection">
+<meta name=keywords content="emotion detection ai">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=subject content="emotion detection">
 </head><?php include "../header.php" ?>

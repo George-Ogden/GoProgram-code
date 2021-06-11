@@ -3,7 +3,7 @@
 <head>
 <title>Colour Converter</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=online.css?v=2>
+<link rel=stylesheet href=interactive.css?v=1>
 <?php include "../meta.php" ?>
 <meta name=description content="Play with this colour converter or use it as a tool in design. It will convert colours into different formats from hex to HLS.">
 <meta name=keywords content="colour converter rgb to hex">

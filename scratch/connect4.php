@@ -28,17 +28,17 @@ echo "</tr>";
         <div id="spinner" class="m-auto"></div>
     </div></div>
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
-<script src=/scripts/js/activation_functions.js></script>
-<script src=/scripts/js/matrix.js></script>
-<script src=/scripts/js/ann.js></script>
-<script src=/scripts/js/gnn.js></script>
-<script src=/scripts/js/gfcnn.js></script>
-<script src=/scripts/js/convoluting.js></script>
-<script src=/scripts/js/gcnn.js></script>
-<script src="/scripts/js/genetic flatten.js"></script>
-<script src="/scripts/js/genetic combined network.js"></script>
-<script src=/scripts/js/player.js></script>
-<script src=/scripts/js/umpire.js></script>
-<script src="/scripts/js/noughts and crosses.js"></script>
-<script src=/scripts/js/gamer.js></script>
+<script src=ai/activation_functions.js></script>
+<script src=ai/matrix.js></script>
+<script src=ai/ann.js></script>
+<script src=ai/gnn.js></script>
+<script src=ai/gfcnn.js></script>
+<script src=ai/convoluting.js></script>
+<script src=ai/gcnn.js></script>
+<script src="ai/genetic flatten.js"></script>
+<script src="ai/genetic combined network.js"></script>
+<script src=ai/player.js></script>
+<script src=ai/umpire.js></script>
+<script src="ai/noughts and crosses.js"></script>
+<script src=ai/gamer.js></script>
 <script src=connect4.js></script>

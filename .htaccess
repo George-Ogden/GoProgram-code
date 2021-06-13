@@ -66,16 +66,10 @@ RewriteRule ^(?!about\/updates)(?!.*\.jpg)(.*\/)?(((what\'?s[-_\s]?)?new)|update
 RewriteRule ^(?!about\/tutorials)(?!.*\.jpg)(.*\/)?(learn[-_\s]?(python)?|(python)?[-_\s]?tutorial(s)?)\/?$ "\/about\/tutorials" [R=301,L]
 RewriteRule ^(?!about\/(CV|cv)\.pdf)(about)?\/?(cv|CV)(\.?pdf)?\/?$ "\/about\/CV\.pdf" [R=301,L]
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,L]
-Header always set Content-Security-Policy: upgrade-insecure-requests
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} (www\.)?goprogram.co.uk
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,NE,R=301]
 Options -Indexes
 ErrorDocument 404 /404.php
 ErrorDocument 403 /403.php

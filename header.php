@@ -17,9 +17,9 @@
             <li class="generator level-2"><a href=/scratch/dinosaurs>
                     <content>Dinosaur Generator</content>
                 </a></li>
-            <!-- <li class="hangman level-2"><a href=/scratch/hangman>
+            <li class="hangman level-2"><a href=/scratch/hangman>
                     <content>Hangman Solver</content>
-                </a></li> -->
+                </a></li>
         </ul>
         <li class="fork level-1"><a href=/fork>
                 <content>Code Forks</content>

@@ -30,19 +30,8 @@ echo "<option value=$i>$i</option>";
 ?>
 </select>
 </div><button id=start class="major mt-5">Start</button></div>
-<script type="text/javascript" src=sdk/lib/axios/dist/axios.standalone.js></script>
-<script type="text/javascript" src=sdk/lib/cryptojs/rollups/hmac-sha256.js></script>
-<script type="text/javascript" src=sdk/lib/cryptojs/rollups/sha256.js></script>
-<script type="text/javascript" src=sdk/lib/cryptojs/components/hmac.js></script>
-<script type="text/javascript" src=sdk/lib/cryptojs/components/enc-base64.js></script>
-<script type="text/javascript" src=sdk/lib/url-template/url-template.js></script>
-<script type="text/javascript" src=sdk/lib/apigatewaycore/sigv4client.js></script>
-<script type="text/javascript" src=sdk/lib/apigatewaycore/apigatewayclient.js></script>
-<script type="text/javascript" src=sdk/lib/apigatewaycore/simplehttpclient.js></script>
-<script type="text/javascript" src=sdk/lib/apigatewaycore/utils.js></script>
-<script type="text/javascript" src=sdk/apigClient.js></script>
 <?php include "../footer.php" ?></section>
 <?php include "../scripts.php" ?>
-<script src=hangman.js?v=2></script>
+<script src=hangman.js?v=3></script>
 </script>
 </html>

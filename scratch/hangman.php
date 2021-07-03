@@ -32,6 +32,6 @@ echo "<option value=$i>$i</option>";
 </div><button id=start class="major mt-5">Start</button></div>
 <?php include "../footer.php" ?></section>
 <?php include "../scripts.php" ?>
-<script src=hangman.js?v=3></script>
+<script src=hangman.js?v=4></script>
 </script>
 </html>

@@ -7,6 +7,8 @@ input {
 	text-align: center;
     border-radius: 0;
     border-color: #000;
+	width: 250px;
+	margin: auto;
 }
 
 .main div {
@@ -16,15 +18,26 @@ input {
 	padding: 100px 0 !important;
 	flex-direction: row !important;
 }
-@media (max-width: 1000px) {
-	#output {
-		margin: 50px 0 0;
-	}
-	.section.interactive {
-		padding: 50px 0 !important;
-	}
-	input,
-	select {
-		font-size: 1.5em;
-	}
+
+
+button.major {
+	background: var(--base);
+	cursor: pointer;
+	font-size: 2em;
+	margin: 50px auto;
+	display: block;
+	width: 200px;
+	background: var(--secondary-dark);
+	color: #fff;
+	border: none;
+	padding: 20px 0;
+	margin: 50px auto;
+}
+button.major,
+input,
+select {
+	font-size: 1.5em;
+}
+button.major {
+	padding: 10px 0;
 }

@@ -22,10 +22,11 @@
             $distances = ["100" => "100m",  "200" => "200m", "300" => "300m", "400" => "400m", "400H" => "400m Hurdles", "800" => "800m", "1000" => "1000m / 1km",  "1500" => "1500m", "Mile" => "1 mile",  "3000" => "3000m / 3km", "3000SC" => "3000m Steeplechase", "5000" => "5000m / 5km", "5M" => "5 miles",  "10000" => "10000m / 10km",  "10M" => "10 miles", "HM" => "Half Marathon",  "Mar" => "Marathon",
             "LJ" => "Long Jump", "TJ" => "Triple Jump","HJ" => "High Jump",];
             foreach ($distances as $k => $v) {
-                echo "<div id=$k class='d-flex justify-content-around py-1'><div><label for=$k class=pr-2>$v</label><input name=$k class=in></div><input name=$k-predicted class=out disabled></div>";
+                echo "<div id=$k class='d-flex justify-content-around py-1'><div class=w-50><label for=$k class=pr-2>$v</label><input name=$k class=in></div><div class='w-50 d-flex flex-center'><input name=$k-predicted class=out disabled></div></div>";
             }
             ?>
         </div>
+        <button id=calculate class="major mt-5">Calculate</button>
     </div>
     <?php include "../footer.php" ?>
 </section>

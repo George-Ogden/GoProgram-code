@@ -28,10 +28,14 @@
 <option value=100m id=100m>100m</option>
 <option value=200m id=200m>200m</option>
 <option value=300m id=300m>300m</option>
+<option value=400m id=400m>400m</option>
 <option value=800m id=800m>800m</option>
+<option value=1km id=1km time=60>1000m / 1km</option>
 <option value=1500m id=1500m time=60>1500m</option>
+<option value=1-mile id=1-miles time=60>1 mile</option>
 <option value=3km id=3km time=60>3000m / 3 km</option>
 <option value=5km id=5km time=60>5000m / 5 km</option>
+<option value=5-miles id=5-miles time=60>5 miles</option>
 <option value=10km id=10km time=60>10000m / 10 km</option>
 <option value=10-miles id=10-miles time=60>10 miles</option>
 <option value=half id=half time=60>Half Marathon</option>
@@ -39,6 +43,6 @@
 </select><input id=time placeholder="Time" time=60></div>
 </div>
 </div>
-<script src=timings.js?v=5></script>
+<script src=timings.js?v=6></script>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

@@ -12,7 +12,8 @@
 <meta name=subject content="hangman"> -->
 </head><?php include "../header.php" ?>
 <section>
-    <div class=section id=top>
+    <div class="section d-one"></div>
+    <div class="section" id=top>
         <h1 class="colour pad-1">PB Predictor</h1>
     </div>
     <div class="section interactive" id=main>
@@ -22,7 +23,7 @@
             $distances = ["100" => "100m",  "200" => "200m", "300" => "300m", "400" => "400m", "400H" => "400m Hurdles", "800" => "800m", "1000" => "1000m / 1km",  "1500" => "1500m", "Mile" => "1 mile",  "3000" => "3000m / 3km", "3000SC" => "3000m Steeplechase", "5000" => "5000m / 5km", "5M" => "5 miles",  "10000" => "10000m / 10km",  "10M" => "10 miles", "HM" => "Half Marathon",  "Mar" => "Marathon",
             "LJ" => "Long Jump", "TJ" => "Triple Jump","HJ" => "High Jump",];
             foreach ($distances as $k => $v) {
-                echo "<div id=$k class='d-flex justify-content-around py-1'><div class=w-50><label for=$k class=pr-2>$v</label><input name=$k class=in></div><div class='w-50 d-flex flex-center'><input name=$k-predicted class=out disabled></div></div>";
+                echo "<div id=$k class='d-flex justify-content-around py-1'><div class='w-50 d-flex align-items-center '><label for=$k class=pr-2>$v</label><input type='checkbox' class='check mx-3' name=$k><input name=$k class='in disabled'></div><div class='w-50 d-flex flex-center'><input name=$k-predicted class=out disabled></div></div>";
             }
             ?>
         </div>

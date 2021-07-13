@@ -23,27 +23,48 @@ $("#calculate").on("click", function () {
 		$(".section.interactive .options .out").each(function () {
 			var out_ = $(this);
 			$(this)
-				.parent()
-				.parent()
-				.append(
-					line(
-						in_.position().left + in_.outerWidth(false),
-						in_.position().top + in_.outerHeight(false) / 2,
-						out_.position().left +
-							(out_.outerWidth(true) - out_.outerWidth(false)) /
-								2,
-						out_.position().top + out_.outerHeight(false) / 2
+			.parent()
+			.parent()
+			.append(
+				line(
+					in_.position().left + in_.outerWidth(false) +
+					(in_.outerWidth(true) - in_.outerWidth(false)) /
+					2,
+					in_.position().top + in_.outerHeight(false) / 2,
+					out_.position().left +
+					(out_.outerWidth(true) - out_.outerWidth(false)) /
+					2,
+					out_.position().top + out_.outerHeight(false) / 2
 					)
-				);
-		});
-	});
-
-	const t = new XMLHttpRequest();
-	t.open(
-		"PUT",
-		`https://hangman.goprogram.ai/update?word=${word.toLowerCase()}`
-	),
-		t.send();
+					);
+				});
+			});
+			let data = {};
+			$("input.in:not(.disabled)").each(function() {
+				if ($(this).val()){
+					data[$(this).attr("name")] = $(this).val()
+				}
+			})
+			if (data){
+				const t = new XMLHttpRequest();
+				t.open(
+					"GET",
+					`https://timings.goprogram.ai/?${$.param(data)}`
+					),
+					t.send();
+					t.onload = () => {
+						if (200 == t.status) {
+							var e = JSON.parse(t.response)
+							console.log(e)
+							for (let k in e){
+								if (!$(`input.in[name=${k}]`).hasClass("disabled")) {
+									$(`input.out[name=${k}-predicted]`).css("background", 1 || $(`input.in[name=${k}]`).val() == e[k] ? "silver" : $(`input.in[name=${k}]`).val() > e[k] ? "var(--green)" : "red")
+								}
+								$(`input.out[name=${k}-predicted]`).val(format(e[k],formats[k]))
+							}
+						} else console.error("Error!");
+					}
+				}
 });
 //.append(line(100,100,200,200))
 const defaults  = {"3000": 560.1204918616402, "800": 128.0895949694736, "1000": 167.88712211524808, "5M": 1669.5824673526495, "1500": 268.9393741599833, "200": 23.90700972394997, "400": 52.26357749092554, "TJ": 11.956888734448812, "10000": 2154.426032866935, "5000": 1067.4503698623034, "3000SC": 613.689604666458, "Mile": 289.5441703471213, "10M": 3618.307323557738, "HM": 4896.056395688766, "HJ": 1.6392686876832219, "Mar": 10627.716554128732, "400H": 57.852445494269304, "LJ": 5.300191850479601, "100": 11.82995507906262, "300": 38.23575943261794}

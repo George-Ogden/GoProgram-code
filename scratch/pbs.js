@@ -13,61 +13,126 @@ function line(x1, y1, x2, y2) {
     -o-transform: rotate(${angle}rad); -ms-transform: rotate(${angle}rad); position: absolute; top: ${y}px; left: ${x}px'</div>`;
 }
 
-$("#calculate").on("click", function () {
+function parse(x, f) {
+	if (
+		x == undefined ||
+		!x.replace(" ", "").match(/^(\d*:){0,2}\d*(\.\d*)?$/)
+	) {
+		return undefined;
+	}
+	switch (f) {
+		case "d":
+		case "s":
+			return parseFloat(x) || undefined;
+		case "m":
+			if (!x.includes(":")) {
+				return 60 * parse(x, "s");
+			} else {
+				return parse(x);
+			}
+		case "h":
+			if (x.split(":").length < 3) {
+				return 60 * parse(x, "m");
+			} else {
+				return parse(x);
+			}
+		default:
+			return x
+				.replace(" ", "")
+				.split(":")
+				.reverse()
+				.reduce((a, c, i) => a + parseFloat(c || 0) * 60 ** i, 0);
+	}
+}
+
+function draw() {
 	$(".line").remove();
-	$(".section.interactive .options .in").each(function () {
+	$(".section.interactive .options input.in.use").each(function () {
 		var in_ = $(this);
-		if (!$(in_).val()) {
-			return;
-		}
 		$(".section.interactive .options .out").each(function () {
 			var out_ = $(this);
 			$(this)
-			.parent()
-			.parent()
-			.append(
-				line(
-					in_.position().left + in_.outerWidth(false) +
-					(in_.outerWidth(true) - in_.outerWidth(false)) /
-					2,
-					in_.position().top + in_.outerHeight(false) / 2,
-					out_.position().left +
-					(out_.outerWidth(true) - out_.outerWidth(false)) /
-					2,
-					out_.position().top + out_.outerHeight(false) / 2
+				.parent()
+				.parent()
+				.append(
+					line(
+						in_.position().left +
+							in_.outerWidth(false) +
+							(in_.outerWidth(true) - in_.outerWidth(false)) / 2,
+						in_.position().top + in_.outerHeight(false) / 2,
+						out_.position().left +
+							(out_.outerWidth(true) - out_.outerWidth(false)) /
+								2,
+						out_.position().top + out_.outerHeight(false) / 2
 					)
-					);
-				});
-			});
-			let data = {};
-			$("input.in:not(.disabled)").each(function() {
-				if ($(this).val()){
-					data[$(this).attr("name")] = $(this).val()
-				}
-			})
-			if (data){
+				);
+		});
+	});
+}
+
+document.body.onresize = draw
+
+$("#calculate").on("click", function () {
+	let data = {};
+	$(".section.interactive .options input.in").each(
+		function () {
+			var in_ = $(this);
+			in_.removeClass("use");
+			var val = parse(in_.val(),formats[in_.attr("name")]);
+			var name = in_.attr("name");
+			if (in_.hasClass("disabled") || 
+				val == undefined ||
+				(formats[name] == "d"
+					? val > defaults[name] * 2
+					: val < defaults[name] / 2)
+			) {
+				return;
+			}
+			in_.addClass("use");
+			data[name] = val;
+			if (Object.keys(data).length) {
 				const t = new XMLHttpRequest();
-				t.open(
-					"GET",
-					`https://timings.goprogram.ai/?${$.param(data)}`
-					),
+				t.open("GET", `https://timings.goprogram.ai/?${$.param(data)}`),
 					t.send();
-					t.onload = () => {
-						if (200 == t.status) {
-							var e = JSON.parse(t.response)
-							console.log(e)
-							for (let k in e){
-								if (!$(`input.in[name=${k}]`).hasClass("disabled")) {
-									$(`input.out[name=${k}-predicted]`).css("background", 1 || $(`input.in[name=${k}]`).val() == e[k] ? "silver" : $(`input.in[name=${k}]`).val() > e[k] ? "var(--green)" : "red")
-								}
-								$(`input.out[name=${k}-predicted]`).val(format(e[k],formats[k]))
+				t.onload = () => {
+					if (200 == t.status) {
+						var e = JSON.parse(t.response);
+						for (let k in e) {
+							if (
+								$(`input.in[name=${k}]`).hasClass("disabled")
+								) {
+								$(`input.out[name=${k}-predicted]`).css(
+									"background","initial"
+									);
+							} else {
+								$(`input.out[name=${k}-predicted]`).css(
+									"background",
+									1 || $(`input.in[name=${k}]`).val() == e[k]
+										? "silver"
+										: $(`input.in[name=${k}]`).val() > e[k]
+										? "var(--green)"
+										: "red"
+								);
 							}
-						} else console.error("Error!");
-					}
-				}
+							$(`input.out[name=${k}-predicted]`).val(
+								format(e[k], formats[k]))
+							
+						}draw();
+					} else console.error("Error!");
+				};
+			}
+		}
+	);
 });
 //.append(line(100,100,200,200))
-const defaults  = {"3000": 560.1204918616402, "800": 128.0895949694736, "1000": 167.88712211524808, "5M": 1669.5824673526495, "1500": 268.9393741599833, "200": 23.90700972394997, "400": 52.26357749092554, "TJ": 11.956888734448812, "10000": 2154.426032866935, "5000": 1067.4503698623034, "3000SC": 613.689604666458, "Mile": 289.5441703471213, "10M": 3618.307323557738, "HM": 4896.056395688766, "HJ": 1.6392686876832219, "Mar": 10627.716554128732, "400H": 57.852445494269304, "LJ": 5.300191850479601, "100": 11.82995507906262, "300": 38.23575943261794}
+let defaults = {};
+const t = new XMLHttpRequest();
+t.open("GET", `https://timings.goprogram.ai?HM=0`), t.send();
+t.onload = () => {
+	if (200 == t.status) {
+		defaults = JSON.parse(t.response);
+	} else console.error("Error!");
+};
 const formats = {
 	100: "s",
 	200: "s",
@@ -83,37 +148,60 @@ const formats = {
 	5000: "m",
 	"5M": "m",
 	10000: "m",
-	"10M": "m",
+	"10M": "h",
 	HM: "h",
 	Mar: "h",
 	LJ: "d",
 	TJ: "d",
 	HJ: "d",
 };
-function format(x, f){
-    console.log(x,f)
-    return x
+function pad(n, width = 2, z = "0") {
+	return String(n).padStart(width, z);
 }
-$("input.check").on("click",function(){
-    if (this.checked) {
-        $(this).parent().children("input.in").removeClass("disabled");
-        if (!$(this).parent().children("input.in").val()){
-            $(this).parent().children("input.in").val(format(defaults[$(this).attr("name")],$(this).attr("name")))
-        }
-    } else {
-          $(this).parent().children("input.in").addClass("disabled");
-      }
-    
-})
-$("input.in").on("focus",function(){
-    $(this).removeClass("disabled");
-    $(this).parent().children("input.check").attr("checked", true);
-    
-})
-$("input.in").on("focusout",function(){
-    if (!$(this).val()){
-        $(this).addClass("disabled");
-        $(this).parent().children("input.check").removeAttr("checked");
-    }
-    
-})
+function format(x, f) {
+	switch (f) {
+		case "d":
+		case "s":
+			return x.toFixed(2);
+		case "m":
+			return Math.floor(x / 60) + ":" + pad((x % 60).toFixed(2), 5);
+		case "h":
+			return (
+				Math.floor(x / 3600) +
+				":" +
+				pad(Math.floor((x % 3600) / 60)) +
+				":" +
+				pad((x % 60).toFixed(0))
+			);
+		default:
+			return x;
+	}
+}
+$("input.check").on("click", function () {
+	if (this.checked) {
+		$(this).parent().children("input.in").removeClass("disabled");
+		if (!$(this).parent().children("input.in").val()) {
+			$(this)
+				.parent()
+				.children("input.in")
+				.val(
+					format(
+						defaults[$(this).attr("name")],
+						formats[$(this).attr("name")]
+					)
+				);
+		}
+	} else {
+		$(this).parent().children("input.in").addClass("disabled");
+	}
+});
+$("input.in").on("focus", function () {
+	$(this).removeClass("disabled");
+	$(this).parent().children("input.check").attr("checked", true);
+});
+$("input.in").on("focusout", function () {
+	if (!$(this).val()) {
+		$(this).addClass("disabled");
+		$(this).parent().children("input.check").removeAttr("checked");
+	}
+});

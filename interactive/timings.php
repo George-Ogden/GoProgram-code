@@ -16,33 +16,34 @@
 </div>
 <div class="section interactive">
 <div class=main>
+<input class=d-none id=speed>
 <h2 class=mt-5>Laps (400m)</h2>
-<div><input id=lap value=80s placeholder="Lap time"></div>
+<div><input id=lap placeholder="Lap time" format=s></div>
 <h2 class=mt-5>Kilometres</h2>
-<div><input id=km placeholder="Kilometre time" time=60></div>
+<div><input id=km placeholder="Kilometre time" format=m></div>
 <h2 class=mt-5>Miles</h2>
-<div><input id=mi placeholder="Mile time" time=60></div>
+<div><input id=mi placeholder="Mile time" format=m></div>
 <h2 class=mt-5>Custom Distance</h2>
 <div><select class="mdb-select md-form" id=distance>
 <option value="" disabled>Distance</option>
-<option value=100m id=100m>100m</option>
-<option value=200m id=200m>200m</option>
-<option value=300m id=300m>300m</option>
-<option value=400m id=400m>400m</option>
-<option value=800m id=800m>800m</option>
-<option value=1km id=1km time=60>1000m / 1km</option>
-<option value=1500m id=1500m time=60>1500m</option>
-<option value=1-mile id=1-miles time=60>1 mile</option>
-<option value=3km id=3km time=60>3000m / 3 km</option>
-<option value=5km id=5km time=60>5000m / 5 km</option>
-<option value=5-miles id=5-miles time=60>5 miles</option>
-<option value=10km id=10km time=60>10000m / 10 km</option>
-<option value=10-miles id=10-miles time=60>10 miles</option>
-<option value=half id=half time=3600>Half Marathon</option>
-<option value=marathon id=marathon time=3600>Marathon</option>
-</select><input id=time placeholder="Time" time=60></div>
+<option value=100m id=100m format=s>100m</option>
+<option value=200m id=200m format=s>200m</option>
+<option value=300m id=300m format=s>300m</option>
+<option value=400m id=400m format=s>400m</option>
+<option value=800m id=800m format=m>800m</option>
+<option value=1km id=1km format=m>1000m / 1km</option>
+<option value=1500m id=1500m format=m>1500m</option>
+<option value=1-mile id=1-miles format=m>1 mile</option>
+<option value=3km id=3km format=m>3000m / 3 km</option>
+<option value=5km id=5km format=m>5000m / 5 km</option>
+<option value=5-miles id=5-miles format=m>5 miles</option>
+<option value=10km id=10km format=m>10000m / 10 km</option>
+<option value=10-miles id=10-miles format=h>10 miles</option>
+<option value=half id=half format=h>Half Marathon</option>
+<option value=marathon id=marathon format=h>Marathon</option>
+</select><input id=time placeholder="Time"></div>
 </div>
 </div>
-<script src=timings.js?v=7></script>
+<script src=timings.js?v=8></script>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?>
 </html>

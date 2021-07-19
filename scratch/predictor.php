@@ -4,7 +4,7 @@
 <head>
     <title>PB Predictor</title>
     <?php include "../main.php" ?>
-    <link rel=stylesheet href=predictor.css?v=2>
+    <link rel=stylesheet href=predictor.css?v=3>
     <?php include "../meta.php" ?>
     <meta name=description content="Unsure on what times you need to aim for? This tool calculates target times for a range of distances.">
 <meta name=keywords content="running time predictor">

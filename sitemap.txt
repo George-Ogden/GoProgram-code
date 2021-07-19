@@ -3,6 +3,7 @@ https://www.goprogram.co.uk/scratch/
 https://www.goprogram.co.uk/scratch/connect4
 https://www.goprogram.co.uk/scratch/dinosaurs
 https://www.goprogram.co.uk/scratch/hangman
+https://www.goprogram.co.uk/scratch/predictor
 https://www.goprogram.co.uk/fork/
 https://www.goprogram.co.uk/fork/faceswap
 https://www.goprogram.co.uk/fork/emotion

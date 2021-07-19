@@ -21,7 +21,7 @@
                     <content>Hangman Solver</content>
                 </a></li>
             <li class="pbs level-2"><a href=/scratch/pbs>
-                    <content>PBs Predictor</content>
+                    <content>PB Predictor</content>
                 </a></li>
         </ul>
         <li class="fork level-1"><a href=/fork>

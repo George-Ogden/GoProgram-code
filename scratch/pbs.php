@@ -6,10 +6,10 @@
     <?php include "../main.php" ?>
     <link rel=stylesheet href=pbs.css?v=1>
     <?php include "../meta.php" ?>
-    <!-- <meta name=description content="This hangman solver figures out your word by looking up what other people have done before you! Then, it learns and improves based on what you do.">
-<meta name=keywords content="hangman solver">
+    <meta name=description content="Unsure on what times you need to aim for? This tool calculates target times for a range of distances.">
+<meta name=keywords content="running time predictor">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="hangman"> -->
+<meta name=subject content="runnnig time predictor">
 </head><?php include "../header.php" ?>
 <section>
     <div class="section d-one"></div>

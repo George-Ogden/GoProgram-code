@@ -20,6 +20,9 @@
             <li class="hangman level-2"><a href=/scratch/hangman>
                     <content>Hangman Solver</content>
                 </a></li>
+            <li class="pbs level-2"><a href=/scratch/pbs>
+                    <content>PBs Predictor</content>
+                </a></li>
         </ul>
         <li class="fork level-1"><a href=/fork>
                 <content>Code Forks</content>

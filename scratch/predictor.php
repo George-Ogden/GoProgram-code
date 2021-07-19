@@ -31,7 +31,7 @@
     <?php include "../footer.php" ?>
 </section>
 <?php include "../scripts.php" ?>
-<script src=predictor.js?v=1></script>
+<script src=predictor.js?v=2></script>
 </script>
 
 </html>

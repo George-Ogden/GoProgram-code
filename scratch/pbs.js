@@ -49,7 +49,7 @@ function draw() {
 	$(".line").remove();
 	$(".section.interactive .options input.in.use").each(function () {
 		var in_ = $(this);
-		$(".section.interactive .options .out").each(function () {
+		$(".section.interactive .options input.out").each(function () {
 			var out_ = $(this);
 			$(this)
 				.parent()
@@ -58,11 +58,10 @@ function draw() {
 					line(
 						in_.position().left +
 							in_.outerWidth(false) +
-							(in_.outerWidth(true) - in_.outerWidth(false)) / 2,
+							parseInt(in_.css("marginLeft")),
 						in_.position().top + in_.outerHeight(false) / 2,
 						out_.position().left +
-							(out_.outerWidth(true) - out_.outerWidth(false)) /
-								2,
+							parseInt(out_.css("marginLeft")),
 						out_.position().top + out_.outerHeight(false) / 2
 					)
 				);
@@ -90,39 +89,39 @@ $("#calculate").on("click", function () {
 			}
 			in_.addClass("use");
 			data[name] = val;
-			if (Object.keys(data).length) {
-				const t = new XMLHttpRequest();
-				t.open("GET", `https://timings.goprogram.ai/?${$.param(data)}`),
-					t.send();
-				t.onload = () => {
-					if (200 == t.status) {
-						var e = JSON.parse(t.response);
-						for (let k in e) {
-							if (
-								$(`input.in[name=${k}]`).hasClass("disabled")
-								) {
-								$(`input.out[name=${k}-predicted]`).css(
-									"background","initial"
-									);
-							} else {
-								$(`input.out[name=${k}-predicted]`).css(
-									"background",
-									1 || $(`input.in[name=${k}]`).val() == e[k]
-										? "silver"
-										: $(`input.in[name=${k}]`).val() > e[k]
-										? "var(--green)"
-										: "red"
-								);
-							}
-							$(`input.out[name=${k}-predicted]`).val(
-								format(e[k], formats[k]))
-							
-						}draw();
-					} else console.error("Error!");
-				};
-			}
 		}
-	);
+		);
+		if (Object.keys(data).length) {
+			const t = new XMLHttpRequest();
+			t.open("GET", `https://timings.goprogram.ai/?${$.param(data)}`),
+				t.send();
+			t.onload = () => {
+				if (200 == t.status) {
+					var e = JSON.parse(t.response);
+					for (let k in e) {
+						if (
+							$(`input.in[name=${k}]`).hasClass("disabled")
+							) {
+							$(`input.out[name=${k}-predicted]`).css(
+								"background","initial"
+								);
+						} else {
+							$(`input.out[name=${k}-predicted]`).css(
+								"background",
+								1 || $(`input.in[name=${k}]`).val() == e[k]
+									? "silver"
+									: $(`input.in[name=${k}]`).val() > e[k]
+									? "var(--green)"
+									: "red"
+							);
+						}
+						$(`input.out[name=${k}-predicted]`).val(
+							format(e[k], formats[k]))
+						
+					}draw();
+				} else console.error("Error!");
+			};
+		}
 });
 //.append(line(100,100,200,200))
 let defaults = {};
@@ -197,11 +196,11 @@ $("input.check").on("click", function () {
 });
 $("input.in").on("focus", function () {
 	$(this).removeClass("disabled");
-	$(this).parent().children("input.check").attr("checked", true);
+	$(this).parent().children("input.check").prop("checked", true);
 });
 $("input.in").on("focusout", function () {
 	if (!$(this).val()) {
 		$(this).addClass("disabled");
-		$(this).parent().children("input.check").removeAttr("checked");
+		$(this).parent().children("input.check").prop("checked",false);
 	}
 });

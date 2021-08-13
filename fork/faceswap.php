@@ -11,7 +11,7 @@
 <meta name=subject content="deepfake faceswap">
 </head><?php include "../header.php" ?>
 <section class=colour>
-<?php echo image("images/delorean.jpg", "Deloreanr", "text-darken", ["id" => "top", "text" => "<h1>Deepfakes Faceswap</h1>"]); ?>
+<?php echo image("images/delorean.jpg", "Delorean", "text-darken", ["id" => "top", "text" => "<h1>Deepfakes Faceswap</h1>"]); ?>
 <div class=section>
 <div class="section image"><div class=text><h2>Faceswap</h2><p>Faceswap is a deepfake implementation in Python that allows a user to transform a series of images by changing the face of the subject. In this project, I converted the famous hoverboard scene from "Back to the Future" and then pieced back together each of the frames with the audio on top.</div><?php echo image("images/faceswap.jpg","Original / Edited") ?></div>
 <?php echo video("https://youtube.com/embed/d6Z4e14Zy94") ?>

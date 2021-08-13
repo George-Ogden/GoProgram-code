@@ -29,11 +29,15 @@
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/faceswap</loc>
+        <loc>https://www.goprogram.co.uk/fork/emotion</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/emotion</loc>
+        <loc>https://www.goprogram.co.uk/fork/maskrcnn</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.goprogram.co.uk/fork/faceswap</loc>
         <priority>0.80</priority>
     </url>
     <url>

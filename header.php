@@ -34,6 +34,9 @@
             <li class="emotion level-2"><a href=/fork/emotion>
                     <content>Emotion Detection</content>
                 </a></li>
+            <li class="maskrcnn level-2"><a href=/fork/maskrcnn>
+                    <content>Mask-RCNN</content>
+                </a></li>
             <li class="faceswap level-2"><a href=/fork/faceswap>
                     <content>Faceswap</content>
                 </a></li>

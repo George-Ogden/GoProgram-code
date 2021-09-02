@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <link rel=stylesheet href=/ai.css?v=1>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="Using AI, this project extracts the faces in an image and then converts them so that they appear to be painted.">
+<meta name=keywords content="painted faces ai art">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="CUT Implementation for Face Extraction and Portrait Generation">
 </head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>

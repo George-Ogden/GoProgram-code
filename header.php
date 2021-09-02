@@ -31,6 +31,9 @@
             <li class="emotion level-2"><a href=/fork>
                     <content>Home</content>
                 </a></li>
+            <li class="painter level-2"><a href=/fork/painter>
+                    <content>Painted Faces</content>
+                </a></li>
             <li class="emotion level-2"><a href=/fork/emotion>
                     <content>Emotion Detection</content>
                 </a></li>

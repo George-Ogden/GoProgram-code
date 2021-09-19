@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://www.goprogram.co.uk/</loc>
+        <loc>https://goprogram.ai/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/scratch/</loc>
+        <loc>https://goprogram.ai/scratch/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/scratch/connect4</loc>
+        <loc>https://goprogram.ai/scratch/connect4</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/scratch/dinosaurs</loc>
+        <loc>https://goprogram.ai/scratch/dinosaurs</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/scratch/hangman</loc>
+        <loc>https://goprogram.ai/scratch/hangman</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/scratch/predictor</loc>
+        <loc>https://goprogram.ai/scratch/predictor</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/</loc>
+        <loc>https://goprogram.ai/fork/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/painter</loc>
+        <loc>https://goprogram.ai/fork/painter</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/emotion</loc>
+        <loc>https://goprogram.ai/fork/emotion</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/maskrcnn</loc>
+        <loc>https://goprogram.ai/fork/maskrcnn</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/faceswap</loc>
+        <loc>https://goprogram.ai/fork/faceswap</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/musegan</loc>
+        <loc>https://goprogram.ai/fork/musegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/fork/cyclegan</loc>
+        <loc>https://goprogram.ai/fork/cyclegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/pro/</loc>
+        <loc>https://goprogram.ai/pro/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/pro/yolo</loc>
+        <loc>https://goprogram.ai/pro/yolo</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/pro/posenet</loc>
+        <loc>https://goprogram.ai/pro/posenet</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/interactive/</loc>
+        <loc>https://goprogram.ai/interactive/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/interactive/calculator</loc>
+        <loc>https://goprogram.ai/interactive/calculator</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/interactive/sudoku</loc>
+        <loc>https://goprogram.ai/interactive/sudoku</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/interactive/converter</loc>
+        <loc>https://goprogram.ai/interactive/converter</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/interactive/timings</loc>
+        <loc>https://goprogram.ai/interactive/timings</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/about/</loc>
+        <loc>https://goprogram.ai/about/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/about/updates</loc>
+        <loc>https://goprogram.ai/about/updates</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/about/tutorials</loc>
+        <loc>https://goprogram.ai/about/tutorials</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/about/source</loc>
+        <loc>https://goprogram.ai/about/source</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.goprogram.co.uk/about/CV.pdf</loc>
+        <loc>https://goprogram.ai/about/CV.pdf</loc>
         <priority>0.80</priority>
     </url>
 </urlset>

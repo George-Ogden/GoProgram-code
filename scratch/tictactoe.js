@@ -1,4 +1,8 @@
 let move_promise, thinking = !1;
+const umpire = new Noughts_and_Crosses(5,4)
+const player = {move : function(){
+    return Matrix.fromArray([[1,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]])
+}};
 function endGame() {
     finishMove(),
     thinking = !0
@@ -20,41 +24,40 @@ async function displayBoard(t) {
             $(`[row=${o}][col=${e}].box`).hasClass("taken") || $(`[row=${o}][col=${e}].box`).addClass("taken"))
         }
 }
-async function animateMove(t, o) {
-    t = parseInt(t),
-    distance = $("#board").offset().top - $(`[row=${t}][col=${o}].box circle`).offset().top,
-    $(`[row=${t}][col=${o}].box circle`).css("transform", `translate(0,${distance}px`),
-    await new Promise(t=>setTimeout(t, 100)),
-    $(`[row=${t}][col=${o}].box circle`).css("transition", `transform ${Math.sqrt(-1 * distance) / 100}s cubic-bezier(.3,0,.69,.17)`),
-    $(`[row=${t}][col=${o}].box circle`).css("transform", "translate(0,0)")
+async function animateMove() {
 }
 function resize() {
     $("#board").height($("#board").width())
 }
 $("#board").on("mouseenter", function() {
     $(this).off("mouseenter"),
-    umpire.challenge(player)
+    umpire.challenge(player,1)
 }),
 $(window).resize(resize),
 resize(),
 $("td.box").on("mouseover", function() {
-    !thinking && $(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 && ($(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--base)"),
-    $(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t, $(o).attr("row") || 0), 0)}][col=${$(this).attr("col")}] circle`).css({
-        opacity: "0.3",
-        background: "red"
-    }))
-}),
-$("td.box").on("click", function() {
-    !thinking && $(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 && (move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t, $(o).attr("row") || 0), 0), $(this).attr("col")]),
-    thinking = !0,
-    $(".cover").removeClass("d-none"),
-    $(".cover").addClass("darken d-flex"),
-    $(".box:not(.taken) circle").css("background", "transparent"),
-    $(".box").css("background", "var(--primary-light)"))
+    if (!thinking && !$(this).is(".taken")){
+        $(this).css("background","var(--base)")
+        $(this).children("circle").css({
+            opacity: "0.3",
+            background: "red"
+        })
+    }
 }),
 $("td.box").on("mouseout", function() {
-    $(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 && ($(`[col=${$(this).attr("col")}]:not(.taken)`).css("background", "var(--primary-light)"),
-    $(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t, $(o).attr("row") || 0), 0)}][col=${$(this).attr("col")}] circle`).css({
-        background: "transparent"
-    }))
-});
+    if (!thinking && !$(this).is(".taken")){
+        $(this).css("background","var(--primary-light)")
+        $(this).children("circle").css("background","transparent")
+    }
+}),
+$("td.box").on("click", function() {
+    if (!thinking && !$(this).is(".taken")){
+        thinking = true,
+        move_promise([$(this).attr("row"),$(this).attr("col")])
+        $(".cover").removeClass("d-none"),
+        $(".cover").addClass("darken d-flex"),
+        $(".box:not(.taken) circle").css("background", "transparent"),
+        $(".box").css("background", "var(--primary-light)")
+    }
+    // !thinking && $(`[col=${$(this).attr("pos")}]:not(.taken)`).length > 0 && (move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t, $(o).attr("row") || 0), 0), $(this).attr("col")]),
+})

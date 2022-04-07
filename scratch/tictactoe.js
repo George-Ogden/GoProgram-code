@@ -1,6 +1,8 @@
 let move_promise, thinking = !1;
 const umpire = new Noughts_and_Crosses(5,4)
-const player = {move : function(){
+pieces = {0:" ",1:"X","-1":"O"}
+const player = {move : function(t,m){
+    console.log(Matrix.flatten(t).data[0].map(x => pieces[x]).join(""))
     return Matrix.fromArray([[1,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]])
 }};
 function endGame() {

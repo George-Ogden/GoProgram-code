@@ -6,11 +6,11 @@ const player = {move : async function(t,m){
     w = (t.rss() % 2) * 2 - 1
     let r = await this.request(Matrix.flatten(t).data[0].map(x => pieces[x]).join(""))
     if (200 == r.status) {
-        console.log(r.responseText)
+        // console.log(r.responseText)
         return Matrix.multiply(Matrix.resize(Matrix.fromArray([r.responseText.toUpperCase().split("").map(x => pieces[x])]),5,5),w)
     } else console.error("Error!");
 },request : function(board){
-    console.log(board)
+    // console.log(board)
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
         xhr.open(
@@ -53,7 +53,7 @@ function resize() {
 }
 $("#board").on("mouseenter", function() {
     $(this).off("mouseenter"),
-    umpire.challenge(player,0)
+    umpire.challenge(player)
 }),
 $(window).resize(resize),
 resize(),

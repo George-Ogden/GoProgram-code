@@ -1,9 +1,29 @@
 let move_promise, thinking = !1;
-const umpire = new Noughts_and_Crosses(5,4)
-pieces = {0:" ",1:"X","-1":"O"}
-const player = {move : function(t,m){
-    console.log(Matrix.flatten(t).data[0].map(x => pieces[x]).join(""))
-    return Matrix.fromArray([[1,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]])
+const size = 5;
+const umpire = new Noughts_and_Crosses(size,4)
+pieces = {0:".",1:"X","-1":"O",".":0,"X":1,"O":-1}
+const player = {move : async function(t,m){
+    w = (t.rss() % 2) * 2 - 1
+    let r = await this.request(Matrix.flatten(t).data[0].map(x => pieces[x]).join(""))
+    if (200 == r.status) {
+        console.log(r.responseText)
+        return Matrix.multiply(Matrix.resize(Matrix.fromArray([r.responseText.toUpperCase().split("").map(x => pieces[x])]),5,5),w)
+    } else console.error("Error!");
+},request : function(board){
+    console.log(board)
+    return new Promise(function (resolve, reject) {
+        let xhr = new XMLHttpRequest();
+        xhr.open(
+              "GET",
+              `https://api.goprogram.ai/tictactoe?board=${board}`);
+        xhr.onload = function () {
+            if (this.status == 200) {
+                resolve(xhr);
+            } 
+        };
+        xhr.send();
+    });
+
 }};
 function endGame() {
     finishMove(),
@@ -33,7 +53,7 @@ function resize() {
 }
 $("#board").on("mouseenter", function() {
     $(this).off("mouseenter"),
-    umpire.challenge(player,1)
+    umpire.challenge(player,0)
 }),
 $(window).resize(resize),
 resize(),
@@ -55,11 +75,10 @@ $("td.box").on("mouseout", function() {
 $("td.box").on("click", function() {
     if (!thinking && !$(this).is(".taken")){
         thinking = true,
-        move_promise([$(this).attr("row"),$(this).attr("col")])
         $(".cover").removeClass("d-none"),
         $(".cover").addClass("darken d-flex"),
         $(".box:not(.taken) circle").css("background", "transparent"),
         $(".box").css("background", "var(--primary-light)")
+        move_promise([$(this).attr("row"),$(this).attr("col")])
     }
-    // !thinking && $(`[col=${$(this).attr("pos")}]:not(.taken)`).length > 0 && (move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t, $(o).attr("row") || 0), 0), $(this).attr("col")]),
 })

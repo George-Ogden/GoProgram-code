@@ -28,16 +28,7 @@ echo "</tr>";
         <div id="spinner" class="m-auto"></div>
     </div></div>
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
-<!-- <script src=https://goprogram.ai/scratch/ai/activation_functions.js></script> -->
-<script src=https://goprogram.ai/scratch/ai/matrix.js></script>
-<!-- <script src=https://goprogram.ai/scratch/ai/ann.js></script> -->
-<!-- <script src=https://goprogram.ai/scratch/ai/gnn.js></script> -->
-<!-- <script src=https://goprogram.ai/scratch/ai/gfcnn.js></script> -->
-<!-- <script src=https://goprogram.ai/scratch/ai/convoluting.js></script> -->
-<!-- <script src=https://goprogram.ai/scratch/ai/gcnn.js></script> -->
-<!-- <script src="https://goprogram.ai/scratch/ai/genetic flatten.js"></script> -->
-<!-- <script src="https://goprogram.ai/scratch/ai/genetic combined network.js"></script> -->
-<!-- <script src=https://goprogram.ai/scratch/ai/player.js></script> -->
-<script src=https://goprogram.ai/scratch/ai/umpire.js></script>
-<script src="https://goprogram.ai/scratch/ai/noughts and crosses.js"></script>
+<script src=ai/matrix.js></script>
+<script src=ai/umpire.js></script>
+<script src="ai/noughts and crosses.js"></script>
 <script src=tictactoe.js></script>

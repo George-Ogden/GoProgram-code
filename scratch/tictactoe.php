@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <link rel=stylesheet href=tictactoe.css?v=1>
 <?php include "../meta.php" ?>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="Play tic-tac-toe against an AI">
+<meta name=keywords content="tic tac toe ai python">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="tic tac toe ai">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>

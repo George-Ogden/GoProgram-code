@@ -2,6 +2,7 @@ https://goprogram.ai/
 https://goprogram.ai/scratch/
 https://goprogram.ai/scratch/connect4
 https://goprogram.ai/scratch/dinosaurs
+https://goprogram.ai/scratch/tictactoe
 https://goprogram.ai/scratch/hangman
 https://goprogram.ai/scratch/predictor
 https://goprogram.ai/fork/

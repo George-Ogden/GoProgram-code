@@ -15,7 +15,6 @@
 <div class="section text">
 <p>Every time a new web page is launched, it will show up here so that you can see what is new!</p>
 </div>
-<?php echo section("Painted Faces", "Following on from a project converting Minecraft images to real life, I decided to take it a step further and train CUT for another image to image translation task. Have a look <a href=/painter>here</a> to see the project that extracts faces from an image and converts them to paintings.","/fork/images/painting.jpg");
-echo section("Mask-RCNN", "Image Segmentation is a cool field of AI but it be quite user-unfriendly. I've worked with some code and shared some examples <a href=/segmentation>here</a>! You can also rewatch the 100m world record with the background greyed out and the focus on the runners <a href=http://www.youtube.com/watch?v=fRnFHRNIQRs>(very cool)</a>!","/fork/images/maskrcnn.jpg");
+<?php echo section("Tic-Tac-Toe", "As part of my research on games, I decided to create an AI that would always win at tic-tac-toe. To extend the challenge, I moved up from a 3x3 grid to a 5x5 one and you can <a href=/ai/tictactoe/>play against the result</a>!","/scratch/images/tictactoe.jpg");
 ?>
 <?php include "../footer.php" ?></section><?php include "../scripts.php" ?></html>

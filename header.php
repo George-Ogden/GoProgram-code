@@ -18,7 +18,7 @@
                     <content>Dinosaur Generator</content>
                 </a></li>
             <li class="tictactoe level-2"><a href=/scratch/tictactoe>
-                    <content>Tic Tac Toe</content>
+                    <content>Tic-Tac-Toe</content>
                 </a></li>
             <li class="hangman level-2"><a href=/scratch/hangman>
                     <content>Hangman Solver</content>

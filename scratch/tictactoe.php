@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Tic Tac Toe</title>
+<title>Tic-Tac-Toe</title>
 <?php include "../main.php" ?>
 <link rel=stylesheet href=tictactoe.css?v=1>
 <?php include "../meta.php" ?>
@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-1">Tic Tac Toe</h1>
+<h1 class="colour pad-1">Tic-Tac-Toe</h1>
 </div>
 <div class="main section interactive"><table id=board>
 <?php

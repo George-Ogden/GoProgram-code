@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>
-<h1 class="colour pad-2 highlight">PoseNet</h1>
+<h1 class="colour pad-3 loaded text-left"><span class=highlight>Pose</span>Net<br></h1>
 </div>
 <div class=section>
 <?php echo section("PoseNet","PoseNet is an artificial intelligence model that estimates the positions of various limbs and facial points in in an image. It generates a set of keypoints and then connects them to display the outline of a skeleton. I used this AI to count the number of reps during a workout so that a client could use the code in a gym.");

@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <link rel=stylesheet href=/ai.css?v=1>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="This project uses U-Net to detect the veins in cigar plants.">
+<meta name=keywords content="unet segmentation keras">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="vein detection deep learning">
 </head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>

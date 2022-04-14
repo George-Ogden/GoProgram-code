@@ -15,6 +15,7 @@ https://goprogram.ai/fork/cyclegan
 https://goprogram.ai/pro
 https://goprogram.ai/pro/yolo
 https://goprogram.ai/pro/posenet
+https://goprogram.ai/pro/unet
 https://goprogram.ai/interactive/
 https://goprogram.ai/interactive/calculator
 https://goprogram.ai/interactive/sudoku

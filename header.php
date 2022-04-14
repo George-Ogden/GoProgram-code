@@ -66,9 +66,9 @@
             <li class="posenet level-2"><a href=/pro/posenet>
                     <content>PoseNet</content>
                 </a></li>
-            <li class="unet level-2"><a href=/pro/unet>
+            <!-- <li class="unet level-2"><a href=/pro/unet>
                     <content>U-Net</content>
-                </a></li>
+                </a></li> -->
         </ul>
         <li class="interactive level-1"><a href=/interactive>
                 <content>Interactive Non-AI</content>

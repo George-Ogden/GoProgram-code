@@ -1,1 +1,140 @@
-const size=7,umpire=new Noughts_and_Crosses(7,4),player=new Gamer(Genetic_Combined_Network.from_string({type:"Genetic_Combined_Network",activation_function_name:"tanh",activation_function:{},networks:[{type:"Genetic_Convolutional_Neural_Network",activation_function_name:"swish",activation_function:{},length:1,width:4,height:4,weights:[],biases:[],kernels:[{data:[[-3.7530441201026705,-6.946657163072802,-6.014129872804888,-9.1685113874304],[-6.091059245330693,-7.01619576648955,-8.741959893774236,-8.160339942637155],[-9.174352468717842,-9.850032406372808,-5.487638519077924,-8.384013636488138],[-5.218035523958747,-7.00134419419202,-8.497673602692444,-6.717001833676291]],rows:4,cols:4}]},{type:"Genetic_Flatten",activation_function_name:"identity",activation_function:{}},{type:"Genetic_Fully_Connected_Neural_Network",activation_function_name:"tanh",activation_function:{},length:4,width:8,weights:[{data:[[.7091813285529542,.17205187073306893,2.1600401333911012,.9514293942412082,.4607350205809997,-.1358799098057002,1.8730103568724505,-4.6698628972909395],[2.60474243448205,-1.9438651652482757,-1.321726247574219,-.7414623037500498,-.18543126069130667,-1.7295946811614664,2.805726766114293,-1.921037228338903],[1.90565521361345,3.595075126114156,1.055006271672379,-1.8525079900266537,-1.0890807152295565,-.29094660990630694,-1.3688953371494663,1.798458982049878],[-2.3989963767210605,1.4630373196002218,-.9551005883641673,1.9273678003484953,-3.3803756419786137,3.0218699780886222,1.154951535028335,.5215367692147521],[-1.0493947616432022,-1.6993637714786383,.3622707698103156,2.755412290693613,-.9162723646696946,-2.504238333872983,1.2876246916162675,2.334996149197984],[1.8603220686537476,.5916545731394494,1.367191719306947,-.7420030986517432,.5981842542203761,-1.8241428411743135,-2.2130265954146418,-1.229430344543005],[-1.4130062846807845,2.2330449077498367,1.8217382918269274,2.1280592928459954,-.5737128301424725,-.24499930690413896,.10112269480845226,2.494744548565636],[3.4473271887442642,.32224898822288095,1.904611327035322,.7716095296336052,1.083944819821697,1.9247373517909234,-4.056472468123319,-.6525273017318423],[.27648031646121973,-2.2157814239024023,2.147670913002308,-.5324431963616134,-2.3222027344395904,1.3084119499232836,.6689195341804259,1.6985906468855156],[-3.187980665376377,1.9336092465134045,.1895805457392461,.5776334049024165,-.47735150785068114,2.8113588094435973,-6.567688279494764,-.3565499935713623],[.4336938149975431,-1.980203520766667,-.6519951555815069,1.836909801374433,-1.9950470808202576,-1.3040744635947359,-.8013678682688621,-.3280450545913811],[1.4475999323100313,2.437915089152387,2.197809043523989,1.6254767853121965,2.822483183105272,-4.82261893024147,1.6557109436816715,-.9137773541660212],[-.955446555217643,2.572841078219122,.5111696167036661,.2861712800990739,.5206129830777875,-.058824090582921595,-2.275300354367754,-2.325584769067329],[-.9434672154120238,2.0254162402966376,.1971199794466778,-.8542142398318213,.6414236814426273,-.7444096436561254,-.1784548211587198,-.2141896915722784],[2.0932872730382015,2.015921517519706,-.8311223312012679,.044082824918809216,.18268815383419001,2.467209366394575,-.26050829128218034,2.629391435555561],[-3.147529082472823,-.0611939022932706,1.967815544189608,.451171315871415,1.0243394491038025,-1.097276255491604,1.515253045188869,-1.9732461461400008]],rows:16,cols:8},{data:[[-.10222197239590924,.9429134180783394,-.23047263007518937,-.4784378824164417,.7715893778821612,2.9051370828589698,2.4942559384378087,-1.1557950588946242],[-.012310178759775026,.27410597275911774,-.4998963662873077,-2.3146745571494063,.04135577466252105,-1.2859364746865287,.031460344945037466,-2.636756386887243],[-.6495898358187113,2.289511816406182,-.22950309161125504,.1698933924388335,1.7798166406227125,-3.8702187859914625,-.566380182615128,-.1229207021556662],[2.6733303892842666,-.6557445796098818,1.031192597027505,-1.3774058553530772,2.5354485804451485,-1.8258701088415235,-.7001026394144031,.4860898064213386],[-.09898573447123105,-1.182632508241999,1.4831675902693742,.44765653810137396,-.4645843882101901,-2.9326108674709674,-.991242733319114,.383004395297168],[.7697841070423936,-1.5038745856255957,-1.6332827523211009,-.4125632691378902,-1.0153074199894006,-2.0186905804148663,-.48346540078163414,-.47753050694730215],[3.1668501824534987,.17543268473158724,-.8073057997009112,-2.254294700542509,.25961385876463083,-1.6065049139725347,-1.274061663931611,2.5689415257625194],[.44638287555613254,-.23875548967141436,-.20935613320757818,-4.459166404564079,-.7976754626884746,1.4369065878808986,-1.0227734210594543,-1.1187253016521177]],rows:8,cols:8},{data:[[-1.6663252952688707,1.3024548938102578,-2.3092716891562373,-1.7889134131941566,.029192809841718237,-.8917901587635515,-.8782630575437349,2.4453270647530614],[2.942629260797968,1.2642842833099595,.27412317478896764,.24615958744970512,1.3707252144317974,-1.5853934136091297,.36215541245911087,-2.438738850637565],[-.41219447272810905,-.6684435144156753,-.7469378301704332,3.0426607633953697,.5723730663206616,-1.1984428056533518,-.586695318367747,2.903943805564976],[1.176297972295468,1.7173131979257241,-.7777997891625463,-2.553937202140996,.3984744150677244,-.4475088000932963,-.43907248588055814,-1.2646365866858282],[2.66478232418495,-3.1469560596794963,.06840505340856318,-.9084064053377805,2.4305150196775953,.9262753917487561,-1.4181520162395465,.4475620599438175],[2.4231991184064374,-.01759962881947641,-.21680363914074285,.5694751257782378,2.0197468857787104,-1.33818417718801,-1.3176348960137423,1.0898054609243877],[.6443385096842689,-2.341070056561084,-.2794234658360164,-.10017882321168692,-.42277175885440355,.04296212207818417,-.05608817150796508,1.1256628066583292],[-.07244926088711612,-.3472604753440609,1.4279749308156653,1.2828552304233125,2.1685633720281845,-.5453699695676772,-1.8523988474693285,-2.432624349029725]],rows:8,cols:8},{data:[[-.7315034160674808],[1.9517205952055252],[1.0387716516416585],[.9444576261619777],[-.3153454919854015],[.41222962729768886],[.03140677403918457],[-2.540429226627309]],rows:8,cols:1}],biases:[{data:[[.6181752243858765,.5979759688621826,-.6306529253617461,-1.0192376692922456,-1.5423431692342382,1.8670516154630667,2.102231494572265,.07794397113311846]],rows:1,cols:8},{data:[[.8460738581667648,1.9919157825978089,.8366225208397791,-.00397788111650299,.29461071246857173,-.5317787953877273,-.30513999497570476,-.1358871453696502]],rows:1,cols:8},{data:[[-.6255879252984735,-.5306629040916494,.025748376668258688,.4641049088179485,-.37507534125953224,-.758462262543868,1.7021891346053701,-1.4324127896441308]],rows:1,cols:8},{data:[[2.4157181248618014]],rows:1,cols:1}]}],length:3}),umpire,3);let move_promise,thinking=!1;function endGame(){finishMove(),thinking=!0}function finishMove(){thinking=!1,$(".cover").addClass("d-none"),$(".cover").removeClass("darken d-flex")}async function displayBoard(t){for(let o=0;o<t.rows;o++)for(let e=0;e<t.cols;e++){let n=t.data[o][e];0!=n&&($(`[row=${o}][col=${e}].box circle`).css({background:n<0?"red":"blue",opacity:1}),$(`[row=${o}][col=${e}].box`).css("background","var(--primary-light)"),$(`[row=${o}][col=${e}].box`).hasClass("taken")||$(`[row=${o}][col=${e}].box`).addClass("taken"))}}async function animateMove(t,o){t=parseInt(t),distance=$("#board").offset().top-$(`[row=${t}][col=${o}].box circle`).offset().top,$(`[row=${t}][col=${o}].box circle`).css("transform",`translate(0,${distance}px`),await new Promise(t=>setTimeout(t,100)),$(`[row=${t}][col=${o}].box circle`).css("transition",`transform ${Math.sqrt(-1*distance)/100}s cubic-bezier(.3,0,.69,.17)`),$(`[row=${t}][col=${o}].box circle`).css("transform","translate(0,0)")}function resize(){$("#board").height($("#board").width())}$("#board").on("mouseenter",function(){$(this).off("mouseenter"),umpire.challenge(player)}),$(window).resize(resize),resize(),$("td.box").on("mouseover",function(){!thinking&&$(`[col=${$(this).attr("col")}]:not(.taken)`).length>0&&($(`[col=${$(this).attr("col")}]:not(.taken)`).css("background","var(--base)"),$(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t,$(o).attr("row")||0),0)}][col=${$(this).attr("col")}] circle`).css({opacity:"0.3",background:"red"}))}),$("td.box").on("click",function(){!thinking&&$(`[col=${$(this).attr("col")}]:not(.taken)`).length>0&&(move_promise([Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t,$(o).attr("row")||0),0),$(this).attr("col")]),thinking=!0,$(".cover").removeClass("d-none"),$(".cover").addClass("darken d-flex"),$(".box:not(.taken) circle").css("background","transparent"),$(".box").css("background","var(--primary-light)"))}),$("td.box").on("mouseout",function(){$(`[col=${$(this).attr("col")}]:not(.taken)`).length>0&&($(`[col=${$(this).attr("col")}]:not(.taken)`).css("background","var(--primary-light)"),$(`[row=${Object.values($(`[col=${$(this).attr("col")}]:not(.taken)`)).reduce((t,o)=>Math.max(t,$(o).attr("row")||0),0)}][col=${$(this).attr("col")}] circle`).css({background:"transparent"}))});
+let move_promise,
+	thinking = !1;
+const size = 7,
+	umpire = new Noughts_and_Crosses(size, 4),
+	pieces = { 0: ".", 1: "X", "-1": "O", ".": 0, X: 1, O: -1 },
+	player = {
+		move: async function (e) {
+			w = (e.rss() % 2) * 2 - 1;
+			let t = await this.request(
+				Matrix.flatten(e)
+					.data[0].map((e) => pieces[e])
+					.join("")
+			);
+			if (200 == t.status){
+				return Matrix.multiply(
+					Matrix.resize(
+						Matrix.fromArray([
+							t.responseText
+								.toUpperCase()
+								.split("")
+								.map((e) => pieces[e]),
+						]),
+						size,
+						size
+					),
+					w
+				);
+            }
+		},
+		request: function (e) {
+			return new Promise(function (o) {
+				let n = new XMLHttpRequest();
+				n.open(
+					"GET",
+					`https://api.goprogram.ai/games/connect4?board=${e}`
+				),
+					(n.onload = function () {
+						200 == this.status && o(n);
+					}),
+					n.send();
+			});
+		},
+	};
+function endGame() {
+	finishMove(), (thinking = !0);
+}
+function finishMove() {
+	(thinking = !1),
+		$(".cover").addClass("d-none"),
+		$(".cover").removeClass("darken d-flex");
+}
+async function displayBoard(t) {
+	for (let o = 0; o < t.rows; o++)
+		for (let e = 0; e < t.cols; e++) {
+			let n = t.data[o][e];
+			0 != n &&
+				($(`[row=${o}][col=${e}].box circle`).css({
+					background: n < 0 ? "red" : "blue",
+					opacity: 1,
+				}),
+				$(`[row=${o}][col=${e}].box`).css(
+					"background",
+					"var(--primary-light)"
+				),
+				$(`[row=${o}][col=${e}].box`).hasClass("taken") ||
+					$(`[row=${o}][col=${e}].box`).addClass("taken"));
+		}
+}
+async function animateMove(t, o) {
+	(t = parseInt(t)),
+		(distance =
+			$("#board").offset().top -
+			$(`[row=${t}][col=${o}].box circle`).offset().top),
+		$(`[row=${t}][col=${o}].box circle`).css(
+			"transform",
+			`translate(0,${distance}px`
+		),
+		await new Promise((t) => setTimeout(t, 100)),
+		$(`[row=${t}][col=${o}].box circle`).css(
+			"transition",
+			`transform ${
+				Math.sqrt(-1 * distance) / 100
+			}s cubic-bezier(.3,0,.69,.17)`
+		),
+		$(`[row=${t}][col=${o}].box circle`).css("transform", "translate(0,0)");
+}
+function resize() {
+	$("#board").height($("#board").width());
+}
+$("#board").on("mouseenter", function () {
+	$(this).off("mouseenter"), umpire.challenge(player);
+}),
+	$(window).resize(resize),
+	resize(),
+	$("td.box").on("mouseover", function () {
+		!thinking &&
+			$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
+			($(`[col=${$(this).attr("col")}]:not(.taken)`).css(
+				"background",
+				"var(--base)"
+			),
+			$(
+				`[row=${Object.values(
+					$(`[col=${$(this).attr("col")}]:not(.taken)`)
+				).reduce(
+					(t, o) => Math.max(t, $(o).attr("row") || 0),
+					0
+				)}][col=${$(this).attr("col")}] circle`
+			).css({ opacity: "0.3", background: "red" }));
+	}),
+	$("td.box").on("click", function () {
+		!thinking &&
+			$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
+			(move_promise([
+				Object.values(
+					$(`[col=${$(this).attr("col")}]:not(.taken)`)
+				).reduce((t, o) => Math.max(t, $(o).attr("row") || 0), 0),
+				$(this).attr("col"),
+			]),
+			(thinking = !0),
+			$(".cover").removeClass("d-none"),
+			$(".cover").addClass("darken d-flex"),
+			$(".box:not(.taken) circle").css("background", "transparent"),
+			$(".box").css("background", "var(--primary-light)"));
+	}),
+	$("td.box").on("mouseout", function () {
+		$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
+			($(`[col=${$(this).attr("col")}]:not(.taken)`).css(
+				"background",
+				"var(--primary-light)"
+			),
+			$(
+				`[row=${Object.values(
+					$(`[col=${$(this).attr("col")}]:not(.taken)`)
+				).reduce(
+					(t, o) => Math.max(t, $(o).attr("row") || 0),
+					0
+				)}][col=${$(this).attr("col")}] circle`
+			).css({ background: "transparent" }));
+	});

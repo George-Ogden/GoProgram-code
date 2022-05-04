@@ -30,5 +30,5 @@ echo "</tr>";
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
 <script src=ai/matrix.js></script>
 <script src=ai/umpire.js?v=2></script>
-<script src="ai/noughts and crosses.js"></script>
-<script src=connect4.js?v=1></script>
+<script src="ai/noughts and crosses.js?v=1"></script>
+<script src=connect4.js?v=2></script>

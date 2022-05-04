@@ -30,7 +30,7 @@
     <?php include "../footer.php" ?>
 </section>
 <?php include "../scripts.php" ?>
-<script src=predictor.js?v=4></script>
+<script src=predictor.js?v=5></script>
 </script>
 
 </html>

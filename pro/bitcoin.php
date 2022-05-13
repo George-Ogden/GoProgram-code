@@ -5,14 +5,14 @@
 <?php include "../main.php" ?>
 <?php include "../meta.php" ?>
 <link rel=stylesheet href=/ai.css?v=1>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="Bitcoin trading algorithm using AI.">
+<meta name=keywords content="bitcoin bot">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="bitcoin trading algorithm">
 </head><?php include "../header.php" ?>
 <section class="colour">
 <div class=section id=top>
-<h1 class="colour pad-3 loaded">Bitcoin<br><span class=highlight>Price</span><br>Prediction</h1>
+<h1 class="colour pad-3 loaded">Bitcoin<br><span class=highlight>Trading</span><br>Algorithm</h1>
 </div>
 <div class="section image pad-100">
 <?php 

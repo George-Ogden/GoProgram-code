@@ -66,6 +66,9 @@
             <li class="posenet level-2"><a href=/pro/posenet>
                     <content>PoseNet</content>
                 </a></li>
+            <li class="bitcoin level-2"><a href=/pro/bitcoin>
+                    <content>Bitcoin Bot</content>
+                </a></li>
             <li class="unet level-2"><a href=/pro/unet>
                     <content>U-Net</content>
                 </a></li>

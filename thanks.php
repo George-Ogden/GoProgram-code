@@ -1,3 +1,4 @@
+<link rel="icon" href="https://www.tiktok.com/favicon.ico" type="image/icon type">
 <img style="width:100%" src=https://cdn1.byjus.com/wp-content/uploads/2018/11/free-ias-prep/2016/12/27073227/Don%E2%80%99t-fall-for-the-trick-1024x554.jpg>
 <script>
 window.onbeforeunload = () => "Error closing page";

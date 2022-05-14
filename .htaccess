@@ -63,7 +63,7 @@ RewriteRule ^(?!fork\/faceswap)(?!.*\.jpg)(.*\/)?(face(swap)?)|deepfake(s)?\/?$ 
 RewriteRule ^(?!fork\/cyclegan)(?!.*\.jpg)(.*\/)?(cycle(gan)?)|gender\/?$ "\/fork\/cyclegan" [R=301,L]
 RewriteRule ^(?!pro\/yolo$)(?!.*\.jpg)(.*\/)?yolo[-_\s]?v?[-_\s]?3?\/?$ "\/pro\/yolo" [R=301,L]
 RewriteRule ^(?!pro\/posenet$)(?!.*\.jpg)(.*\/)?pose[-_\s]?(net|detect(ion))?\/?$ "\/pro\/posenet" [R=301,L]
-RewriteRule ^(?!pro\/bitcoin$)(?!.*\.jpg)(.*\/)?(btc|(bit)?[-_\s]?coin[-_\s]?(price)?|price)?[-_\s]?(predict(ion|ing|or)?|bot|trad(e|er|ing))?[-_\s]?(algorithm)?\/?$ "\/pro\/bitcoin" [R=301,L]
+RewriteRule ^(?!pro\/bitcoin$)(?!.*\.jpg)(.*\/)?(btc|(bit)?[-_\s]?coin[-_\s]?(price)?|price)[-_\s]?(predict(ion|ing|or)?|bot|trad(e|er|ing))?[-_\s]?(algorithm)?\/?$ "\/pro\/bitcoin" [R=301,L]
 RewriteRule ^(?!pro\/unet$)(?!.*\.jpg)(.*\/)?(u[-_\s]?net|vein[-_\s]?(detect(ion)?)?)\/?$ "\/pro\/unet" [R=301,L]
 RewriteRule ^(?!interactive\/sudoku$)(interactive)?\/?sudoku[-_\s]?(solver)?\/?$ "\/interactive\/sudoku" [R=301,L]
 RewriteRule ^(?!interactive\/timings$)(interactive\/)?(tim(e)?|pac(e)?(r)?)(ing)?(s)?[-_\s]?(convert(er)?)?\/?$ "\/interactive\/timings" [R=301,L]

@@ -14,7 +14,7 @@
 <div class=section id=top>
 <?php echo image("images/abstract-cover.jpg", "AI Generated Abstract Art", "text-darken", ["id" => "top", "text" => "<h1>Abstract Art</h1>"]); 
 echo section("Abstract Art","This AI (StyleGAN2-ADA) has learned to extract the common patterns that we create in abstract art and then place them into its own version of art. It has seen 1000s of images from a range of artists, yet still has its own distinctive style.","images/abstract-side.jpg") . 
-"<a href=images/abstract.png class=icon target=_blank>" . image("images/abstract-base.jpg","AI Generated Abstract Art","none") . "</a>" ?>
+"<a href=images/abstract.png class=icon target=_blank>" . image("images/abstract-base.jpg","AI Generated Abstract Art","none", ["id" => "collage"]) . "</a>" ?>
 <div class="section icons">
 <a class="icon" href="https://github.com/NVlabs/stylegan2-ada-pytorch" target="_blank">
 <ion-icon name="logo-github"></ion-icon>

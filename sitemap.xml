@@ -57,6 +57,10 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://goprogram.ai/fork/abstract</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://goprogram.ai/pro/</loc>
         <priority>0.90</priority>
     </url>

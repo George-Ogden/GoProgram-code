@@ -12,6 +12,7 @@ https://goprogram.ai/fork/maskrcnn
 https://goprogram.ai/fork/faceswap
 https://goprogram.ai/fork/musegan
 https://goprogram.ai/fork/cyclegan
+https://goprogram.ai/fork/abstract
 https://goprogram.ai/pro
 https://goprogram.ai/pro/yolo
 https://goprogram.ai/pro/posenet

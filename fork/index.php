@@ -11,6 +11,7 @@
 <section class="colour">
 <?php 
 echo image("images/ai.jpg", "Network", "text-darken", ["id" => "top", "text" => "<h1>Code Forks</h1>"]);
+echo section("Abstract Art", "I trained a StyleGAN2-ADA model on a custom dataset of abstract art to generate realistic fakes. Check out <a href=abstract>the results</a> to see the interesting artwork it creates.","images/abstract-side.jpg");
 echo section("Painted Faces", "Using a multiple AIs, <a href=painting>this project</a> extracts the faces from an image and converts them into painted portraits.","images/painting.jpg");
 echo section("Emotion Detection", "This emotion detection AI is able to detect the facial expressions of someone in a picture! It uses two AIs working together to find faces and then classify them. Why not <a href=emotion>have a look</a>?","images/emotions.jpg");
 echo section("Image Segmentation", "Image segmentation creates masks around objects to identify exactly where they start and end. <a href=maskrcnn>This code</a> provides an implementation of Mask-RCNN, which can run live.","images/maskrcnn.jpg");

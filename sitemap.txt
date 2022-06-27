@@ -6,6 +6,7 @@ https://goprogram.ai/scratch/tictactoe
 https://goprogram.ai/scratch/hangman
 https://goprogram.ai/scratch/predictor
 https://goprogram.ai/fork/
+https://goprogram.ai/fork/abstract
 https://goprogram.ai/fork/painter
 https://goprogram.ai/fork/emotion
 https://goprogram.ai/fork/maskrcnn

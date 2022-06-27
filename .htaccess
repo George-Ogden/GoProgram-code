@@ -56,6 +56,7 @@ RewriteRule ^(?!scratch\/connect4$)(?!.*\.jpg)(.*\/)?((connect[-_\s]?(4|four)?)|
 RewriteRule ^(?!scratch\/dinosaurs$)(?!.*\.jpg)(.*\/)?dinosaur(s)?[-_\s]?(generator)?\/?$ "\/scratch\/dinosaurs" [R=301,L]
 RewriteRule ^(?!scratch\/predictor$)(?!.*\.jpg)(.*\/)?(((pb(s)?)|(tim(es|ings)))?[-_\s]?(predict(or)?)|pb(s)?)\/?$ "\/scratch\/predictor" [R=301,L]
 RewriteRule ^(?!scratch\/tictactoe$)(?!.*\.jpg)(.*\/)?(tic[-_\s]?(tac)?[-_\s]?(toe)?|noughts?([-_\s]?(and|\&|\+))?cross(es)?|nougts?|cross(es)?)\/?$ "\/scratch\/tictactoe" [R=301,L]
+RewriteRule ^(?!fork\/abstract$)(?!.*\.jpg)(.*\/)?(art|abstract[-_\s]?(art)?|style[-_\s]?gan(2)?[-_\s]?(ada)?)$ "\/fork\/abstract" [R=301,L]
 RewriteRule ^(?!fork\/painter$)(?!.*\.jpg)(.*\/)?paint((er)|(ed)|(ing))?(s)?[-_\s]?(face(s)?)?$ "\/fork\/painter" [R=301,L]
 RewriteRule ^(?!fork\/musegan$)(?!.*\.jpg)(.*\/)?mus(egan|ic)\/?$ "\/fork\/musegan" [R=301,L]
 RewriteRule ^(?!fork\/emotion$)(?!.*\.jpg)(.*\/)?((emotion[-_\s]?(detect(ion|or)?)?)|affectnet|((rep)?vgg)|((yolo)?[-_\s]?v?[-_\s]?5)|(wider[-_\s]?face(s)?))\/?$ "\/fork\/emotion" [R=301,L]

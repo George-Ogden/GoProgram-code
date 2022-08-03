@@ -9,34 +9,12 @@ td {
 	background: var(--primary-light);
 }
 table {
-	border: 5px solid;
 	border-collapse: collapse;
 	margin: 100px auto;
 	max-width: 800px;
 	width: 90%;
 }
-button {
-	cursor: pointer;
-	font-size: 2em;
-	width: 50%;
-	margin: 50px auto;
-	display: block;
-	background: var(--secondary-dark);
-	color: #fff;
-	border: none;
-}
-#valid {
-	display: none;
-	font-size: 250%;
-	text-align: center;
-}
-circle {
-	border-radius: 50%;
-	width: 90%;
-	height: 90%;
-	display: table;
-	margin: auto;
-}
+
 .main {
 	padding: 100px 0;
 	position: relative;

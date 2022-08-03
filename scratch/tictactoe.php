@@ -3,7 +3,7 @@
 <head>
 <title>Tic-Tac-Toe</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=tictactoe.css?v=1>
+<link rel=stylesheet href=tictactoe.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Play tic-tac-toe against an AI">
 <meta name=keywords content="tic tac toe ai python">

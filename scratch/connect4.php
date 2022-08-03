@@ -3,7 +3,7 @@
 <head>
 <title>Connect 4</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=connect4.css?v=1>
+<link rel=stylesheet href=connect4.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Play connect 4 against an AI that has learned the game and improved just by playing itself thousands of times.">
 <meta name=keywords content="connect 4 ai oinline">

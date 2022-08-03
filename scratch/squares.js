@@ -1,6 +1,6 @@
 const size = 7,
-	umpire = new Noughts_and_Crosses(7, 4),
-	pieces = { 0: ".", 1: "X", "-1": "O", ".": 0, X: 1, O: -1 },
+	umpire = new Squares(7),
+	sides=["top", "right", "bottom", "left"],
 	player = {
 		move: async function (t) {
 			w = (t.rss() % 2) * 2 - 1;
@@ -40,7 +40,7 @@ const size = 7,
 	};
 let move_promise,
 	thinking = !1,
-	history = "";
+	box = false;
 function endGame() {
 	finishMove(), (thinking = !0), umpire.find();
 }
@@ -49,41 +49,56 @@ function finishMove() {
 		$(".cover").addClass("d-none"),
 		$(".cover").removeClass("darken d-flex");
 }
+
+function colourSquare(board, x, y){
+			let r = board.data[x][y];
+            let s = r % 3;
+            for (let j = 0; j < 4; j++){
+                if (r % 3){
+                    $(`[row=${o}][col=${e}]`).css(
+                        `border-${sides[j]}`, ((r % 3) > 1 ? "red":"blue") +" 5px solid"
+                    )
+                }
+                if (r % 3 != s){
+                    s = 0;
+                }
+                r = Math.floor(r/3);
+            }
+            if (s){
+                $(`[row=${o}][col=${e}].box`).css({
+                    background: s > 1 ? "red" : "blue",
+                    opacity: 1
+                })
+            }
+}
+function findQuadrant(square, mouse){
+    let x = (mouse.x - square.left) / square.width
+    let y = (mouse.y - square.top) / square.height
+    if (x > 1 || x < 0 || y > 1 || y < 0){
+        return -1;
+    }
+    if (x < y){
+        if (x + y < 1){
+            return 3
+        } else {
+            return 2
+        }
+    } else {
+        if (x + y < 1){
+            return 0
+        } else {
+            return 1
+        }
+    }
+}
+
 async function displayBoard(t) {
 	for (let o = 0; o < t.rows; o++)
 		for (let e = 0; e < t.cols; e++) {
-			let r = t.data[o][e];
-			0 != r &&
-				($(`[row=${o}][col=${e}].box circle`).css({
-					background: r < 0 ? "red" : "blue",
-					opacity: 1,
-				}),
-				$(`[row=${o}][col=${e}].box`).css(
-					"background",
-					"var(--primary-light)"
-				),
-				$(`[row=${o}][col=${e}].box`).hasClass("taken") ||
-					$(`[row=${o}][col=${e}].box`).addClass("taken"));
+            colourSquare(t, o, e)
 		}
 }
 async function animateMove(t, o) {
-	(history += String(o)),
-		(t = parseInt(t)),
-		(distance =
-			$("#board").offset().top -
-			$(`[row=${t}][col=${o}].box circle`).offset().top),
-		$(`[row=${t}][col=${o}].box circle`).css(
-			"transform",
-			`translate(0,${distance}px`
-		),
-		await new Promise((t) => setTimeout(t, 100)),
-		$(`[row=${t}][col=${o}].box circle`).css(
-			"transition",
-			`transform ${
-				Math.sqrt(-1 * distance) / 100
-			}s cubic-bezier(.3,0,.69,.17)`
-		),
-		$(`[row=${t}][col=${o}].box circle`).css("transform", "translate(0,0)");
 }
 function resize() {
 	$("#board").height($("#board").width());
@@ -97,21 +112,13 @@ function resize() {
 	}),
 	$(window).resize(resize),
 	resize(),
-	$("td.box").on("mouseover", function () {
-		!thinking &&
-			$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
-			($(`[col=${$(this).attr("col")}]:not(.taken)`).css(
-				"background",
-				"var(--base)"
-			),
-			$(
-				`[row=${Object.values(
-					$(`[col=${$(this).attr("col")}]:not(.taken)`)
-				).reduce(
-					(t, o) => Math.max(t, $(o).attr("row") || 0),
-					0
-				)}][col=${$(this).attr("col")}] circle`
-			).css({ opacity: "0.3", background: "red" }));
+	$("td.box").on("mouseover", function (e) {
+		if (!thinking){
+            box = $(this)
+			let q = findQuadrant($(this).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+            $(this).css(
+                `border-${sides[q]}`, "red 5px dashed"
+            )}
 	}),
 	$("td.box").on("click", function () {
 		!thinking &&
@@ -129,17 +136,5 @@ function resize() {
 			$(".box").css("background", "var(--primary-light)"));
 	}),
 	$("td.box").on("mouseout", function () {
-		$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
-			($(`[col=${$(this).attr("col")}]:not(.taken)`).css(
-				"background",
-				"var(--primary-light)"
-			),
-			$(
-				`[row=${Object.values(
-					$(`[col=${$(this).attr("col")}]:not(.taken)`)
-				).reduce(
-					(t, o) => Math.max(t, $(o).attr("row") || 0),
-					0
-				)}][col=${$(this).attr("col")}] circle`
-			).css({ background: "transparent" }));
+        colourSquare(umpire.board, $(this).attr("col"), $(this).attr("row"))
 	});

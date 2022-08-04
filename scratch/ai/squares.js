@@ -31,6 +31,44 @@ class Squares extends Umpire {
         }
 		return 0;
 	}
-	async find() {
+    async challenge(t, a = Math.random() > 0.5 ? 1 : 0) {
+		this.board.reset();
+		for (let s = -a; s < this.size * this.size - a; s++) {
+			if ((displayBoard(this.board), s % 2 == 0)) {
+				let a = await t.move(this.board, 1);
+				finishMove();
+			} else {
+				let t = new Promise((t) => (move_promise = t));
+				t = await t
+                this.board.data[t[0]][t[1]] += Math.pow(3,t[2]);
+                switch (t[2]){
+                    case 0:
+                        if (t[1] > 0){
+                            this.board.data[t[0]][t[1]-1] += 9
+                        }
+                        break;
+                    case 2:
+                        if (t[1] < this.size - 1){
+                            this.board.data[t[0]][t[1]+1] += 1
+                        }
+                        break;
+                    case 3:
+                        if (t[0] > 0){
+                            this.board.data[t[0]-1][t[1]] += 3
+                        }
+                        break;
+                    case 1:
+                        if (t[0] < this.size - 1){
+                            this.board.data[t[0]+1][t[1]] += 27
+                        }
+                        break;
+
+                }
+                animateMove(umpire.board)
+			}
+			let a = this.check_state();
+			if ((displayBoard(this.board), 0 != a)) return endGame(), a;
+		}
+		return displayBoard(this.board), endGame(), 0;
 	}
 }

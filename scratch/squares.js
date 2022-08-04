@@ -4,39 +4,9 @@ const size = 7,
 	player = {
 		move: async function (t) {
 			w = (t.rss() % 2) * 2 - 1;
-			let o = await this.request(
-				Matrix.flatten(t)
-					.data[0].map((t) => pieces[t])
-					.join("")
-			);
-			if (200 == o.status)
-				return Matrix.multiply(
-					Matrix.resize(
-						Matrix.fromArray([
-							o.responseText
-								.toUpperCase()
-								.split("")
-								.map((t) => pieces[t]),
-						]),
-						7,
-						7
-					),
-					w
-				);
-		},
-		request: function (t) {
-			return new Promise(function (t) {
-				let o = new XMLHttpRequest();
-				o.open(
-					"GET",
-					`https://api.goprogram.ai/games/connect4?board=${history}`
-				),
-					(o.onload = function () {
-						200 == this.status && t(o);
-					}),
-					o.send();
-			});
-		},
+			// if (200 == o.status)
+			return umpire.board
+		}
 	};
 let move_promise,
 	thinking = !1,
@@ -55,18 +25,22 @@ function colourSquare(board, x, y){
             let s = r % 3;
             for (let j = 0; j < 4; j++){
                 if (r % 3){
-                    $(`[row=${o}][col=${e}]`).css(
-                        `border-${sides[j]}`, ((r % 3) > 1 ? "red":"blue") +" 5px solid"
+                    $(`[row=${y}][col=${x}]`).css(
+                        `border-${sides[j]}`, ((r % 3) > 1 ? "blue":"red") +" 5px solid"
                     )
-                }
+                } else {
+                    $(`[row=${y}][col=${x}]`).css(
+                        `border-${sides[j]}`, "1px dotted rgba(0,0,0,.5)"
+                    )
+				}
                 if (r % 3 != s){
                     s = 0;
                 }
                 r = Math.floor(r/3);
             }
             if (s){
-                $(`[row=${o}][col=${e}].box`).css({
-                    background: s > 1 ? "red" : "blue",
+                $(`[row=${y}][col=${x}].box`).css({
+                    background: s > 1 ? "blue" : "red",
                     opacity: 1
                 })
             }
@@ -98,7 +72,8 @@ async function displayBoard(t) {
             colourSquare(t, o, e)
 		}
 }
-async function animateMove(t, o) {
+async function animateMove(b) {
+	displayBoard(b)
 }
 function resize() {
 	$("#board").height($("#board").width());
@@ -116,24 +91,42 @@ function resize() {
 		if (!thinking){
             box = $(this)
 			let q = findQuadrant($(this).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
-            $(this).css(
-                `border-${sides[q]}`, "red 5px dashed"
-            )}
+			let x = $(this).attr("col")
+			let y = $(this).attr("row")
+			colourSquare(umpire.board, x, y)
+			if (umpire.board.data[x][y] / Math.ceil(Math.pow(3, q)) % 3 == 0){
+				$(this).css(
+					`border-${sides[q]}`, "5px dashed rgba(255,0,0,.5)"
+				)}
+		}
 	}),
-	$("td.box").on("click", function () {
-		!thinking &&
-			$(`[col=${$(this).attr("col")}]:not(.taken)`).length > 0 &&
-			(move_promise([
-				Object.values(
-					$(`[col=${$(this).attr("col")}]:not(.taken)`)
-				).reduce((t, o) => Math.max(t, $(o).attr("row") || 0), 0),
-				$(this).attr("col"),
-			]),
-			(thinking = !0),
-			$(".cover").removeClass("d-none"),
-			$(".cover").addClass("darken d-flex"),
-			$(".box:not(.taken) circle").css("background", "transparent"),
-			$(".box").css("background", "var(--primary-light)"));
+	$("table#board").on("mousemove", function (e) {
+		if (!thinking){
+			let x = $(box).attr("col");
+			let y = $(box).attr("row");
+			colourSquare(umpire.board, x, y)
+			let q = findQuadrant($(box).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+			if (Math.floor(umpire.board.data[x][y] / Math.ceil(Math.pow(3, q))) % 3 == 0){
+				$(box).css(
+					`border-${sides[q]}`, "5px dashed rgba(255,0,0,.5)"
+				)}
+		}
+	}),
+	$("td.box").on("click", function (e) {
+		if (!thinking){
+			let q = findQuadrant($(this).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+            
+			let x = $(box).attr("col");
+			let y = $(box).attr("row");
+			if (Math.floor(umpire.board.data[x][y] / Math.ceil(Math.pow(3, q))) % 3 == 0){
+				move_promise([
+					parseInt(x),parseInt(y),q
+				]);
+				(thinking = !0);
+				$(".cover").removeClass("d-none");
+				$(".cover").addClass("darken d-flex");
+			}
+		}
 	}),
 	$("td.box").on("mouseout", function () {
         colourSquare(umpire.board, $(this).attr("col"), $(this).attr("row"))

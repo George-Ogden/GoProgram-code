@@ -2,6 +2,10 @@ const delay = (t) => new Promise((i) => setTimeout(i, t));
 class Squares extends Umpire {
 	constructor(t = 5) {
 		super(t);
+        let game = new DotsAndBoxesGame(t);
+        tf.loadLayersModel("model/model.json").then(neural_network =>
+            this.mcts = new MCTS(game, neural_network, {cpuct: 1.0, numMCTSSims: 25})
+          );
 	}
 	check_state(t = this.board) {
         let full = true;

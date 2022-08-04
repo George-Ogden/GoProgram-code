@@ -31,5 +31,6 @@ echo "</tr>";
 <script src=ai/matrix.js></script>
 <script src=ai/umpire.js?v=2></script>
 <script src="ai/mcts.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.19.0/dist/tf.min.js"></script>
 <script src="ai/squares.js?v=2"></script>
 <script src=squares.js></script>

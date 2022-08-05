@@ -377,12 +377,12 @@ class Board {
   class Player {
       constructor(u){
         tf.loadLayersModel("model/model.json").then(neural_network =>
-          this.mcts = new MCTS(u.game, neural_network, {cpuct: 1.0, numMCTSSims: 2}))
+          this.mcts = new MCTS(u.game, neural_network, {cpuct: 1.0, numMCTSSims: 25}))
         ;
       };
       async move(g, t, p) {
         while (this.mcts === undefined){
-          await new Promise(resolve => setTimeout(resolve, 1000))
+          await new Promise(resolve => setTimeout(resolve, 100))
         }
         let board = g.getCanonicalForm(t, p)
         let probs = await this.mcts.getActionProb(board)

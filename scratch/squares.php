@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <link rel=stylesheet href=squares.css>
 <?php include "../meta.php" ?>
-<meta name=description content="">
-<meta name=keywords content="">
+<meta name=description content="AlphaZero implementation of the squares game.">
+<meta name=keywords content="alphazero squares algorithm">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="">
+<meta name=subject content="AlphaZero implementation">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>

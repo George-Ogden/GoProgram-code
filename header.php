@@ -52,7 +52,7 @@
             <li class="faceswap level-2"><a href=/fork/faceswap>
                     <content>Faceswap</content>
                 </a></li>
-            <li class="musegan level-2"><a href=/fork/musegan>
+        <li class="musegan level-2"><a href=/fork/musegan>
                     <content>MuseGAN</content>
                 </a></li>
             <li class="cyclegan level-2"><a href=/fork/cyclegan>

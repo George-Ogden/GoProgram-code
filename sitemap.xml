@@ -9,15 +9,19 @@
         <priority>0.90</priority>
     </url>
     <url>
+        <loc>https://goprogram.ai/scratch/tictactoe</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://goprogram.ai/scratch/connect4</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/dinosaurs</loc>
+        <loc>https://goprogram.ai/scratch/squares</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/tictactoe</loc>
+        <loc>https://goprogram.ai/scratch/dinosaurs</loc>
         <priority>0.80</priority>
     </url>
     <url>

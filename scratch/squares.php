@@ -16,9 +16,9 @@
 </div>
 <div class="main section interactive"><table id=board>
 <?php
-for ($i = 0; $i < 7; $i++) {
+for ($i = 0; $i < 6; $i++) {
 echo "<tr>";
-for ($j = 0; $j < 7; $j++) {
+for ($j = 0; $j < 6; $j++) {
 echo "<td class=box row=$i col=$j></td>";
 }
 echo "</tr>";

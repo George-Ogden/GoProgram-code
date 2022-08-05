@@ -2,10 +2,8 @@ const delay = (t) => new Promise((i) => setTimeout(i, t));
 class Squares extends Umpire {
 	constructor(t = 5) {
 		super(t);
-        let game = new DotsAndBoxesGame(t);
-        tf.loadLayersModel("model/model.json").then(neural_network =>
-            this.mcts = new MCTS(game, neural_network, {cpuct: 1.0, numMCTSSims: 25})
-          );
+    this.game = new DotsAndBoxesGame(t)
+    this.gboard = this.game.getInitBoard();
 	}
 	check_state(t = this.board) {
         let full = true;
@@ -35,40 +33,117 @@ class Squares extends Umpire {
         }
 		return 0;
 	}
-    async challenge(t, a = Math.random() > 0.5 ? 1 : 0) {
-		this.board.reset();
-		for (let s = -a; s < this.size * this.size - a; s++) {
-			if ((displayBoard(this.board), s % 2 == 0)) {
-				let a = await t.move(this.board, 1);
-				finishMove();
-			} else {
-				let t = new Promise((t) => (move_promise = t));
-				t = await t
-                this.board.data[t[0]][t[1]] += Math.pow(3,t[2]);
-                switch (t[2]){
-                    case 0:
-                        if (t[1] > 0){
-                            this.board.data[t[0]][t[1]-1] += 9
-                        }
-                        break;
-                    case 2:
-                        if (t[1] < this.size - 1){
-                            this.board.data[t[0]][t[1]+1] += 1
-                        }
-                        break;
-                    case 3:
-                        if (t[0] > 0){
-                            this.board.data[t[0]-1][t[1]] += 3
-                        }
-                        break;
-                    case 1:
-                        if (t[0] < this.size - 1){
-                            this.board.data[t[0]+1][t[1]] += 27
-                        }
-                        break;
+  update(a, player){
+    if (player == -1) {
+      player = 2;
+    }
+    let b = false;
+    this.gboard = this.game.getNextState(this.gboard, -1, a)[0];
+    
+    if (a < this.size * (this.size + 1)){
+      let x = a % (this.size)
+      let y = (a - x) / (this.size)
+      let s =true;
+      if (y < this.size){
+        this.board.data[x][y] += player
+        for (let i = 0;i < 4; i++){
+          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i))) % 3 == 0){
+            s = false;
+          }
+        }
+        if (s && Math.floor(this.board.data[x][y] / 81 % 3) == 0){
+          this.board.data[x][y] += 81 * player
+          b= true;
+        }
+      }
+      if (y > 0){
+          this.board.data[x][y-1] += 9 * player
+          s = true;
+          for (let i = 0;i < 4; i++){
+            if (Math.floor(this.board.data[x][y-1] / Math.ceil(Math.pow(3, i))) % 3 == 0){
+              s = false;
+            }
+          }
+          if (s && Math.floor(this.board.data[x][y-1] / 81 % 3) == 0){
+            this.board.data[x][y-1] += 81 * player
+            b= true;
+          }
+      } 
+    } else if (a < 2* this.size * (this.size + 1)) {
+      a -= this.size * (this.size + 1)
+      let x = a % (this.size + 1)
+      let y = (a - x) / (this.size + 1)
+      let s = true;
+      if (x < this.size){
+        this.board.data[x][y] += 27 * player
+        for (let i = 0;i < 4; i++){
+          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i)) % 3) == 0){
+            s = false;
+          }
+        }
+        if (s && Math.floor(this.board.data[x][y] / 81 % 3) == 0){
+          this.board.data[x][y] += 81 * player
+          b= true;
+        }
+      }
+      if (x > 0){
+        this.board.data[x-1][y] += 3 * player
+        s = true;
 
-                }
-                animateMove(umpire.board)
+        for (let i = 0;i < 4; i++){
+          if (Math.floor(this.board.data[x-1][y] / Math.ceil(Math.pow(3, i)) % 3) == 0){
+            s = false;
+          }
+        }
+        if (s && Math.floor(this.board.data[x-1][y] / 81 % 3) == 0){
+          this.board.data[x-1][y] += 81 * player
+          b= true;
+        }
+      }
+    }
+    return b;
+  }
+    async challenge(t, p = Math.random() > 0.5 ? 1 : -1) {
+		this.board.reset();
+		
+    for (let moves = this.game.getValidMoves(this.gboard, 1); moves.length; (moves = this.game.getValidMoves(this.gboard, 1), p *= -1)){
+
+      displayBoard(this.board)
+			if (p == -1) {
+				let a = await t.move(this.game, this.gboard, -1);
+        if (this.update(a, 2)){
+          p *= -1;
+          this.update(2 * this.size * (this.size + 1),1)
+        }else {
+          finishMove()
+        }
+			} else {
+          let t = new Promise((t) => (move_promise = t));
+          t = await t
+          var b;
+                    switch (t[2]){
+                      case 0:
+                          b = this.update(t[0] + t[1] * this.size, 1)
+                          break;
+                          case 2:
+                            b = this.update(t[0] + (t[1] + 1) * this.size,1)
+                            break;
+                            case 3:
+                            b= this.update(t[0] + (t[1]) * (this.size + 1) + (this.size + 1) * this.size,1)
+                            break;
+                            case 1:
+                              b = this.update(t[0] + 1+ (t[1]) * (this.size + 1) + (this.size + 1) * this.size,1)
+                          break;
+                  }
+                  if (b){
+                    p *= -1
+                  } else {
+                    
+				(thinking = !0);
+				$(".cover").removeClass("d-none");
+				$(".cover").addClass("darken d-flex");
+                  }
+                  animateMove(umpire.board)
 			}
 			let a = this.check_state();
 			if ((displayBoard(this.board), 0 != a)) return endGame(), a;
@@ -300,4 +375,19 @@ class Board {
       return board.toString();
     }
   
+  }
+  class Player {
+      constructor(u){
+        tf.loadLayersModel("model/model.json").then(neural_network =>
+          this.mcts = new MCTS(u.game, neural_network, {cpuct: 1.0, numMCTSSims: 2}))
+        ;
+      };
+      async move(g, t, p) {
+        while (this.mcts === undefined){
+          await new Promise(resolve => setTimeout(resolve, 1000))
+        }
+        let board = g.getCanonicalForm(t, p)
+        let probs = await this.mcts.getActionProb(board)
+        return probs.indexOf(1)
+      }
   }

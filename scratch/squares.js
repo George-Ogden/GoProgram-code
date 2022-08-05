@@ -1,13 +1,7 @@
-const size = 7,
-	umpire = new Squares(7),
+const size = 6,
+	umpire = new Squares(size),
 	sides=["top", "right", "bottom", "left"],
-	player = {
-		move: async function (t) {
-			w = (t.rss() % 2) * 2 - 1;
-			// if (200 == o.status)
-			return umpire.board
-		}
-	};
+	player = new Player(umpire);
 let move_promise,
 	thinking = !1,
 	box = false;
@@ -22,7 +16,6 @@ function finishMove() {
 
 function colourSquare(board, x, y){
 			let r = board.data[x][y];
-            let s = r % 3;
             for (let j = 0; j < 4; j++){
                 if (r % 3){
                     $(`[row=${y}][col=${x}]`).css(
@@ -33,14 +26,11 @@ function colourSquare(board, x, y){
                         `border-${sides[j]}`, "1px dotted rgba(0,0,0,.5)"
                     )
 				}
-                if (r % 3 != s){
-                    s = 0;
-                }
                 r = Math.floor(r/3);
             }
-            if (s){
+            if (r % 3){
                 $(`[row=${y}][col=${x}].box`).css({
-                    background: s > 1 ? "blue" : "red",
+                    background: r > 1 ? "blue" : "red",
                     opacity: 1
                 })
             }
@@ -80,7 +70,7 @@ function resize() {
 }
 (start = () => $("body").off("mouseenter")),
 	$("section").off("scroll"),
-	umpire.challenge(player),
+	umpire.challenge(player, 1),
 	$("body").on("mouseenter", start),
 	$("section").on("scroll", function () {
 		$("section").height() - $("table#board").offset().top > 50 && start();
@@ -122,9 +112,6 @@ function resize() {
 				move_promise([
 					parseInt(x),parseInt(y),q
 				]);
-				(thinking = !0);
-				$(".cover").removeClass("d-none");
-				$(".cover").addClass("darken d-flex");
 			}
 		}
 	}),

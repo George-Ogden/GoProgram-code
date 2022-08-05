@@ -26,9 +26,10 @@ class MCTS {
   // Returns:
   //     probs: a policy vector where the probability of the ith action is
   //            proportional to Nsa[(s,a)]**(1./temp)
-  getActionProb(canonicalBoard) {
+  async getActionProb(canonicalBoard) {
     for (let i = 0; i < this.args.numMCTSSims; i++) {
       this.search(canonicalBoard);
+      await new Promise(resolve => setTimeout(resolve, 1))
     }
     let s = this.game.stringRepresentation(canonicalBoard);
     let counts = [];

@@ -4,6 +4,7 @@ class Squares extends Umpire {
 		super(t);
     this.game = new DotsAndBoxesGame(t)
     this.gboard = this.game.getInitBoard();
+    this.score = {"2":0,"1":0}
 	}
 	check_state(t = this.board) {
         let full = true;
@@ -44,18 +45,6 @@ class Squares extends Umpire {
       let x = a % (this.size)
       let y = (a - x) / (this.size)
       let s =true;
-      if (y < this.size){
-        this.board.data[x][y] += player
-        for (let i = 0;i < 4; i++){
-          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i))) % 3 == 0){
-            s = false;
-          }
-        }
-        if (s && Math.floor(this.board.data[x][y] / 81 % 3) == 0){
-          this.board.data[x][y] += 81 * player
-          b= true;
-        }
-      }
       if (y > 0){
           this.board.data[x][y-1] += 9 * player
           s = true;
@@ -66,26 +55,30 @@ class Squares extends Umpire {
           }
           if (s && Math.floor(this.board.data[x][y-1] / 81 % 3) == 0){
             this.board.data[x][y-1] += 81 * player
-            b= true;
+            this.score[player] ++;
+            $(`[row=${y-1}][col=${x}]`).text(this.score[player])
+            b = true;
           }
       } 
-    } else if (a < 2* this.size * (this.size + 1)) {
-      a -= this.size * (this.size + 1)
-      let x = a % (this.size + 1)
-      let y = (a - x) / (this.size + 1)
-      let s = true;
-      if (x < this.size){
-        this.board.data[x][y] += 27 * player
+      if (y < this.size){
+        this.board.data[x][y] += player
         for (let i = 0;i < 4; i++){
-          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i)) % 3) == 0){
+          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i))) % 3 == 0){
             s = false;
           }
         }
         if (s && Math.floor(this.board.data[x][y] / 81 % 3) == 0){
           this.board.data[x][y] += 81 * player
-          b= true;
+          this.score[player] ++;
+          $(`[row=${y}][col=${x}]`).text(this.score[player])
+          b = true
         }
       }
+    } else if (a < 2* this.size * (this.size + 1)) {
+      a -= this.size * (this.size + 1)
+      let x = a % (this.size + 1)
+      let y = (a - x) / (this.size + 1)
+      let s = true;
       if (x > 0){
         this.board.data[x-1][y] += 3 * player
         s = true;
@@ -97,7 +90,23 @@ class Squares extends Umpire {
         }
         if (s && Math.floor(this.board.data[x-1][y] / 81 % 3) == 0){
           this.board.data[x-1][y] += 81 * player
-          b= true;
+          this.score[player] ++;
+          $(`[row=${y}][col=${x-1}]`).text(this.score[player])
+          b = true;
+        }
+      }
+      if (x < this.size){
+        this.board.data[x][y] += 27 * player
+        for (let i = 0;i < 4; i++){
+          if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i)) % 3) == 0){
+            s = false;
+          }
+        }
+        if (s && Math.floor(this.board.data[x][y] / 81 % 3) == 0){
+          this.board.data[x][y] += 81 * player
+          this.score[player] ++;
+          $(`[row=${y}][col=${x}]`).text(this.score[player])
+          b = true
         }
       }
     }

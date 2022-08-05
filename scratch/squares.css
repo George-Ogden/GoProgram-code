@@ -6,6 +6,10 @@ td {
 	height: 16.7%;
 	width: 16.7%;
 	background: var(--primary-dark);
+	transition: background 1s;
+	color: white;
+	text-align: center;
+	font-size: 2em;
 }
 table {
 	border-collapse: collapse;

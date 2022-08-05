@@ -110,6 +110,9 @@ class Squares extends Umpire {
 
       displayBoard(this.board)
 			if (p == -1) {
+				(thinking = !0);
+				$(".cover").removeClass("d-none");
+				$(".cover").addClass("darken d-flex");
 				let a = await t.move(this.game, this.gboard, -1);
         if (this.update(a, 2)){
           p *= -1;
@@ -137,12 +140,7 @@ class Squares extends Umpire {
                   }
                   if (b){
                     p *= -1
-                  } else {
-                    
-				(thinking = !0);
-				$(".cover").removeClass("d-none");
-				$(".cover").addClass("darken d-flex");
-                  }
+                  } 
                   animateMove(umpire.board)
 			}
 			let a = this.check_state();

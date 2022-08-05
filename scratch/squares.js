@@ -23,7 +23,7 @@ function colourSquare(board, x, y){
                     )
                 } else {
                     $(`[row=${y}][col=${x}]`).css(
-                        `border-${sides[j]}`, "1px dotted rgba(0,0,0,.5)"
+                        `border-${sides[j]}`, "none"
                     )
 				}
                 r = Math.floor(r/3);
@@ -67,10 +67,13 @@ async function animateMove(b) {
 }
 function resize() {
 	$("#board").height($("#board").width());
+	$("table.guide").offset($("#board").offset())
+	$("table.guide").width($("#board").width())
+	$("table.guide").height($("#board").height())
 }
 (start = () => $("body").off("mouseenter")),
 	$("section").off("scroll"),
-	umpire.challenge(player, 1),
+	umpire.challenge(player),
 	$("body").on("mouseenter", start),
 	$("section").on("scroll", function () {
 		$("section").height() - $("table#board").offset().top > 50 && start();

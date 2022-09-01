@@ -17,6 +17,9 @@
             <li class="generator level-2"><a href=/scratch/dinosaurs>
                     <content>Dinosaur Generator</content>
                 </a></li>
+            <li class="generator level-2"><a href=/scratch/ikea>
+                    <content>IKEA Name Generator</content>
+                </a></li>
             <li class="tictactoe level-2"><a href=/scratch/tictactoe>
                     <content>Tic-Tac-Toe</content>
                 </a></li>

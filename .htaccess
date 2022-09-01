@@ -54,6 +54,7 @@ RewriteRule ^(?!.*\.(jpg|png))(.*\/)?(codechef|competitive[-_\s]?(programming)?)
 RewriteRule ^(?!scratch\/hangman$)(?!.*\.jpg)(.*\/)?hangman[-_\s]?(solver)?\/?$ "\/scratch\/hangman" [R=301,L]
 RewriteRule ^(?!scratch\/connect4$)(?!.*\.jpg)(.*\/)?((connect[-_\s]?(4|four)?)|((connect)?[-_\s]?(4|four)))\/?$ "\/scratch\/connect4" [R=301,L]
 RewriteRule ^(?!scratch\/dinosaurs$)(?!.*\.jpg)(.*\/)?dinosaur(s)?[-_\s]?(generator)?\/?$ "\/scratch\/dinosaurs" [R=301,L]
+RewriteRule ^(?!scratch\/ikea$)(?!.*\.jpg)(.*\/)?(ikea|(ikea)?[-_\s]?furniture)[-_\s](generator)?\/?$ "\/scratch\/ikea" [R=301,L]
 RewriteRule ^(?!scratch\/predictor$)(?!.*\.jpg)(.*\/)?(((pb(s)?)|(tim(es|ings)))?[-_\s]?(predict(or)?)|pb(s)?)\/?$ "\/scratch\/predictor" [R=301,L]
 RewriteRule ^(?!scratch\/tictactoe$)(?!.*\.jpg)(.*\/)?(tic[-_\s]?(tac)?[-_\s]?(toe)?|noughts?([-_\s]?(and|\&|\+))?cross(es)?|nougts?|cross(es)?)\/?$ "\/scratch\/tictactoe" [R=301,L]
 RewriteRule ^(?!fork\/abstract$)(?!.*\.jpg)(.*\/)?(art|abstract[-_\s]?(art)?|style[-_\s]?gan(2)?[-_\s]?(ada)?)$ "\/fork\/abstract" [R=301,L]

@@ -27,7 +27,7 @@ h1 {
 @media (max-width:1000px) {
 
     input,
-    p#output {
+    #output {
         font-size: 3em !important
     }
 }
@@ -35,7 +35,7 @@ h1 {
 @media (max-width:700px) {
 
     input,
-    p#output {
+    #output {
         font-size: 2em !important
     }
 }
@@ -43,7 +43,7 @@ h1 {
 @media (max-width:450px) {
 
     input,
-    p#output {
+    #output {
         font-size: 1.5em !important
     }
 }

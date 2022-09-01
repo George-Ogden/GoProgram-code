@@ -5,10 +5,10 @@
 <?php include "../main.php" ?>
 <link rel=stylesheet href=ikea.css>
 <?php include "../meta.php" ?>
-<meta name=description content="An interactive piece of AI that generates dinasaur names with the input.">
-<meta name=keywords content="random dinosaur name generator">
+<meta name=description content="An AI that generates names of IKEA furniture.">
+<meta name=keywords content="ikea name generator">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=subject content="dinosaur generator">
+<meta name=subject content="IKEA generator">
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>

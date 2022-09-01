@@ -12,12 +12,12 @@
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-1">IKEA Generator</h1>
+<h1 class="colour pad-1 loaded">IKEA Generator</h1>
 </div>
 <div class="section text pad-1 interactive" id="generator">
-    <p class="text-center display-3 container" id=output><span class="typed font-weight-bold">
+    <h2 class="text-center display-3" id=output>
         <?php $curl = curl_init("https://api.goprogram.ai/ikea");curl_exec($curl);curl_close($curl) ?> 
-    </span><span class="generated font-weight-light"></span></p>
+</h2>
 </div>
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
 </html>

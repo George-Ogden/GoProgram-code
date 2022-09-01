@@ -17,6 +17,10 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://goprogram.ai/scratch/ikea</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://goprogram.ai/scratch/tictactoe</loc>
         <priority>0.80</priority>
     </url>

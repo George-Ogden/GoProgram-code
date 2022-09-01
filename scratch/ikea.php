@@ -15,9 +15,7 @@
 <h1 class="colour pad-1 loaded">IKEA Generator</h1>
 </div>
 <div class="section text pad-1 interactive" id="generator">
-    <h2 class="text-center display-3" id=output>
-        <?php $curl = curl_init("https://api.goprogram.ai/ikea");curl_exec($curl);curl_close($curl) ?> 
-</h2>
+<h2 class="text-center display-3" id=output><?php $curl = curl_init("https://api.goprogram.ai/ikea");curl_exec($curl);curl_close($curl)?></h2>
 </div>
 <?php include "../footer.php"?></section><?php include "../scripts.php" ?>
 </html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>IKEA Generator</title>
+<title>IKEA Name Generator</title>
 <?php include "../main.php" ?>
 <link rel=stylesheet href=ikea.css>
 <?php include "../meta.php" ?>
@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section>
 <div class=section id=top>
-<h1 class="colour pad-1 loaded">IKEA Generator</h1>
+<h1 class="colour pad-1 loaded">IKEA Name Generator</h1>
 </div>
 <div class="section text pad-1 interactive" id="generator">
 <h2 class="text-center display-3" id=output><?php $curl = curl_init("https://api.goprogram.ai/ikea");curl_exec($curl);curl_close($curl)?></h2>

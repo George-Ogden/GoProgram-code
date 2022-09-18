@@ -120,8 +120,4 @@
         <loc>https://goprogram.ai/about/source</loc>
         <priority>0.80</priority>
     </url>
-    <url>
-        <loc>https://goprogram.ai/about/CV.pdf</loc>
-        <priority>0.80</priority>
-    </url>
 </urlset>

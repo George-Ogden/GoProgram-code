@@ -112,9 +112,6 @@
             <li class="tutorials level-2"><a href=/about/tutorials>
                     <content>Python Tutorials</content>
                 </a></li>
-            <li class="cv level-2"><a href=/about/CV.pdf>
-                    <content>CV</content>
-                </a></li>
         </ul>
     </ul>
 </header>

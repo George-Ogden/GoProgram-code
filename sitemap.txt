@@ -27,5 +27,4 @@ https://goprogram.ai/interactive/timings
 https://goprogram.ai/about/
 https://goprogram.ai/about/tutorials
 https://goprogram.ai/about/updates
-https://goprogram.ai/about/CV.pdf
 https://goprogram.ai/about/source

@@ -44,7 +44,7 @@ class Squares extends Umpire {
     if (a < this.size * (this.size + 1)){
       let x = a % (this.size)
       let y = (a - x) / (this.size)
-      let s =true;
+      let s;
       if (y > 0){
           this.board.data[x][y-1] += 9 * player
           s = true;
@@ -61,6 +61,7 @@ class Squares extends Umpire {
           }
       } 
       if (y < this.size){
+        s = true;
         this.board.data[x][y] += player
         for (let i = 0;i < 4; i++){
           if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i))) % 3 == 0){
@@ -96,6 +97,7 @@ class Squares extends Umpire {
         }
       }
       if (x < this.size){
+        s = true;
         this.board.data[x][y] += 27 * player
         for (let i = 0;i < 4; i++){
           if (Math.floor(this.board.data[x][y] / Math.ceil(Math.pow(3, i)) % 3) == 0){
@@ -386,7 +388,7 @@ class Board {
   class Player {
       constructor(u){
         tf.loadLayersModel("model/model.json").then(neural_network =>
-          this.mcts = new MCTS(u.game, neural_network, {cpuct: 1.0, numMCTSSims: 25}))
+          this.mcts = new MCTS(u.game, neural_network, {cpuct: 3.0, numMCTSSims: 100}))
         ;
       };
       async move(g, t, p) {

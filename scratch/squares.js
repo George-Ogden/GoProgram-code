@@ -1,4 +1,4 @@
-const size = 7,
+const size = 3,
 	umpire = new Squares(size),
 	sides=["top", "right", "bottom", "left"],
 	player = new Player(umpire);

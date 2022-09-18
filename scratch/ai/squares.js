@@ -35,11 +35,8 @@ class Squares extends Umpire {
 		return 0;
 	}
   update(a, player){
-    if (player == -1) {
-      player = 2;
-    }
+    this.gboard = this.game.getNextState(this.gboard, (player == 2 ? -1 : 1) * this.m, a)[0];
     let b = false;
-    this.gboard = this.game.getNextState(this.gboard, -1, a)[0];
     
     if (a < this.size * (this.size + 1)){
       let x = a % (this.size)
@@ -116,7 +113,7 @@ class Squares extends Umpire {
   }
     async challenge(t, p = Math.random() > 0.5 ? 1 : -1) {
 		this.board.reset();
-		
+		this.m = p;
     for (let moves = this.game.getValidMoves(this.gboard, 1); moves.length; (moves = this.game.getValidMoves(this.gboard, 1), p *= -1)){
 
       displayBoard(this.board)
@@ -388,7 +385,7 @@ class Board {
   class Player {
       constructor(u){
         tf.loadLayersModel("model/model.json").then(neural_network =>
-          this.mcts = new MCTS(u.game, neural_network, {cpuct: 3.0, numMCTSSims: 100}))
+          this.mcts = new MCTS(u.game, neural_network, {cpuct: 1.0, numMCTSSims: 50}))
         ;
       };
       async move(g, t, p) {

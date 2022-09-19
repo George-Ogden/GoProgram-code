@@ -1,9 +1,10 @@
 https://goprogram.ai/
 https://goprogram.ai/scratch/
-https://goprogram.ai/scratch/tictactoe
 https://goprogram.ai/scratch/connect4
 https://goprogram.ai/scratch/squares
 https://goprogram.ai/scratch/dinosaurs
+https://goprogram.ai/scratch/ikea
+https://goprogram.ai/scratch/tictactoe
 https://goprogram.ai/scratch/hangman
 https://goprogram.ai/scratch/predictor
 https://goprogram.ai/fork/
@@ -27,5 +28,4 @@ https://goprogram.ai/interactive/timings
 https://goprogram.ai/about/
 https://goprogram.ai/about/tutorials
 https://goprogram.ai/about/updates
-https://goprogram.ai/about/CV.pdf
 https://goprogram.ai/about/source

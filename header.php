@@ -11,9 +11,6 @@
             <li class="home level-2"><a href=/scratch>
                     <content>Home</content>
                 </a></li>
-            <li class="tictactoe level-2"><a href=/scratch/tictactoe>
-                    <content>Tic-Tac-Toe</content>
-                </a></li>
             <li class="connect4 level-2"><a href=/scratch/connect4>
                     <content>Connect 4</content>
                 </a></li>
@@ -22,6 +19,12 @@
                 </a></li> -->
             <li class="generator level-2"><a href=/scratch/dinosaurs>
                     <content>Dinosaur Generator</content>
+                </a></li>
+            <li class="generator level-2"><a href=/scratch/ikea>
+                    <content>IKEA Name Generator</content>
+                </a></li>
+            <li class="tictactoe level-2"><a href=/scratch/tictactoe>
+                    <content>Tic-Tac-Toe</content>
                 </a></li>
             <li class="hangman level-2"><a href=/scratch/hangman>
                     <content>Hangman Solver</content>
@@ -111,9 +114,6 @@
                 </a></li>
             <li class="tutorials level-2"><a href=/about/tutorials>
                     <content>Python Tutorials</content>
-                </a></li>
-            <li class="cv level-2"><a href=/about/CV.pdf>
-                    <content>CV</content>
                 </a></li>
         </ul>
     </ul>

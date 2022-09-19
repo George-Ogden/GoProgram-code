@@ -10,6 +10,10 @@ td {
 	color: white;
 	text-align: center;
 	font-size: 2em;
+	line-height: 1;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--primary-dark);
 }
 table {
 	border-collapse: collapse;

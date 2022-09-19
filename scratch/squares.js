@@ -23,7 +23,7 @@ function colourSquare(board, x, y){
                     )
                 } else {
                     $(`[row=${y}][col=${x}]`).css(
-                        `border-${sides[j]}`, "none"
+                        `border-${sides[j]}`, "var(--primary-dark) 5px solid"
                     )
 				}
                 r = Math.floor(r/3);

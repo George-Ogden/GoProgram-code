@@ -36,11 +36,12 @@ function colourSquare(board, x, y){
             }
 }
 function findQuadrant(square, mouse){
-    let x = (mouse.x - square.left) / square.width
-    let y = (mouse.y - square.top) / square.height
-    if (x > 1 || x < 0 || y > 1 || y < 0){
-        return -1;
-    }
+    let x = (mouse.x - square.offset().left) / square.width()
+    let y = (mouse.y - square.offset().top) / square.height()
+	x = Math.max(x, 0)
+	y = Math.max(y, 0)
+	x = Math.min(x, 1)
+	y = Math.min(y, 1)
     if (x < y){
         if (x + y < 1){
             return 3
@@ -83,7 +84,7 @@ function resize() {
 	$("td.box").on("mouseover", function (e) {
 		if (!thinking){
             box = $(this)
-			let q = findQuadrant($(this).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+			let q = findQuadrant($(this), {x: e.pageX, y:e.pageY});
 			let x = $(this).attr("col")
 			let y = $(this).attr("row")
 			colourSquare(umpire.board, x, y)
@@ -98,7 +99,7 @@ function resize() {
 			let x = $(box).attr("col");
 			let y = $(box).attr("row");
 			colourSquare(umpire.board, x, y)
-			let q = findQuadrant($(box).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+			let q = findQuadrant($(box), {x: e.pageX, y:e.pageY});
 			if (Math.floor(umpire.board.data[x][y] / Math.ceil(Math.pow(3, q))) % 3 == 0){
 				$(box).css(
 					`border-${sides[q]}`, "5px dashed rgba(255,0,0,.5)"
@@ -107,7 +108,7 @@ function resize() {
 	}),
 	$("td.box").on("click", function (e) {
 		if (!thinking){
-			let q = findQuadrant($(this).get(0).getBoundingClientRect(), {x: e.pageX, y:e.pageY});
+			let q = findQuadrant($(this), {x: e.pageX, y:e.pageY});
             
 			let x = $(box).attr("col");
 			let y = $(box).attr("row");

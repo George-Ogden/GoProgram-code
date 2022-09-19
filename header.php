@@ -17,9 +17,9 @@
             <li class="connect4 level-2"><a href=/scratch/connect4>
                     <content>Connect 4</content>
                 </a></li>
-            <li class="squares level-2"><a href=/scratch/squares>
+            <!-- <li class="squares level-2"><a href=/scratch/squares>
                     <content>Squares</content>
-                </a></li>
+                </a></li> -->
             <li class="generator level-2"><a href=/scratch/dinosaurs>
                     <content>Dinosaur Generator</content>
                 </a></li>

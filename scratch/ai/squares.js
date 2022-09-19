@@ -145,6 +145,8 @@ class Squares extends Umpire {
                             case 1:
                               b = this.update(t[0] + 1+ (t[1]) * (this.size + 1) + (this.size + 1) * this.size,1)
                           break;
+                          default:
+                            console.log("default", t)
                   }
                   if (b){
                     p *= -1

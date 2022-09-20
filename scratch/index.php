@@ -13,6 +13,7 @@
 <?php echo image("images/brain.jpg", "Intelligence", "text-darken", ["id" => "top", "text" => "<h1>AI from Scratch</h1>"]);
 echo image("images/network.jpg", "Neural Network", "text", ["text" => "<p>Take a look at some AI written from scratch that you can play with directly in your browser!</p>"]);
 echo section("Connect 4", "<a href=connect4>Play against an AI</a> at a game of connect 4. It has trained by playing itself millions of times after only being taught the rules of the game.","images/connect4.jpg");
+echo section("Squares", "Draw horizontal and vertical lines on the board to try to create a full square and capture the territory. Even on a small board, <a href=squares>this game</a> is a lot of fun!");
 echo section("Dinosaur Generator", "The dinosaur generator uses an n-gram-like algorithm to generate realistic dinosaur names. <a href=/ai/dinosaurs>Check it out</a> and have a play with the cool feature.","images/dinosaur.jpg");
 echo section("Ikea Name Generator", "Transformers have revolutionised the field of natural language processing, but switching around the sizes of potentially humongous models can give you some cool names for flat-packed furniture. <a href=ikea>See the results here!</a>","images/ikea.jpg");
 echo section("Tic-Tac-Toe", "The original 3x3 game of tic-tac-toe is trivial but on a larger grid, this is no longer the case. With a 5x5 grid and the aim of getting 4 in any direction, this advanced version gives you the opportunity to <a href=/ai/tictactoe>play against an AI</a>.","images/tictactoe.jpg");

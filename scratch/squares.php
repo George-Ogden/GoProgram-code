@@ -23,15 +23,6 @@ echo "<td class=box row=$i col=$j></td>";
 }
 echo "</tr>";
 } ?>
-</table><table class=guide>
-<?php
-for ($i = 0; $i < 3; $i++) {
-echo "<tr>";
-for ($j = 0; $j < 3; $j++) {
-echo "<td></td>";
-}
-echo "</tr>";
-} ?>
 </table>
     <div class="cover d-none w-100 h-100">
         <div id="spinner" class="m-auto"></div>

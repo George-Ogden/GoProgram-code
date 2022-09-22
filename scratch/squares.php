@@ -33,4 +33,4 @@ echo "</tr>";
 <script src="ai/mcts.js?v=2"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.19.0/dist/tf.min.js"></script>
 <script src="ai/squares.js?v=3"></script>
-<script src=squares.js?v=1></script>
+<script src=squares.js?v=3></script>

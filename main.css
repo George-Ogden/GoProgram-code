@@ -4,18 +4,18 @@ p {
 }
 * {
     box-sizing: border-box;
-    font: 23px/150% var(--primary-font);
+    font: 23px/150% var(--secondary-font);
 }
 :root {
     --base: #00509d;
-    --primary-light: #003f88;
-    --primary-dark: #00296B;
-    --primary-transparent: #00296Ba0;
-    --secondary-dark: #FDC500;
-    --secondary-light: #FFD500;
-    --secondary-transparent: #0f1af2a0;
-    --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Lato", sans-serif;
+    --secondary-light: #003f88;
+    --secondary-dark: #00296B;
+    --secondary-transparent: #00296Ba0;
+    --primary-dark: #FDC500;
+    --primary-light: #FFD500;
+    --primary-transparent: #0f1af2a0;
+    --secondary-font: "Roboto", sans-serif;
+    --primary-font: "Lato", sans-serif;
 }
 body,
 html {
@@ -101,7 +101,7 @@ section.showcase .section.video {
 h1,
 h2,
 h3 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-weight: 300;
     user-select: none;
     width: 100%;
@@ -123,12 +123,12 @@ ion-icon {
     font-size: 5em;
 }
 h1.colour {
-    color: var(--base);
+    color: var(--primary-dark);
 }
 .section.text h2,
 h2.colour,
 section.colour .section:nth-of-type(3n) h2 {
-    color: var(--primary-dark);
+    color: var(--secondary-dark);
 }
 h2 {
     font-size: 3em;
@@ -138,7 +138,7 @@ h3 {
 }
 h3.colour,
 section.colour .section:nth-of-type(3n + 2) h2 {
-    color: var(--secondary-dark);
+    color: var(--primary-dark);
 }
 .pad,
 .section.icons,
@@ -243,7 +243,7 @@ input::selection {
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-light);
+    background: var(--secondary-light);
 }
 section.showcase .section.selection .image {
     margin: 25px;
@@ -258,7 +258,7 @@ section.showcase .section.selection {
     align-items: center;
 }
 section.showcase .section.selection a.selected {
-    color: var(--secondary-dark) !important;
+    color: var(--primary-dark) !important;
 }
 section.showcase .section.selection a.selected .image {
     border-color: var(--base);

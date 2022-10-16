@@ -3,7 +3,7 @@
 <head>
 <title>What's New?</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=updates.css?v=1>
+<link rel=stylesheet href=updates.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Get all of the updates about GoProgram as soon as they are released on this page.">
 <meta name=keywords content="updates">

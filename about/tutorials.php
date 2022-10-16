@@ -3,7 +3,7 @@
 <head>
 <title>Understanding Python</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=tutorials.css?v=1>
+<link rel=stylesheet href=tutorials.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="Free Python tutorials that start at the beginning and end up covering advanced topics. New videos are released every week on YouTube.">
 <meta name=keywords content="python tutorial free">

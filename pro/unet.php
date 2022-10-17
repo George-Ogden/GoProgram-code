@@ -12,7 +12,7 @@
 </head><?php include "../header.php" ?>
 <section class=colour>
 <div class=section id=top>
-<?php echo image("images/leaf.jpg", "Cigar Leaf", "text-darken", ["id" => "top", "text" => "<h1 style=color:var(--secondary-light);width:auto!important>U-Net</h1>"]);?>
+<?php echo image("images/leaf.jpg", "Cigar Leaf", "text-darken", ["id" => "top", "text" => "<h1 style=color:var(--primary-light);width:auto!important>U-Net</h1>"]);?>
 </div>
 <?php echo section("U-Net","U-Net was designed to perform image segmentation on medical images. I used it to train a model to detect the veins in cigar plants, which was deployed in a Docker container. As a result, the client could have a containerised way to process their images.","images/vein.jpg","about") . image("images/wall.jpg","Vein Detection","none") ?>
 <div class="section icons">

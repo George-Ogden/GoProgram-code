@@ -95,6 +95,6 @@ function skills(){
 return image("/images/logos.jpg", "Hand Drawn Logos", "text-overlay", ["text" => "<h2 class=pad-1>Skills</h2><p>I specialise in machine-learning, which is what I'm passionate about, but I've worked with many other technologies (as you can see here)!</p>"]);
 }
 function about(){
-return section("George Ogden","I am making the world a better place! AI and code are an important part, but it's so much more than just that.","/about/images/george ogden.jpg");
+return section("George Ogden","I am working on cool projects and I share some here! Have a look around at what I've worked on.","/about/images/george ogden.jpg");
 }
 ?>

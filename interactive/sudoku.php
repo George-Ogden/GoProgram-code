@@ -3,7 +3,7 @@
 <head>
 <title>Sudoku Solver</title>
 <?php include "../main.php" ?>
-<link rel=stylesheet href=sudoku.css?v=1>
+<link rel=stylesheet href=sudoku.css?v=2>
 <?php include "../meta.php" ?>
 <meta name=description content="This sudoku solver will solve sudoku puzzles using an interactive backtracking algorithm. Watch as it figures out which numbers are correct using trial and error.">
 <meta name=keywords content="sudoku solver online">
@@ -29,7 +29,7 @@ echo "</tr>";
 <button id=solve class="py-3">Solve</button>
 </form>
 </div>
-<script src=sudoku.js?v=1></script>
+<script src=sudoku.js?v=2></script>
 <?php include "../footer.php" ?></section>
 <?php include "../scripts.php" ?>
 </script>

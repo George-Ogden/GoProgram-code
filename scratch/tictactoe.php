@@ -31,4 +31,4 @@ echo "</tr>";
 <script src=ai/matrix.js></script>
 <script src=ai/umpire.js></script>
 <script src="ai/noughts and crosses.js?v=2"></script>
-<script src=tictactoe.js?v=2></script>
+<script src=tictactoe.js?v=3></script>

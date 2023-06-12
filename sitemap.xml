@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://goprogram.ai/</loc>
+        <loc>https://goprogram.co.uk/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/</loc>
+        <loc>https://goprogram.co.uk/scratch/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/connect4</loc>
+        <loc>https://goprogram.co.uk/scratch/connect4</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/squares</loc>
+        <loc>https://goprogram.co.uk/scratch/squares</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/ikea</loc>
+        <loc>https://goprogram.co.uk/scratch/ikea</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/tictactoe</loc>
+        <loc>https://goprogram.co.uk/scratch/tictactoe</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/hangman</loc>
+        <loc>https://goprogram.co.uk/scratch/hangman</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/scratch/predictor</loc>
+        <loc>https://goprogram.co.uk/scratch/predictor</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/</loc>
+        <loc>https://goprogram.co.uk/fork/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/abstract</loc>
+        <loc>https://goprogram.co.uk/fork/abstract</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/painter</loc>
+        <loc>https://goprogram.co.uk/fork/painter</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/emotion</loc>
+        <loc>https://goprogram.co.uk/fork/emotion</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/maskrcnn</loc>
+        <loc>https://goprogram.co.uk/fork/maskrcnn</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/faceswap</loc>
+        <loc>https://goprogram.co.uk/fork/faceswap</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/musegan</loc>
+        <loc>https://goprogram.co.uk/fork/musegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/fork/cyclegan</loc>
+        <loc>https://goprogram.co.uk/fork/cyclegan</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/pro/</loc>
+        <loc>https://goprogram.co.uk/pro/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/pro/yolo</loc>
+        <loc>https://goprogram.co.uk/pro/yolo</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/pro/posenet</loc>
+        <loc>https://goprogram.co.uk/pro/posenet</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/pro/bitcoin</loc>
+        <loc>https://goprogram.co.uk/pro/bitcoin</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/pro/unet</loc>
+        <loc>https://goprogram.co.uk/pro/unet</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/interactive/</loc>
+        <loc>https://goprogram.co.uk/interactive/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/interactive/calculator</loc>
+        <loc>https://goprogram.co.uk/interactive/calculator</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/interactive/sudoku</loc>
+        <loc>https://goprogram.co.uk/interactive/sudoku</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/interactive/converter</loc>
+        <loc>https://goprogram.co.uk/interactive/converter</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/interactive/timings</loc>
+        <loc>https://goprogram.co.uk/interactive/timings</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/about/</loc>
+        <loc>https://goprogram.co.uk/about/</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/about/updates</loc>
+        <loc>https://goprogram.co.uk/about/updates</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/about/tutorials</loc>
+        <loc>https://goprogram.co.uk/about/tutorials</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://goprogram.ai/about/source</loc>
+        <loc>https://goprogram.co.uk/about/source</loc>
         <priority>0.80</priority>
     </url>
 </urlset>
